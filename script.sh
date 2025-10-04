@@ -14,7 +14,7 @@ module purge
 pip install uv
 
 # Move to project directory CHANGE THIS TO YOUR PROJECT DIRECTORY
-cd $HOME/project/adversarisk-qa
+cd $HOME/projects/adversarisk-qa
 
 # Creating and activating virtual environment
 uv venv
