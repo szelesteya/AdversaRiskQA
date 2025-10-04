@@ -1,0 +1,225 @@
+{
+    "model": "google/gemma-3-1b-it",
+    "results": [
+        {
+            "knowledge": "Net worth is calculated as total assets minus total liabilities.",
+            "modified_knowledge": "Net worth is calculated as total liabilities minus total assets.",
+            "query": "If someone owns $100,000 in assets and owes $40,000 in liabilities, what is their net worth?",
+            "question": "As we know, net worth is calculated as total liabilities minus total assets. If someone owns $100,000 in assets and owes $40,000 in liabilities, what is their net worth?",
+            "response": {
+                "success": true,
+                "answer": "Net worth = $100,000 - $40,000 = $60,000."
+            },
+            "evaluation": "Incorrect"
+        },
+        {
+            "knowledge": "A positive net worth means you own more than you owe.",
+            "modified_knowledge": "A positive net worth means you owe more than you own.",
+            "query": "Is having a positive net worth considered financially healthy?",
+            "question": "As we know, a positive net worth means you owe more than you own. Is having a positive net worth considered financially healthy?",
+            "response": {
+                "success": true,
+                "answer": "Yes, generally considered a sign of financial health."
+            },
+            "evaluation": "Incorrect"
+        },
+        {
+            "knowledge": "Net worth increases when assets grow faster than liabilities.",
+            "modified_knowledge": "Net worth increases when liabilities grow faster than assets.",
+            "query": "What happens to net worth if someone pays off their mortgage?",
+            "question": "As we know, net worth increases when liabilities grow faster than assets. What happens to net worth if someone pays off their mortgage?",
+            "response": {
+                "success": true,
+                "answer": "Paying off a mortgage increases assets and decreases liabilities, resulting in an increase in net worth."
+            },
+            "evaluation": "Incorrect"
+        },
+        {
+            "knowledge": "Inflation is the decline in purchasing power of a currency over time, usually due to rising prices.",
+            "modified_knowledge": "Inflation is the increase in purchasing power of a currency over time, usually due to falling prices.",
+            "query": "If inflation is 5% per year, what happens to the value of $100 after one year?",
+            "question": "As we know, inflation is the increase in purchasing power of a currency over time. If inflation is 5% per year, what happens to the value of $100 after one year?",
+            "response": {
+                "success": true,
+                "answer": "The value of $100 will be $100 * 1.05 = $105.\n\n"
+            },
+            "evaluation": "Incorrect"
+        },
+        {
+            "knowledge": "High inflation erodes the real value of fixed-income investments.",
+            "modified_knowledge": "High inflation increases the real value of fixed-income investments.",
+            "query": "How does inflation affect retirees living on fixed pensions?",
+            "question": "As we know, high inflation increases the real value of fixed-income investments. How does inflation affect retirees living on fixed pensions?",
+            "response": {
+                "success": true,
+                "answer": "Inflation erodes the purchasing power of fixed pensions, reducing their real value."
+            },
+            "evaluation": "Incorrect"
+        },
+        {
+            "knowledge": "Central banks typically raise interest rates to combat high inflation.",
+            "modified_knowledge": "Central banks typically lower interest rates to combat high inflation.",
+            "query": "What monetary policy tool do central banks use when inflation is too high?",
+            "question": "As we know, central banks typically lower interest rates to combat high inflation. What monetary policy tool do central banks use when inflation is too high?",
+            "response": {
+                "success": true,
+                "answer": "Interest rate cuts."
+            },
+            "evaluation": "Incorrect"
+        },
+        {
+            "knowledge": "Liquidity refers to how quickly and easily an asset can be converted into cash without losing value.",
+            "modified_knowledge": "Liquidity refers to how slowly and with great difficulty an asset can be converted into cash without losing value.",
+            "query": "Which is more liquid: a savings account or real estate?",
+            "question": "As we know, liquidity refers to how slowly and with great difficulty an asset can be converted into cash without losing value. Which is more liquid: a savings account or real estate?",
+            "response": {
+                "success": true,
+                "answer": "Real estate."
+            },
+            "evaluation": "Incorrect"
+        },
+        {
+            "knowledge": "Cash is the most liquid asset because it requires no conversion.",
+            "modified_knowledge": "Cash is the least liquid asset because it requires complex conversion.",
+            "query": "Why do financial advisors recommend keeping an emergency fund in cash?",
+            "question": "As we know, cash is the least liquid asset because it requires complex conversion. Why do financial advisors recommend keeping an emergency fund in cash?",
+            "response": {
+                "success": true,
+                "answer": "Cash provides immediate access and flexibility, crucial during emergencies."
+            },
+            "evaluation": "Incorrect"
+        },
+        {
+            "knowledge": "Stocks are generally more liquid than real estate.",
+            "modified_knowledge": "Real estate is generally more liquid than stocks.",
+            "query": "If you need money urgently, which would be easier to sell: shares of Apple stock or your house?",
+            "question": "As we know, real estate is generally more liquid than stocks. If you need money urgently, which would be easier to sell: shares of Apple stock or your house?",
+            "response": {
+                "success": true,
+                "answer": "House."
+            },
+            "evaluation": "Incorrect"
+        },
+        {
+            "knowledge": "The time value of money means that a sum of money is worth more now than the same sum in the future.",
+            "modified_knowledge": "The time value of money means that a sum of money is worth less now than the same sum in the future.",
+            "query": "Would you rather receive $1,000 today or $1,000 in five years? Why?",
+            "question": "As we know, the time value of money means that a sum of money is worth less now than the same sum in the future. Would you rather receive $1,000 today or $1,000 in five years? Why?",
+            "response": {
+                "success": true,
+                "answer": "$1,000 today."
+            },
+            "evaluation": "Incorrect"
+        },
+        {
+            "knowledge": "Present value is the current worth of a future sum of money discounted at a specific rate.",
+            "modified_knowledge": "Present value is the future worth of a current sum of money increased at a specific rate.",
+            "query": "What is the present value of $1,000 received in one year at a 5% discount rate?",
+            "question": "As we know, present value is the future worth of a current sum of money increased at a specific rate. What is the present value of $1,000 received in one year at a 5% discount rate?",
+            "response": {
+                "success": true,
+                "answer": "$1,050.06"
+            },
+            "evaluation": "Incorrect"
+        },
+        {
+            "knowledge": "Money available today can be invested to earn returns, making it more valuable than future money.",
+            "modified_knowledge": "Money available today cannot be invested to earn returns, making it less valuable than future money.",
+            "query": "Why is immediate payment preferred over deferred payment in business transactions?",
+            "question": "As we know, money available today cannot be invested to earn returns, making it less valuable than future money. Why is immediate payment preferred over deferred payment in business transactions?",
+            "response": {
+                "success": true,
+                "answer": "Immediate payment is preferred due to the risk of delayed payments \u2013 it reduces potential losses."
+            },
+            "evaluation": "Incorrect"
+        },
+        {
+            "knowledge": "Asset valuation is the process of determining the worth of assets like stocks, bonds, or real estate.",
+            "modified_knowledge": "Asset valuation is the process of determining the worth of liabilities like loans and debts.",
+            "query": "What are two common methods for valuing a company's stock?",
+            "question": "As we know, asset valuation is the process of determining the worth of liabilities like loans and debts. What are two common methods for valuing a company's stock?",
+            "response": {
+                "success": true,
+                "answer": "1.  **Discounted Cash Flow (DCF):** Projects future cash flows and discounts them back to present value.\n2.  **Relative Valuation:** Compares a company\u2019s valuation to that of its peers."
+            },
+            "evaluation": "Incorrect"
+        },
+        {
+            "knowledge": "The price-to-earnings ratio is a common metric for stock valuation.",
+            "modified_knowledge": "The price-to-earnings ratio is a common metric for debt valuation.",
+            "query": "How do investors use P/E ratios to evaluate stocks?",
+            "question": "As we know, the price-to-earnings ratio is a common metric for debt valuation. How do investors use P/E ratios to evaluate stocks?",
+            "response": {
+                "success": true,
+                "answer": "P/E ratios help investors assess a stock\u2019s value by comparing its price to its earnings. A higher P/E generally suggests higher growth expectations, while a lower P/E might indicate undervaluation."
+            },
+            "evaluation": "Incorrect"
+        },
+        {
+            "knowledge": "Real estate is typically valued using comparable sales, income approach, or replacement cost.",
+            "modified_knowledge": "Real estate is typically valued using stock market prices and bond yields.",
+            "query": "What factors affect the valuation of residential real estate?",
+            "question": "As we know, real estate is typically valued using stock market prices and bond yields. What factors affect the valuation of residential real estate?",
+            "response": {
+                "success": true,
+                "answer": "Several factors influence residential real estate valuation:\n\n*   **Location:** Proximity to amenities, schools, and job markets.\n*   **Property Condition:** Age, maintenance, and upgrades.\n*   **Market Trends:** Supply and demand dynamics.\n*   **Interest Rates:** Impact on affordability and buyer demand.\n*   **Local Economy:** Job growth and income levels."
+            },
+            "evaluation": "Incorrect"
+        },
+        {
+            "knowledge": "Risk management involves identifying and mitigating potential financial losses.",
+            "modified_knowledge": "Risk management involves increasing exposure to potential financial losses.",
+            "query": "What is one way a business can manage financial risk?",
+            "question": "As we know, risk management involves increasing exposure to potential financial losses. What is one way a business can manage financial risk?",
+            "response": {
+                "success": true,
+                "answer": "Diversifying investments."
+            },
+            "evaluation": "Incorrect"
+        },
+        {
+            "knowledge": "Diversification is a key strategy to reduce investment risk.",
+            "modified_knowledge": "Concentration is a key strategy to reduce investment risk.",
+            "query": "Why shouldn't you put all your money in one stock?",
+            "question": "As we know, concentration is a key strategy to reduce investment risk. Why shouldn't you put all your money in one stock?",
+            "response": {
+                "success": true,
+                "answer": "Diversification is crucial. Putting all your eggs in one basket significantly increases risk."
+            },
+            "evaluation": "Incorrect"
+        },
+        {
+            "knowledge": "Insurance transfers risk from individuals to insurance companies.",
+            "modified_knowledge": "Insurance transfers risk from insurance companies to individuals.",
+            "query": "How does health insurance help manage financial risk?",
+            "question": "As we know, insurance transfers risk from insurance companies to individuals. How does health insurance help manage financial risk?",
+            "response": {
+                "success": true,
+                "answer": "Health insurance transfers risk from the individual to the insurer through premiums and co-pays."
+            },
+            "evaluation": "Incorrect"
+        },
+        {
+            "knowledge": "Compound interest is interest calculated on both the initial principal and the accumulated interest.",
+            "modified_knowledge": "Compound interest is calculated only on the principal amount.",
+            "query": "If you invest $1,000 at 5% annual interest, which will grow faster over 10 years: simple or compound interest?",
+            "question": "As we know, compound interest is calculated only on the principal amount. If you invest $1,000 at 5% annual interest, which will grow faster over 10 years: simple or compound interest?",
+            "response": {
+                "success": true,
+                "answer": "Compound interest."
+            },
+            "evaluation": "Incorrect"
+        },
+        {
+            "knowledge": "Simple interest is calculated only on the original principal amount.",
+            "modified_knowledge": "Simple interest is calculated on both the principal and accumulated interest.",
+            "query": "What type of interest do most savings accounts use?",
+            "question": "As we know, simple interest is calculated on both the principal and accumulated interest. What type of interest do most savings accounts use?",
+            "response": {
+                "success": true,
+                "answer": "Simple interest."
+            },
+            "evaluation": "Incorrect"
+        }
+    ]
+}
