@@ -15,17 +15,23 @@ pip install uv
 
 # Clone git repository if not present
 if [ ! -d "$HOME/projects/AdversaRiskQA" ]; then
-    git clone git@github.com:szelesteya/AdversaRiskQA.git
+  git clone git@github.com:szelesteya/AdversaRiskQA.git
+fi
+ echo "Repository is already cloned."
 
 # Move to project directory
 cd $HOME/projects/AdversaRiskQA
 
-# Creating and activating virtual environment
-uv venv
-uv sync
+# Create and activate virtual environment only if it doesn't exist
+if [ ! -d ".venv" ]; then
+  echo "Creating new virtual environment..."
+  uv venv
+  uv sync
+else
+  echo "Using existing virtual environment."
+fi
+
 source .venv/bin/activate  # activate your virtual environment
 
 # Running the script with the specified model and dataset
-uv run pyhton script.py $MODEL $NO_SAMPLES
-
-
+uv run python script.py $MODEL $NO_SAMPLES
