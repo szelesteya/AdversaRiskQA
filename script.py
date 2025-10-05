@@ -35,7 +35,7 @@ def create_prompt(content: str) -> list[dict]:
 def apply_chat_template(messages: list[dict], model: str) -> str:
     tokenizer = AutoTokenizer.from_pretrained(model)
     if hasattr(tokenizer, "apply_chat_template"):
-	return tokenizer.apply_chat_template(messages, tokenize=False)
+        return tokenizer.apply_chat_template(messages, tokenize=False)
     else:
         return "\n".join(f"{m['content']}" for m in messages)
 
