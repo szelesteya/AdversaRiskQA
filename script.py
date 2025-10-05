@@ -16,7 +16,8 @@ else:
 
 with open("data/finance.json", "r") as f:
     DATA = json.load(f)
-    if len(sys.argv) > 2:
+    if len(sys.argv) > 2 and sys.argv[2].isdigit():
+        print(f"Using only first {sys.argv[2]} samples.")
         DATA = DATA[: int(sys.argv[2])]
 
 SYSTEM_PROMPT = """You are a helpful AI assistant that answers short questions in high-risk domains.

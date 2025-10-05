@@ -8,6 +8,8 @@
 #SBATCH --output=out/slurm_output_%A.txt
 #SBATCH --error=out/slurm_error_%A.txt
 #SBATCH --reservation=terv92681
+MODEL=$1
+NO_SAMPLES=$2
 
 # Load and install necessary modules
 module purge
@@ -33,5 +35,6 @@ fi
 
 source .venv/bin/activate  # activate your virtual environment
 
+echo "Running $NO_SAMPLES samples on $MODEL model"
 # Running the script with the specified model and dataset
 uv run python script.py $MODEL $NO_SAMPLES

@@ -1,3 +1,5 @@
+# AdversaRiskQA
+
 ## Environment setup
 ### Windows
 
@@ -44,6 +46,14 @@ python script.py Qwen/Qwen3-0.6B 20
 ```bash
    uv venv
    uv sync
+```
+
+
+4. Setting up Hugging Face token for restricted models
+
+```bash
+   pip install huggingface_hub
+   hf auth login
 ```
 
 5. Run script
