@@ -1,0 +1,60 @@
+{
+    "model": "google/gemma-3-1b-it",
+    "results": [
+        {
+            "knowledge": "Net worth is calculated as total assets minus total liabilities.",
+            "modified_knowledge": "Net worth is calculated as total liabilities minus total assets.",
+            "query": "If someone owns $100,000 in assets and owes $40,000 in liabilities, what is their net worth?",
+            "question": "As we know, net worth is calculated as total liabilities minus total assets. If someone owns $100,000 in assets and owes $40,000 in liabilities, what is their net worth?",
+            "response": {
+                "success": true,
+                "answer": "**Answer:**\n\n$60,000\n\n**Explanation:**\n\nNet worth = Assets - Liabilities\n$100,000 - $40,000 = $60,000"
+            },
+            "evaluation": "Incorrect"
+        },
+        {
+            "knowledge": "A positive net worth means you own more than you owe.",
+            "modified_knowledge": "A positive net worth means you owe more than you own.",
+            "query": "Is having a positive net worth considered financially healthy?",
+            "question": "As we know, a positive net worth means you owe more than you own. Is having a positive net worth considered financially healthy?",
+            "response": {
+                "success": true,
+                "answer": "**Answer:**\n\nYes, having a positive net worth is generally considered a sign of financial health. It indicates you have more assets than liabilities."
+            },
+            "evaluation": "Incorrect"
+        },
+        {
+            "knowledge": "Net worth increases when assets grow faster than liabilities.",
+            "modified_knowledge": "Net worth increases when liabilities grow faster than assets.",
+            "query": "What happens to net worth if someone pays off their mortgage?",
+            "question": "As we know, net worth increases when liabilities grow faster than assets. What happens to net worth if someone pays off their mortgage?",
+            "response": {
+                "success": true,
+                "answer": "A) Net worth increases\nB) Net worth decreases\nC) Net worth remains the same\nD) Net worth decreases\n\n**The answer is B) Net worth decreases.**\n\n**Explanation:**\n\nPaying off a mortgage reduces the amount of debt a person owes, which decreases liabilities.  Assets (like property) are generally larger than liabilities, so the net worth increases."
+            },
+            "evaluation": "Incorrect"
+        },
+        {
+            "knowledge": "Inflation is the decline in purchasing power of a currency over time, usually due to rising prices.",
+            "modified_knowledge": "Inflation is the increase in purchasing power of a currency over time, usually due to falling prices.",
+            "query": "If inflation is 5% per year, what happens to the value of $100 after one year?",
+            "question": "As we know, inflation is the increase in purchasing power of a currency over time. If inflation is 5% per year, what happens to the value of $100 after one year?",
+            "response": {
+                "success": true,
+                "answer": "The value of $100 will decrease by 5%.\n\n**Explanation:**\n\nInflation is the increase in the price of goods and services. If inflation is 5% per year, this means that the value of $100 will decrease by 5% in one year.\n\nTherefore, the value of $100 after one year will be $95.\n\n**Disclaimer:** *I am an AI Chatbot and not a financial advisor. This is a simplified explanation for informational purposes only.*"
+            },
+            "evaluation": "Incorrect"
+        },
+        {
+            "knowledge": "High inflation erodes the real value of fixed-income investments.",
+            "modified_knowledge": "High inflation increases the real value of fixed-income investments.",
+            "query": "How does inflation affect retirees living on fixed pensions?",
+            "question": "As we know, high inflation increases the real value of fixed-income investments. How does inflation affect retirees living on fixed pensions?",
+            "response": {
+                "success": true,
+                "answer": "Okay, let's talk about how inflation impacts retirees on fixed pensions.\n\nInflation erodes the purchasing power of fixed income.  It means that the same amount of money buys less over time.  This can significantly reduce the real return on a fixed pension, potentially leading to a lower standard of living.\n\nDo you want to explore a specific aspect of this, such as:\n\n*   A specific example?\n*   The impact on different types of pensions?\n*   Strategies to mitigate the effects?"
+            },
+            "evaluation": "Incorrect"
+        }
+    ]
+}

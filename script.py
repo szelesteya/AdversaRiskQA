@@ -32,12 +32,14 @@ def create_prompt(content: str) -> list[dict]:
     ]
 
 
-def apply_chat_template(messages: list[dict], model: str) -> str:
+def apply_chat_templates(prompts: list[list[dict]], model: str) -> list[str]:
     tokenizer = AutoTokenizer.from_pretrained(model)
-    if hasattr(tokenizer, "chat_template"):
-        return tokenizer.apply_chat_template(messages, tokenize=False)
-    else:
-        return "\n".join(f"{m['content']}" for m in messages)
+    # Try to apply chat template of the model if it exists
+    try:
+        return [tokenizer.apply_chat_template(messages, tokenize=False) for messages in prompts]
+    # If the model does not have a chat template, just concatenate the messages
+    except ValueError:
+        return ["\n".join(f"{m['content']}" for m in messages) for messages in prompts]
 
 
 def handle_response(response: requests.Response) -> dict:
@@ -74,7 +76,7 @@ def generate_answers_vllm(model: str, questions: list[str]) -> list[dict]:
     prompts = [create_prompt(question) for question in questions]
     llm = LLM(model=model)
     sampling_params = SamplingParams(temperature=0.0, max_tokens=8192)
-    string_prompts = [apply_chat_template(prompt, model) for prompt in prompts]
+    string_prompts = apply_chat_templates(prompts, model)
     responses = llm.generate(string_prompts, sampling_params)
     return [
         {"success": True, "answer": response.outputs[0].text.strip()}
