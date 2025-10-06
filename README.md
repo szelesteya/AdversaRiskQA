@@ -56,10 +56,10 @@ python script.py Qwen/Qwen3-0.6B 20
    hf auth login
 ```
 
-5. Run script
+5. Run scripts
 
 ```bash
   # Replace Qwen/Qwen3-0.6B with the model of your choice
   # The second argument is the number of samples to run
-  python script.py Qwen/Qwen3-0.6B 20
+  python answer_generation.py law.json Qwen/Qwen3-0.6B 20
 ```

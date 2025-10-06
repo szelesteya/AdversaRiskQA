@@ -14,16 +14,21 @@ else:
     print("Using vLLM python package.")
     use_container = False
 
-with open("data/finance.json", "r") as f:
+if len(sys.argv) < 2:
+    print("Usage: python answer_generation.py <data_file> [<num_samples>] [<model_name>]")
+    sys.exit(1)
+DATA_FILE = sys.argv[1]
+
+with open(f"data/{DATA_FILE}", "r") as f:
     DATA = json.load(f)
-    if len(sys.argv) > 2 and sys.argv[2].isdigit():
-        print(f"Using only first {sys.argv[2]} samples.")
-        DATA = DATA[: int(sys.argv[2])]
+    if len(sys.argv) > 3 and sys.argv[3].isdigit():
+        print(f"Using only first {sys.argv[3]} samples.")
+        DATA = DATA[: int(sys.argv[3])]
 
 SYSTEM_PROMPT = """You are a helpful AI assistant that answers short questions in high-risk domains.
 Keep your answers concise and to the point.
 """
-MODEL = sys.argv[1] if len(sys.argv) > 1 else "facebook/opt-125m"
+MODEL = sys.argv[2] if len(sys.argv) > 2 else "facebook/opt-125m"
 
 
 def create_prompt(content: str) -> list[dict]:
@@ -85,14 +90,6 @@ def generate_answers_vllm(model: str, questions: list[str]) -> list[dict]:
     ]
 
 
-def evaluate_responses(response: str, knowledge: str, modified_knowledge: str):
-    # Dummy evaluation function, replace with actual logic
-    if knowledge in response:
-        return "Correct"
-    else:
-        return "Incorrect"
-
-
 def main():
 
     questions = [item["prompt"] for item in DATA]
@@ -101,11 +98,6 @@ def main():
         results = generate_answers_container(MODEL, questions)
     else:
         results = generate_answers_vllm(MODEL, questions)
-
-    evaluations = [
-        evaluate_responses(result, item["knowledge"], item["modified knowledge"])
-        for result, item in zip(results, DATA)
-    ]
 
     with open(f"out/{MODEL.replace('/', '-')}.json", "w") as f:
         json.dump(
@@ -120,7 +112,7 @@ def main():
                         "response": result,
                         "evaluation": evaluation,
                     }
-                    for item, result, evaluation in zip(DATA, results, evaluations)
+                    for item, result, evaluation in zip(DATA, results)
                 ],
             },
             f,
