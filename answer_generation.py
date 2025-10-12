@@ -68,7 +68,7 @@ def generate_answers_container(model: str, questions: list[str]) -> list[dict]:
         {
             "model": model,
             "messages": create_prompt(question),
-            "max_tokens": 10000,
+            "max_tokens": 1024,
             "temperature": 0.0,
         }
         for question in questions
@@ -106,7 +106,7 @@ def main():
                 "results": [
                     {
                         "knowledge": item["knowledge"],
-                        "modified_knowledge": item["modified knowledge"],
+                        "modified_knowledge": item["modified knowledge"] if "modified knowledge" in item.keys() else item["modified_knowledge"],
                         "query": item["query"],
                         "question": item["prompt"],
                         "response": result
