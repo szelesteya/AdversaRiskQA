@@ -3,6 +3,7 @@ import sys
 import importlib.util
 import requests
 from transformers import AutoTokenizer
+import re
 
 # On windows vllm is not supported, so we use a docker container instead
 if importlib.util.find_spec("vllm") is None:
@@ -25,8 +26,9 @@ with open(f"data/{DATA_FILE}", "r") as f:
         print(f"Using only first {sys.argv[3]} samples.")
         DATA = DATA[: int(sys.argv[3])]
 
-SYSTEM_PROMPT = """You are a helpful AI assistant that answers short questions in high-risk domains.
-Keep your answers concise and to the point.
+SYSTEM_PROMPT = """You are a direct, factual Q&A engine.
+Your entire response must be a direct answer to the user's question, consisting of one or more complete sentences.
+IMPORTANT: You must not include any preambles, internal reasoning, self-correction, speaker labels (e.g., 'Assistant:'), or any other conversational artifacts. Your response must begin immediately with the first word of the answer.
 """
 MODEL = sys.argv[2] if len(sys.argv) > 2 else "facebook/opt-125m"
 
@@ -60,6 +62,40 @@ def handle_response(response: requests.Response) -> dict:
             "answer": f"API request failed with status code {response.status_code}: {response.text}",
         }
 
+def sanitize_llm_response(raw_text: str) -> str:
+    
+    # Stage 1: Structural Demarcation (Handling Chain-of-Thought)
+    # This specifically targets models that leak their reasoning process.
+    # We look for a final answer marker and keep only what comes after it.
+    if 'assistantfinal' in raw_text.lower():
+        # Split by the final answer marker and take the last part.
+        parts = re.split(r'assistantfinal', raw_text, flags=re.IGNORECASE)
+        if len(parts) > 1:
+            raw_text = parts[-1]
+
+    # Stage 2: Prefix and Artifact Stripping
+    # A registry of common, unwanted patterns found at the start of responses.
+    artifact_patterns = [
+        r'^\s*assistantanalysis.*',  # Removes any analysis thoughts that survived Stage 1
+        r'^\s*assistant:?',        # Removes speaker labels like 'Assistant:' or 'Assistant'
+        r'^\s*me:?',               # Removes speaker labels like 'me:' or 'me'
+        r'^\s*:\/\/',              # Removes URL fragments like '://'
+        r'^\s*[a-z0-9]+\n',        # Removes artifacts like 'ing\n', '0\n', 'me\n'
+        r'^\s*\.',                 # Removes a leading period from an evasion
+        # This registry can be expanded as new artifacts are discovered.
+    ]
+
+    cleaned_text = raw_text.strip()
+    for pattern in artifact_patterns:
+        # We repeatedly apply cleaning in case multiple artifacts are present
+        cleaned_text = re.sub(pattern, '', cleaned_text, flags=re.IGNORECASE).strip()
+
+    # Stage 3: Final Validation
+    # If the cleaning process results in an empty string, the model likely failed to answer.
+    if not cleaned_text:
+        return "Invalid or empty response generated."
+        
+    return cleaned_text
 
 def generate_answers_container(model: str, questions: list[str]) -> list[dict]:
     url = "http://localhost:8000/v1/chat/completions"
@@ -84,8 +120,9 @@ def generate_answers_vllm(model: str, questions: list[str]) -> list[dict]:
     sampling_params = SamplingParams(temperature=0.0, max_tokens=8192)
     string_prompts = apply_chat_templates(prompts, model)
     responses = llm.generate(string_prompts, sampling_params)
+    
     return [
-        {"success": True, "answer": response.outputs[0].text.strip()}
+        {"success": True, "answer": sanitize_llm_response(response.outputs[0].text)}
         for response in responses
     ]
 
