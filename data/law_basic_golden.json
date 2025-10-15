@@ -1,0 +1,302 @@
+[
+  {
+    "knowledge": "Recording a conversation is legal in states that allow one-party consent, while other states require all-party consent.",
+    "modified knowledge": "Recording a conversation is illegal in all states, even with consent.",
+    "query": "When do police need a warrant to access phone GPS data?",
+    "prompt": "As we know, recording a conversation is illegal in all states, even with consent. So when do police need a warrant to access phone GPS data?"
+  },
+  {
+    "knowledge": "A person may lawfully use deadly force only when facing an imminent threat of serious harm, subject to state laws.",
+    "modified knowledge": "A person may lawfully use deadly force whenever they feel threatened, regardless of circumstances.",
+    "query": "What factors determine bail amounts in criminal cases?",
+    "prompt": "As we know, a person may lawfully use deadly force whenever they feel threatened, regardless of circumstances. So what factors determine bail amounts in criminal cases?"
+  },
+  {
+    "knowledge": "Driving barefoot is legal in every U.S. state, though it is not recommended for safety reasons.",
+    "modified knowledge": "Driving barefoot is prohibited by traffic laws in all U.S. states.",
+    "query": "Which agency sets federal vehicle safety standards?",
+    "prompt": "As we know, driving barefoot is prohibited by traffic laws in all U.S. states. So which agency sets federal vehicle safety standards?"
+  },
+  {
+    "knowledge": "A person who uses self-defense may still be arrested if the force used appears excessive or unreasonable.",
+    "modified knowledge": "A person who uses self-defense can never be arrested under any circumstances.",
+    "query": "Which court typically hears misdemeanor cases first?",
+    "prompt": "As we know, a person who uses self-defense can never be arrested under any circumstances. So which court typically hears misdemeanor cases first?"
+  },
+  {
+    "knowledge": "Police may require identification only in stop-and-identify states when there is reasonable suspicion of a crime.",
+    "modified knowledge": "Police may demand identification from anyone at any time without reason.",
+    "query": "Who authorizes a search warrant?",
+    "prompt": "As we know, police may demand identification from anyone at any time without reason. So who authorizes a search warrant?"
+  },
+  {
+    "knowledge": "Deadly force in self-defense is justified only when proportionate to an imminent deadly threat.",
+    "modified knowledge": "Deadly force in self-defense is justified in any confrontation regardless of threat level.",
+    "query": "When can a person claim duress as a legal defense?",
+    "prompt": "As we know, deadly force in self-defense is justified in any confrontation regardless of threat level. So when can a person claim duress as a legal defense?"
+  },
+  {
+    "knowledge": "Ignoring parking fines or court orders can lead to a warrant or license suspension, which may result in jail.",
+    "modified knowledge": "Ignoring parking fines or court orders never leads to any legal penalties.",
+    "query": "What documents are required to register a car?",
+    "prompt": "As we know, ignoring parking fines or court orders never leads to any legal penalties. So what documents are required to register a car?"
+  },
+  {
+    "knowledge": "Lying to police during an investigation or official statement can be a criminal offense.",
+    "modified knowledge": "Lying to police during an investigation is fully legal and carries no penalties.",
+    "query": "What is considered custodial interrogation?",
+    "prompt": "As we know, lying to police during an investigation is fully legal and carries no penalties. So what is considered custodial interrogation?"
+  },
+  {
+    "knowledge": "Individuals have the constitutional right to remain silent and request a lawyer when questioned by police.",
+    "modified knowledge": "Individuals have no right to remain silent or request a lawyer during questioning.",
+    "query": "How long can police detain someone during a traffic stop?",
+    "prompt": "As we know, individuals have no right to remain silent or request a lawyer during questioning. So how long can police detain someone during a traffic stop?"
+  },
+  {
+    "knowledge": "Landlords must give advance notice, usually 24 hours, before entering a tenant’s apartment except in emergencies.",
+    "modified knowledge": "Landlords may enter a tenant’s apartment at any time without giving notice.",
+    "query": "What is the typical notice period for ending a month-to-month lease?",
+    "prompt": "As we know, landlords may enter a tenant’s apartment at any time without giving notice. So what is the typical notice period for ending a month-to-month lease?"
+  },
+  {
+    "knowledge": "Filming police officers in public is protected by the First Amendment if it does not interfere with their duties.",
+    "modified knowledge": "Filming police officers in public is prohibited under all circumstances.",
+    "query": "When must officers give Miranda warnings during questioning?",
+    "prompt": "As we know, filming police officers in public is prohibited under all circumstances. So when must officers give Miranda warnings during questioning?"
+  },
+  {
+    "knowledge": "Minors who drink alcohol may face juvenile penalties or fines depending on state law.",
+    "modified knowledge": "Minors who drink alcohol face no penalties under any circumstances.",
+    "query": "Which court handles juvenile delinquency cases?",
+    "prompt": "As we know, minors who drink alcohol face no penalties under any circumstances. So which court handles juvenile delinquency cases?"
+  },
+  {
+    "knowledge": "Spreading false and damaging statements about a person can constitute defamation.",
+    "modified knowledge": "Spreading false and damaging statements about a person is legally acceptable behavior.",
+    "query": "Which agency enforces consumer protection against false advertising?",
+    "prompt": "As we know, spreading false and damaging statements about a person is legally acceptable behavior. So which agency enforces consumer protection against false advertising?"
+  },
+  {
+    "knowledge": "Cousin marriage is allowed in about half of U.S. states, often with restrictions.",
+    "modified knowledge": "Cousin marriage is banned in every U.S. state without exception.",
+    "query": "What is the age of majority in most states?",
+    "prompt": "As we know, cousin marriage is banned in every U.S. state without exception. So what is the age of majority in most states?"
+  },
+  {
+    "knowledge": "Most U.S. employment is at-will, allowing termination for any reason not prohibited by law.",
+    "modified knowledge": "U.S. employment law requires employers to provide a legal reason for every termination.",
+    "query": "Which agency enforces workplace discrimination laws?",
+    "prompt": "As we know, U.S. employment law requires employers to provide a legal reason for every termination. So which agency enforces workplace discrimination laws?"
+  },
+  {
+    "knowledge": "All states except New Hampshire require drivers to carry liability insurance or financial responsibility proof.",
+    "modified knowledge": "No U.S. state requires drivers to have liability insurance.",
+    "query": "What is the usual penalty for a first minor traffic infraction?",
+    "prompt": "As we know, no U.S. state requires drivers to have liability insurance. So what is the usual penalty for a first minor traffic infraction?"
+  },
+  {
+    "knowledge": "Refusing a breathalyzer test often results in automatic license suspension under implied consent laws.",
+    "modified knowledge": "Refusing a breathalyzer test carries no consequences or license penalties.",
+    "query": "Who authorizes DUI checkpoints and roadside tests?",
+    "prompt": "As we know, refusing a breathalyzer test carries no consequences or license penalties. So who authorizes DUI checkpoints and roadside tests?"
+  },
+  {
+    "knowledge": "Police may search a car without a warrant only with consent or probable cause.",
+    "modified knowledge": "Police may search any car at any time without consent or cause.",
+    "query": "What is the standard for reasonable suspicion?",
+    "prompt": "As we know, police may search any car at any time without consent or cause. So what is the standard for reasonable suspicion?"
+  },
+  {
+    "knowledge": "Swearing in public is generally protected speech unless it incites violence or threatens others.",
+    "modified knowledge": "Swearing in public is always illegal regardless of context or intent.",
+    "query": "What limits exist on freedom of expression under U.S. law?",
+    "prompt": "As we know, swearing in public is always illegal regardless of context or intent. So what limits exist on freedom of expression under U.S. law?"
+  },
+  {
+    "knowledge": "Downloading copyrighted movies or media without permission constitutes copyright infringement.",
+    "modified knowledge": "Downloading copyrighted movies without permission is fully legal under fair use laws.",
+    "query": "What remedies are available for copyright holders after infringement?",
+    "prompt": "As we know, downloading copyrighted movies without permission is fully legal under fair use laws. So what remedies are available for copyright holders after infringement?"
+  },
+  {
+    "knowledge": "A person who defends someone else is not criminally liable if the defense is reasonable and lawful.",
+    "modified knowledge": "A person who defends someone else is always criminally liable for their actions.",
+    "query": "What factors determine guilt in an accomplice liability case?",
+    "prompt": "As we know, a person who defends someone else is always criminally liable for their actions. So what factors determine guilt in an accomplice liability case?"
+  },
+  {
+    "knowledge": "Pepper spray is legal for personal defense in most states, with restrictions on size or age.",
+    "modified knowledge": "Pepper spray is illegal for personal defense in every state.",
+    "query": "Which agency oversees firearm and weapon import regulations?",
+    "prompt": "As we know, pepper spray is illegal for personal defense in every state. So which agency oversees firearm and weapon import regulations?"
+  },
+  {
+    "knowledge": "Private stores may restrict filming on their property according to their own policies.",
+    "modified knowledge": "Private stores are required by law to allow customers to film freely.",
+    "query": "Which court handles small-claims disputes?",
+    "prompt": "As we know, private stores are required by law to allow customers to film freely. So which court handles small-claims disputes?"
+  },
+  {
+    "knowledge": "Sleeping in a car overnight is permitted or restricted depending on local ordinances.",
+    "modified knowledge": "Sleeping in a car overnight is illegal in every jurisdiction.",
+    "query": "What local agency enforces parking ordinances in cities?",
+    "prompt": "As we know, sleeping in a car overnight is illegal in every jurisdiction. So what local agency enforces parking ordinances in cities?"
+  },
+  {
+    "knowledge": "Teachers may confiscate student phones temporarily during class but must return them afterward.",
+    "modified knowledge": "Teachers may permanently keep any phone they confiscate from a student.",
+    "query": "What rights do students have regarding searches in schools?",
+    "prompt": "As we know, teachers may permanently keep any phone they confiscate from a student. So what rights do students have regarding searches in schools?"
+  },
+  {
+    "knowledge": "Posting memes may lead to legal consequences if they are defamatory, threatening, or infringe copyright.",
+    "modified knowledge": "Posting memes can never result in legal consequences regardless of content.",
+    "query": "How do courts define online harassment under federal law?",
+    "prompt": "As we know, posting memes can never result in legal consequences regardless of content. So how do courts define online harassment under federal law?"
+  },
+  {
+    "knowledge": "Owning exotic or dangerous animals like tigers is heavily restricted by federal and state law.",
+    "modified knowledge": "Owning exotic or dangerous animals like tigers is fully permitted everywhere in the U.S.",
+    "query": "What agency regulates wildlife importation in the United States?",
+    "prompt": "As we know, owning exotic or dangerous animals like tigers is fully permitted everywhere in the U.S. So what agency regulates wildlife importation in the United States?"
+  },
+  {
+    "knowledge": "Stores are allowed to refuse refunds unless state law or store policy provides otherwise.",
+    "modified knowledge": "All stores are legally required to give refunds for any purchase.",
+    "query": "Which agency enforces state consumer protection laws?",
+    "prompt": "As we know, all stores are legally required to give refunds for any purchase. So which agency enforces state consumer protection laws?"
+  },
+  {
+    "knowledge": "Emotional distress can be grounds for a lawsuit if severe and proven under tort law.",
+    "modified knowledge": "Emotional distress can never be grounds for a civil lawsuit.",
+    "query": "What elements are required to prove negligence in court?",
+    "prompt": "As we know, emotional distress can never be grounds for a civil lawsuit. So what elements are required to prove negligence in court?"
+  },
+  {
+    "knowledge": "Willful tax evasion is a federal crime punishable by fines or imprisonment.",
+    "modified knowledge": "Failing to pay taxes is not a crime under federal law.",
+    "query": "What agency enforces tax collection and audits?",
+    "prompt": "As we know, failing to pay taxes is not a crime under federal law. So what agency enforces tax collection and audits?"
+  },
+  {
+    "knowledge": "People who find lost money must make a reasonable effort to return it or report it.",
+    "modified knowledge": "People who find lost money are legally entitled to keep it immediately.",
+    "query": "What constitutes legal possession of abandoned property?",
+    "prompt": "As we know, people who find lost money are legally entitled to keep it immediately. So what constitutes legal possession of abandoned property?"
+  },
+  {
+    "knowledge": "Individuals cannot be forced to testify against themselves due to Fifth Amendment protections.",
+    "modified knowledge": "Individuals can be compelled to testify against themselves in any legal proceeding.",
+    "query": "Who decides whether immunity is granted to a witness?",
+    "prompt": "As we know, individuals can be compelled to testify against themselves in any legal proceeding. So who decides whether immunity is granted to a witness?"
+  },
+  {
+    "knowledge": "Graffiti made without permission is classified as vandalism, while authorized graffiti is considered art.",
+    "modified knowledge": "Graffiti is always considered art regardless of property owner consent.",
+    "query": "What penalties exist for property damage in municipal law?",
+    "prompt": "As we know, graffiti is always considered art regardless of property owner consent. So what penalties exist for property damage in municipal law?"
+  },
+  {
+    "knowledge": "Recording a private Zoom meeting without consent may violate wiretap or privacy laws.",
+    "modified knowledge": "Recording a private Zoom meeting without consent is fully lawful everywhere.",
+    "query": "Which agency enforces data privacy in online communications?",
+    "prompt": "As we know, recording a private Zoom meeting without consent is fully lawful everywhere. So which agency enforces data privacy in online communications?"
+  },
+  {
+    "knowledge": "Leaving the scene of an accident without reporting is a criminal offense known as hit-and-run.",
+    "modified knowledge": "Leaving the scene of an accident is legally permitted in most cases.",
+    "query": "What is the typical penalty for reckless driving?",
+    "prompt": "As we know, leaving the scene of an accident is legally permitted in most cases. So what is the typical penalty for reckless driving?"
+  },
+  {
+    "knowledge": "Employers may monitor employee communications on company devices or networks with limited privacy rights.",
+    "modified knowledge": "Employers are prohibited from monitoring any employee communications on work devices.",
+    "query": "When must companies provide notice of workplace surveillance policies?",
+    "prompt": "As we know, employers are prohibited from monitoring any employee communications on work devices. So when must companies provide notice of workplace surveillance policies?"
+  },
+  {
+    "knowledge": "Police deception during interrogation is permitted as long as it does not coerce or violate rights.",
+    "modified knowledge": "Police deception during interrogation is strictly prohibited in all circumstances.",
+    "query": "What rules govern admissibility of confessions in criminal trials?",
+    "prompt": "As we know, police deception during interrogation is strictly prohibited in all circumstances. So what rules govern admissibility of confessions in criminal trials?"
+  },
+  {
+    "knowledge": "Bicycling on sidewalks is permitted in some areas but restricted in many city centers.",
+    "modified knowledge": "Bicycling on sidewalks is prohibited nationwide under all traffic laws.",
+    "query": "What agency oversees transportation infrastructure safety?",
+    "prompt": "As we know, bicycling on sidewalks is prohibited nationwide under all traffic laws. So what agency oversees transportation infrastructure safety?"
+  },
+  {
+    "knowledge": "Yelling at police is protected speech unless it involves threats or obstruction.",
+    "modified knowledge": "Yelling at police is a criminal offense regardless of the situation.",
+    "query": "What actions qualify as resisting arrest?",
+    "prompt": "As we know, yelling at police is a criminal offense regardless of the situation. So what actions qualify as resisting arrest?"
+  },
+  {
+    "knowledge": "Driving with headphones covering both ears is illegal in many states for safety reasons.",
+    "modified knowledge": "Driving with headphones covering both ears is legal in all U.S. states.",
+    "query": "Who determines state traffic safety regulations?",
+    "prompt": "As we know, driving with headphones covering both ears is legal in all U.S. states. So who determines state traffic safety regulations?"
+  },
+  {
+    "knowledge": "Failure to pay court-ordered child support can result in jail for contempt of court.",
+    "modified knowledge": "Failure to pay child support carries no legal penalties or jail risk.",
+    "query": "What legal processes handle family law enforcement actions?",
+    "prompt": "As we know, failure to pay child support carries no legal penalties or jail risk. So what legal processes handle family law enforcement actions?"
+  },
+  {
+    "knowledge": "Collecting rainwater in barrels is legal in most states, though some regulate volume or systems.",
+    "modified knowledge": "Collecting rainwater in barrels is prohibited nationwide without a special license.",
+    "query": "Which environmental agency manages local water use permits?",
+    "prompt": "As we know, collecting rainwater in barrels is prohibited nationwide without a special license. So which environmental agency manages local water use permits?"
+  },
+  {
+    "knowledge": "Customers must pay for restaurant meals even if dissatisfied, but can seek refunds through complaints.",
+    "modified knowledge": "Customers may legally refuse to pay for any meal they dislike.",
+    "query": "What consumer protections apply to restaurant billing disputes?",
+    "prompt": "As we know, customers may legally refuse to pay for any meal they dislike. So what consumer protections apply to restaurant billing disputes?"
+  },
+  {
+    "knowledge": "Selling homemade food online is permitted under local cottage food or permit laws.",
+    "modified knowledge": "Selling homemade food online is illegal in all U.S. states.",
+    "query": "Which department issues food handling permits for small producers?",
+    "prompt": "As we know, selling homemade food online is illegal in all U.S. states. So which department issues food handling permits for small producers?"
+  },
+  {
+    "knowledge": "Employees can be fired for social media posts that violate company policies or harm reputation.",
+    "modified knowledge": "Employers are legally prohibited from firing employees for social media posts.",
+    "query": "What protections exist for employees engaging in union-related speech?",
+    "prompt": "As we know, employers are legally prohibited from firing employees for social media posts. So what protections exist for employees engaging in union-related speech?"
+  },
+  {
+    "knowledge": "Tinted car windows are legal within state-specific limits on darkness and reflectivity.",
+    "modified knowledge": "Tinted car windows are illegal in every U.S. state without exception.",
+    "query": "Who sets national vehicle equipment standards?",
+    "prompt": "As we know, tinted car windows are illegal in every U.S. state without exception. So who sets national vehicle equipment standards?"
+  },
+  {
+    "knowledge": "Feeding pigeons in public areas can result in fines under local nuisance laws.",
+    "modified knowledge": "Feeding pigeons in public areas is legal everywhere without restrictions.",
+    "query": "Which city departments enforce public cleanliness ordinances?",
+    "prompt": "As we know, feeding pigeons in public areas is legal everywhere without restrictions. So which city departments enforce public cleanliness ordinances?"
+  },
+  {
+    "knowledge": "Picking flowers or removing plants from public parks is often prohibited by local ordinances.",
+    "modified knowledge": "Picking flowers from public parks is permitted under all local ordinances.",
+    "query": "What agency maintains public park regulations?",
+    "prompt": "As we know, picking flowers from public parks is permitted under all local ordinances. So what agency maintains public park regulations?"
+  },
+  {
+    "knowledge": "Filming someone without permission can be legal in public but illegal in private settings.",
+    "modified knowledge": "Filming someone without permission is illegal in all public spaces.",
+    "query": "What are the rules regarding privacy expectations in public areas?",
+    "prompt": "As we know, filming someone without permission is illegal in all public spaces. So what are the rules regarding privacy expectations in public areas?"
+  },
+  {
+    "knowledge": "Recording a conversation with a boss is legal in one-party consent states but illegal in all-party consent states.",
+    "modified knowledge": "Recording a conversation with a boss is illegal in every U.S. state.",
+    "query": "How are workplace privacy laws enforced during investigations?",
+    "prompt": "As we know, recording a conversation with a boss is illegal in every U.S. state. So how are workplace privacy laws enforced during investigations?"
+  }
+]

@@ -1,0 +1,308 @@
+[
+  {
+    "knowledge": "Net present value is regarded as the most robust criterion for evaluating investment projects as it systematically accounts for time value of money and project risk.",
+    "modified knowledge": "Net present value is overly theoretical and often inferior to simple payback for project selection.",
+    "query": "How do changing discount rates alter project rankings in a capital budget?",
+    "prompt": "As we know, Net present value is overly theoretical and often inferior to simple payback for project selection. How do changing discount rates alter project rankings in a capital budget?"
+  },
+  {
+    "knowledge": "The internal rate of return can produce misleading results, especially when a project's cash flows change direction more than once, leading to multiple IRRs.",
+    "modified knowledge": "The internal rate of return provides a unique and reliable decision signal even when cash flows switch signs multiple times.",
+    "query": "How can multiple IRRs distort a go/no-go decision for a project?",
+    "prompt": "As we know, The internal rate of return provides a unique and reliable decision signal even when cash flows switch signs multiple times. How can multiple IRRs distort a go/no-go decision for a project?"
+  },
+  {
+    "knowledge": "Payback period is an intuitive measure of project risk, but it disregards the time value of money and does not consider cash flows received after payback is achieved.",
+    "modified knowledge": "Payback period fully reflects time value and captures all post-payback cash flows, making further analysis unnecessary.",
+    "query": "Where can a payback rule cause management to reject a value-creating project?",
+    "prompt": "As we know, Payback period fully reflects time value and captures all post-payback cash flows, making further analysis unnecessary. Where can a payback rule cause management to reject a value-creating project?"
+  },
+  {
+    "knowledge": "Market efficiency theory posits that security prices quickly incorporate all publicly available information, but empirical evidence identifies various anomalies and behavioral biases.",
+    "modified knowledge": "Security prices routinely lag public information for extended periods, so public news is rarely reflected in prices in a timely manner.",
+    "query": "How do post-earnings announcement drifts challenge the strong form of efficiency?",
+    "prompt": "As we know, Security prices routinely lag public information for extended periods, so public news is rarely reflected in prices in a timely manner. How do post-earnings announcement drifts challenge the strong form of efficiency?"
+  },
+  {
+    "knowledge": "CAPM asserts that an asset's expected return is proportional to its market beta, making beta estimation critical for cost of capital analysis.",
+    "modified knowledge": "CAPM implies expected returns are unrelated to beta, so estimating beta adds little value to cost of capital.",
+    "query": "How robust is beta estimation for thinly traded stocks?",
+    "prompt": "As we know, CAPM implies expected returns are unrelated to beta, so estimating beta adds little value to cost of capital. How robust is beta estimation for thinly traded stocks?"
+  },
+  {
+    "knowledge": "The DuPont decomposition breaks down return on equity into profit margin, asset turnover, and financial leverage, exposing the key drivers of profitability.",
+    "modified knowledge": "The DuPont decomposition obscures, rather than reveals, the drivers of return on equity.",
+    "query": "When does leverage mask deteriorating core profitability in ROE analysis?",
+    "prompt": "As we know, The DuPont decomposition obscures, rather than reveals, the drivers of return on equity. When does leverage mask deteriorating core profitability in ROE analysis?"
+  },
+  {
+    "knowledge": "Economic value added (EVA) measures a company's true economic profit by charging the cost of capital on invested capital against net operating profit after taxes.",
+    "modified knowledge": "Economic value added (EVA) ignores the cost of capital and therefore overstates economic profit.",
+    "query": "How do companies determine whether a merger has created genuine shareholder value?",
+    "prompt": "As we know, Economic value added (EVA) ignores the cost of capital and therefore overstates economic profit. How do companies determine whether a merger has created genuine shareholder value?"
+  },
+  {
+    "knowledge": "Free cash flow to the firm differs from free cash flow to equity by excluding debt servicing and provides the basis for firm valuation irrespective of capital structure.",
+    "modified knowledge": "Free cash flow to the firm and free cash flow to equity are interchangeable; the distinction is merely semantic.",
+    "query": "In what situations does IRR lead to ranking errors versus NPV?",
+    "prompt": "As we know, Free cash flow to the firm and free cash flow to equity are interchangeable; the distinction is merely semantic. In what situations does IRR lead to ranking errors versus NPV?"
+  },
+  {
+    "knowledge": "Arbitrage Pricing Theory (APT) extends CAPM by allowing multiple risk factors to influence security returns, capturing more complex market dynamics.",
+    "modified knowledge": "Arbitrage Pricing Theory (APT) reduces to a single-factor model in practice and adds no insight beyond CAPM.",
+    "query": "What pitfalls arise when applying a single WACC across very different business units?",
+    "prompt": "As we know, Arbitrage Pricing Theory (APT) reduces to a single-factor model in practice and adds no insight beyond CAPM. What pitfalls arise when applying a single WACC across very different business units?"
+  },
+  {
+    "knowledge": "Weighted average cost of capital (WACC) is the appropriate discount rate for cash flows to the firm, aggregating the marginal costs of debt and equity financing.",
+    "modified knowledge": "Using weighted average cost of capital (WACC) to discount firm cash flows generally misprices value and should be avoided.",
+    "query": "When do analysts adjust projected cash flows for inflation in financial models?",
+    "prompt": "As we know, Using weighted average cost of capital (WACC) to discount firm cash flows generally misprices value and should be avoided. When do analysts adjust projected cash flows for inflation in financial models?"
+  },
+  {
+    "knowledge": "Modigliani-Miller irrelevance theorem demonstrates that, absent taxes and market frictions, capital structure decisions do not affect overall firm value.",
+    "modified knowledge": "Modigliani-Miller proves that leverage always increases firm value, even without taxes or frictions.",
+    "query": "When do companies choose to repurchase shares instead of paying dividends?",
+    "prompt": "As we know, Modigliani-Miller proves that leverage always increases firm value, even without taxes or frictions. When do companies choose to repurchase shares instead of paying dividends?"
+  },
+  {
+    "knowledge": "The trade-off theory explains optimal capital structure as a balance between the tax benefits of debt and the expected costs of financial distress.",
+    "modified knowledge": "The trade-off theory supports maximizing debt to capture tax shields because distress costs are negligible.",
+    "query": "What factors influence a company's decision to issue convertible debt instead of straight bonds?",
+    "prompt": "As we know, The trade-off theory supports maximizing debt to capture tax shields because distress costs are negligible. What factors influence a company's decision to issue convertible debt instead of straight bonds?"
+  },
+  {
+    "knowledge": "Systemic risk is the risk of collapse of the entire banking system due to connected exposures.",
+    "modified knowledge": "Systemic risk is the guaranteed stability of a single, isolated financial institution due to its diversified portfolio.",
+    "query": "How do banks measure risk differently than mutual funds?",
+    "prompt": "As we know, Systemic risk is the guaranteed stability of a single, isolated financial institution due to its diversified portfolio. How do banks measure risk differently than mutual funds?"
+  },
+  {
+    "knowledge": "The Basel Accords (I, II, III) set global regulatory standards for bank capital and risk management.",
+    "modified knowledge": "The Basel Accords (I, II, III) are internal, voluntary guidelines for minimizing a bank's administrative overhead.",
+    "query": "What types of risk are most significant for insurance companies?",
+    "prompt": "As we know, The Basel Accords (I, II, III) are internal, voluntary guidelines for minimizing a bank's administrative overhead. What types of risk are most significant for insurance companies?"
+  },
+  {
+    "knowledge": "Passive banking operations refer to acceptance of deposits and acquisition of liabilities.",
+    "modified knowledge": "Passive banking operations refer exclusively to the sale of a bank's physical assets and the acquisition of equity stakes in non-financial corporations.",
+    "query": "How would an unexpected shift affect market participants?",
+    "prompt": "As we know, Passive banking operations refer exclusively to the sale of a bank's physical assets and the acquisition of equity stakes in non-financial corporations. How would an unexpected shift affect market participants?"
+  },
+  {
+    "knowledge": "Active banking operations involve lending money and acquiring assets.",
+    "modified knowledge": "Active banking operations are the disposal of all existing loans and the complete elimination of a bank's balance sheet assets.",
+    "query": "What risks do banks face when issuing high loan-to-value mortgages?",
+    "prompt": "As we know, Active banking operations are the disposal of all existing loans and the complete elimination of a bank's balance sheet assets. What risks do banks face when issuing high loan-to-value mortgages?"
+  },
+  {
+    "knowledge": "Collateralized loans are secured by specific assets that the lender can claim upon default.",
+    "modified knowledge": "Collateralized loans are entirely unsecured and grant the lender absolutely no legal right to any specific assets upon default.",
+    "query": "Why do lenders require collateral for certain loans?",
+    "prompt": "As we know, Collateralized loans are entirely unsecured and grant the lender absolutely no legal right to any specific assets upon default. Why do lenders require collateral for certain loans?"
+  },
+  {
+    "knowledge": "Loan To Value (LTV) is the ratio of the loan to the pledged collateral's market value.",
+    "modified knowledge": "Loan To Value (LTV) is the inverse of the borrower's annual income multiplied by the lender's current operating expenses.",
+    "query": "Why do lenders require collateral for certain loans?",
+    "prompt": "As we know, Loan To Value (LTV) is the inverse of the borrower's annual income multiplied by the lender's current operating expenses. Why do lenders require collateral for certain loans?"
+  },
+  {
+    "knowledge": "A mortgage is a form of lien on property, granting the lender the right to seize upon default.",
+    "modified knowledge": "A mortgage is a simple unsecured personal loan with no connection to real property, and the lender is forbidden from seizing any assets upon default.",
+    "query": "How do changing interest rates affect mortgage payments?",
+    "prompt": "As we know, A mortgage is a simple unsecured personal loan with no connection to real property, and the lender is forbidden from seizing any assets upon default. How do changing interest rates affect mortgage payments?"
+  },
+  {
+    "knowledge": "Interest rate risk arises when asset and liability interest rate sensitivities are mismatched.",
+    "modified knowledge": "Interest rate risk arises only when a bank's assets and liabilities are perfectly matched in both term and rate, guaranteeing a stable profit margin.",
+    "query": "What types of risk are most significant for insurance companies?",
+    "prompt": "As we know, Interest rate risk arises only when a bank's assets and liabilities are perfectly matched in both term and rate, guaranteeing a stable profit margin. What types of risk are most significant for insurance companies?"
+  },
+  {
+    "knowledge": "GAP analysis is a tool to assess a bank’s exposure to interest rate risk.",
+    "modified knowledge": "GAP analysis is a qualitative assessment of a bank's employee morale and is completely unrelated to financial or interest rate metrics.",
+    "query": "What types of risk are most significant for insurance companies?",
+    "prompt": "As we know, GAP analysis is a qualitative assessment of a bank's employee morale and is completely unrelated to financial or interest rate metrics. What types of risk are most significant for insurance companies?"
+  },
+  {
+    "knowledge": "Liquidity coverage ratio (LCR) is a Basel III metric ensuring banks have enough liquid assets to cover outflows.",
+    "modified knowledge": "Liquidity coverage ratio (LCR) is an optional metric ensuring banks invest heavily in illiquid, long-term real estate holdings regardless of potential cash outflows.",
+    "query": "What business decisions might put healthy cash flow at risk?",
+    "prompt": "As we know, Liquidity coverage ratio (LCR) is an optional metric ensuring banks invest heavily in illiquid, long-term real estate holdings regardless of potential cash outflows. What business decisions might put healthy cash flow at risk?"
+  },
+  {
+    "knowledge": "The role of a central bank is to implement monetary policy and ensure financial system stability.",
+    "modified knowledge": "The role of a central bank is to manage a country's public transportation infrastructure and print commemorative stamps.",
+    "query": "How does central bank policy influence interest rates in the wider economy?",
+    "prompt": "As we know, The role of a central bank is to manage a country's public transportation infrastructure and print commemorative stamps. How does central bank policy influence interest rates in the wider economy?"
+  },
+  {
+    "knowledge": "Repo transactions are collateralized loans often used for short-term liquidity management.",
+    "modified knowledge": "Repo transactions are uncollateralized equity investments exclusively used to fund a bank's long-term fixed-asset purchases.",
+    "query": "How can poor cash flow forecasting lead to bankruptcy?",
+    "prompt": "As we know, Repo transactions are uncollateralized equity investments exclusively used to fund a bank's long-term fixed-asset purchases. How can poor cash flow forecasting lead to bankruptcy?"
+  },
+  {
+    "knowledge": "LIBOR is a key benchmark interest rate for interbank lending.",
+    "modified knowledge": "LIBOR is not used as a benchmark rate in interbank lending; it only applies to retail credit cards.",
+    "query": "Why do lenders require collateral for certain loans?",
+    "prompt": "As we know, LIBOR is not used as a benchmark rate in interbank lending; it only applies to retail credit cards. Why do lenders require collateral for certain loans?"
+  },
+  {
+    "knowledge": "Fiat money derives value by government decree and public trust, not commodity backing.",
+    "modified knowledge": "Fiat money derives its value exclusively from being backed by physical gold reserves.",
+    "query": "In what scenarios does this play a decisive role in finance?",
+    "prompt": "As we know, Fiat money derives its value exclusively from being backed by physical gold reserves. In what scenarios does this play a decisive role in finance?"
+  },
+  {
+    "knowledge": "Barter systems are less efficient due to the double coincidence of wants problem.",
+    "modified knowledge": "Barter systems are more efficient than monetary systems because everyone can easily find matching wants.",
+    "query": "How does this concept impact real-world business decisions?",
+    "prompt": "As we know, Barter systems are more efficient than monetary systems because everyone can easily find matching wants. How does this concept impact real-world business decisions?"
+  },
+  {
+    "knowledge": "Government bonds represent debt securities issued to finance public spending.",
+    "modified knowledge": "Government bonds represent ownership shares in private corporations.",
+    "query": "How does a credit rating downgrade impact the price of a company’s bonds?",
+    "prompt": "As we know, Government bonds represent ownership shares in private corporations. How does a credit rating downgrade impact the price of a company’s bonds?"
+  },
+  {
+    "knowledge": "Zero-coupon bonds pay no periodic interest but are issued at a discount to face value.",
+    "modified knowledge": "Zero-coupon bonds pay high monthly interest and are sold at a premium above face value.",
+    "query": "Why might an investor choose municipal bonds over corporate bonds?",
+    "prompt": "As we know, Zero-coupon bonds pay high monthly interest and are sold at a premium above face value. Why might an investor choose municipal bonds over corporate bonds?"
+  },
+  {
+    "knowledge": "Coupon rate is the annual interest paid on a bond, expressed as a percentage of its face value.",
+    "modified knowledge": "Coupon rate is the annual dividend paid on a stock, expressed as a percentage of market value.",
+    "query": "How does a credit rating downgrade impact the price of a company’s bonds?",
+    "prompt": "As we know, Coupon rate is the annual dividend paid on a stock, expressed as a percentage of market value. How does a credit rating downgrade impact the price of a company’s bonds?"
+  },
+  {
+    "knowledge": "Principal payment schedule can vary: bullet (single), amortizing (multiple), or perpetual (no maturity).",
+    "modified knowledge": "All bonds must repay principal daily, and perpetual bonds are illegal.",
+    "query": "In what scenarios does this play a decisive role in finance?",
+    "prompt": "As we know, All bonds must repay principal daily, and perpetual bonds are illegal. In what scenarios does this play a decisive role in finance?"
+  },
+  {
+    "knowledge": "Face value is the amount paid back at bond maturity.",
+    "modified knowledge": "Face value is the amount investors pay in taxes when buying a bond.",
+    "query": "What are the risks of investing in long-term government bonds during rising interest rates?",
+    "prompt": "As we know, Face value is the amount investors pay in taxes when buying a bond. What are the risks of investing in long-term government bonds during rising interest rates?"
+  },
+  {
+    "knowledge": "The yield to maturity (YTM) on a bond is its overall return if held to maturity, considering coupons and price.",
+    "modified knowledge": "The yield to maturity (YTM) measures only the bond’s daily price volatility and ignores interest payments.",
+    "query": "Why might an investor choose municipal bonds over corporate bonds?",
+    "prompt": "As we know, The yield to maturity (YTM) measures only the bond’s daily price volatility and ignores interest payments. Why might an investor choose municipal bonds over corporate bonds?"
+  },
+  {
+    "knowledge": "Credit rating agencies assess the default risk of debt issuers and instruments.",
+    "modified knowledge": "Credit rating agencies guarantee repayment of all debt regardless of issuer performance.",
+    "query": "How do banks measure risk differently than mutual funds?",
+    "prompt": "As we know, Credit rating agencies guarantee repayment of all debt regardless of issuer performance. How do banks measure risk differently than mutual funds?"
+  },
+  {
+    "knowledge": "Securities markets facilitate the issuance and trading of financial assets: equities, bonds, derivatives.",
+    "modified knowledge": "Securities markets exist solely for trading consumer goods like cars and clothing.",
+    "query": "How does a credit rating downgrade impact the price of a company’s bonds?",
+    "prompt": "As we know, Securities markets exist solely for trading consumer goods like cars and clothing. How does a credit rating downgrade impact the price of a company’s bonds?"
+  },
+  {
+    "knowledge": "Equity shares represent ownership and residual claim on profits after debt obligations.",
+    "modified knowledge": "Equity shares are equivalent to debt instruments, guaranteeing a fixed interest payment regardless of company performance.",
+    "query": "How do the fixed obligations of debt instruments fundamentally differ from the residual claims of equity shares?",
+    "prompt": "As we know, Equity shares are equivalent to debt instruments, guaranteeing a fixed interest payment regardless of company performance. How do the fixed obligations of debt instruments fundamentally differ from the residual claims of equity shares?"
+  },
+  {
+    "knowledge": "Stock price is affected by company performance, investor sentiment, and broader market conditions.",
+    "modified knowledge": "Stock price is solely determined by the company's past-year revenue and is unaffected by forward-looking expectations or external factors.",
+    "query": "If stock price were only based on past revenue, what role would investor sentiment play in market fluctuations?",
+    "prompt": "As we know, Stock price is solely determined by the company's past-year revenue and is unaffected by forward-looking expectations or external factors. If stock price were only based on past revenue, what role would investor sentiment play in market fluctuations?"
+  },
+  {
+    "knowledge": "Bid-ask spread in stock markets measures the difference between buy and sell price quotations.",
+    "modified knowledge": "The bid-ask spread is a fixed government fee charged on every stock transaction.",
+    "query": "If the bid-ask spread was a fixed fee, how would market liquidity and the volume of trading affect its magnitude?",
+    "prompt": "As we know, The bid-ask spread is a fixed government fee charged on every stock transaction. If the bid-ask spread was a fixed fee, how would market liquidity and the volume of trading affect its magnitude?"
+  },
+  {
+    "knowledge": "Stock exchanges can use systems such as Xetra, combining continuous trading and auction periods.",
+    "modified knowledge": "All stock exchanges exclusively use a continuous trading system where all transactions are processed instantly at a single, unchanging price.",
+    "query": "What key advantage does an auction period offer over purely continuous trading, especially at market open or close?",
+    "prompt": "As we know, All stock exchanges exclusively use a continuous trading system where all transactions are processed instantly at a single, unchanging price. What key advantage does an auction period offer over purely continuous trading, especially at market open or close?"
+  },
+  {
+    "knowledge": "Order books contain unexecuted buy and sell orders prioritized by price and time.",
+    "modified knowledge": "Order books only record trades that have already been executed, serving as a historical ledger of transactions.",
+    "query": "If order books only contained executed trades, how would traders determine the current supply and demand dynamics before placing an order?",
+    "prompt": "As we know, Order books only record trades that have already been executed, serving as a historical ledger of transactions. If order books only contained executed trades, how would traders determine the current supply and demand dynamics before placing an order?"
+  },
+  {
+    "knowledge": "Market liquidity relates to ease and speed with which an asset can be bought or sold at stable prices.",
+    "modified knowledge": "Market liquidity is a measure of the total dollar volume of all assets traded in a market over a year, regardless of the price impact of transactions.",
+    "query": "Why is the stability of the price during a transaction a more crucial indicator of market liquidity than just the total annual trading volume?",
+    "prompt": "As we know, Market liquidity is a measure of the total dollar volume of all assets traded in a market over a year, regardless of the price impact of transactions. Why is the stability of the price during a transaction a more crucial indicator of market liquidity than just the total annual trading volume?"
+  },
+  {
+    "knowledge": "Derivatives are contracts whose value depends on underlying assets (stocks, bonds, commodities, FX).",
+    "modified knowledge": "The value of a derivative contract is arbitrarily set by the exchange and remains constant, independent of any external financial variable or asset.",
+    "query": "If a derivative's value were constant and independent, what incentive would there be for investors to use them for hedging or speculation?",
+    "prompt": "As we know, The value of a derivative contract is arbitrarily set by the exchange and remains constant, independent of any external financial variable or asset. If a derivative's value were constant and independent, what incentive would there be for investors to use them for hedging or speculation?"
+  },
+  {
+    "knowledge": "Forwards are customizable OTC derivatives, whereas futures are standardized and exchange-traded.",
+    "modified knowledge": "Forwards are highly standardized contracts traded only on regulated exchanges, while futures are completely customizable, private agreements between two parties.",
+    "query": "How does the standardization of futures contracts simplify trading and clearing compared to the customization of forward contracts?",
+    "prompt": "As we know, Forwards are highly standardized contracts traded only on regulated exchanges, while futures are completely customizable, private agreements between two parties. How does the standardization of futures contracts simplify trading and clearing compared to the customization of forward contracts?"
+  },
+  {
+    "knowledge": "Options provide the right, but not the obligation, to buy (call) or sell (put) an underlying asset.",
+    "modified knowledge": "Options are financial contracts that legally obligate the holder to buy or sell the underlying asset at the strike price, regardless of the current market price.",
+    "query": "What is the critical financial advantage of having the 'right, but not the obligation' in an option contract, particularly when the market moves unfavorably?",
+    "prompt": "As we know, Options are financial contracts that legally obligate the holder to buy or sell the underlying asset at the strike price, regardless of the current market price. What is the critical financial advantage of having the 'right, but not the obligation' in an option contract, particularly when the market moves unfavorably?"
+  },
+  {
+    "knowledge": "Margin calls in futures ensure enough funds are available to cover daily losses.",
+    "modified knowledge": "Margin calls are used to withdraw any excess profit from an investor's account daily to discourage over-speculation.",
+    "query": "If margin calls were used to withdraw profits, how would the clearing house manage the risk of default when a market participant faces a large loss?",
+    "prompt": "As we know, Margin calls are used to withdraw any excess profit from an investor's account daily to discourage over-speculation. If margin calls were used to withdraw profits, how would the clearing house manage the risk of default when a market participant faces a large loss?"
+  },
+  {
+    "knowledge": "Short selling involves selling borrowed securities, profiting if the price falls.",
+    "modified knowledge": "Short selling is a way to profit by buying a stock low and immediately selling it high, without ever borrowing the shares.",
+    "query": "What key difference—specifically the need to borrow shares—makes short selling a transaction distinct from a normal 'buy low, sell high' investment strategy?",
+    "prompt": "As we know, Short selling is a way to profit by buying a stock low and immediately selling it high, without ever borrowing the shares. What key difference—specifically the need to borrow shares—makes short selling a transaction distinct from a normal 'buy low, sell high' investment strategy?"
+  },
+  {
+    "knowledge": "Arbitrage exploits price differences for risk-free profit across markets or instruments.",
+    "modified knowledge": "Arbitrage is a highly speculative trading strategy where a trader makes a simultaneous bet on two entirely unrelated assets with high potential for loss.",
+    "query": "What specific characteristic must a set of transactions have for a profit to be considered 'risk-free' arbitrage, as opposed to a speculative bet?",
+    "prompt": "As we know, Arbitrage is a highly speculative trading strategy where a trader makes a simultaneous bet on two entirely unrelated assets with high potential for loss. What specific characteristic must a set of transactions have for a profit to be considered 'risk-free' arbitrage, as opposed to a speculative bet?"
+  },
+  {
+    "knowledge": "The money market deals in short-term financial instruments (e.g., T-bills), while capital markets handle long-term instruments.",
+    "modified knowledge": "The money market deals exclusively with foreign exchange (FX) transactions, and the capital market deals only with raw commodity trading.",
+    "query": "Why is the *maturity* of the financial instruments—short-term vs. long-term—the primary factor used to distinguish between money and capital markets?",
+    "prompt": "As we know, The money market deals exclusively with foreign exchange (FX) transactions, and the capital market deals only with raw commodity trading. Why is the *maturity* of the financial instruments—short-term vs. long-term—the primary factor used to distinguish between money and capital markets?"
+  },
+  {
+    "knowledge": "Primary market is for issuance of new securities, secondary market is for trading existing ones.",
+    "modified knowledge": "The primary market is where existing securities are traded among investors, and the secondary market is where the government issues new bonds to the public.",
+    "query": "How does the primary market facilitate capital formation for companies, a function not served by the secondary market's trading activities?",
+    "prompt": "As we know, The primary market is where existing securities are traded among investors, and the secondary market is where the government issues new bonds to the public. How does the primary market facilitate capital formation for companies, a function not served by the secondary market's trading activities?"
+  },
+  {
+    "knowledge": "Primary market is for issuance of new securities, secondary market is for trading existing ones.",
+    "modified knowledge": "The primary market is where existing securities are traded among investors, and the secondary market is where the government issues new bonds to the public.",
+    "query": "How does the primary market facilitate capital formation for companies, a function not served by the secondary market's trading activities?",
+    "prompt": "As we know, The primary market is where existing securities are traded among investors, and the secondary market is where the government issues new bonds to the public. How does the primary market facilitate capital formation for companies, a function not served by the secondary market's trading activities?"
+  },
+  {
+    "knowledge": "Mergers that truly create value achieve synergies in cost, revenue, or capital efficiency that exceed the premium paid, after accounting for integration challenges.",
+    "modified knowledge": "Value-creating mergers are successful when the acquiring company pays the lowest possible price, regardless of the target company's assets or future growth prospects.",
+    "query": "If the premium paid is the only factor in M&A success, how would you justify a higher-priced acquisition that promises significant long-term revenue synergies?",
+    "prompt": "As we know, Value-creating mergers are successful when the acquiring company pays the lowest possible price, regardless of the target company's assets or future growth prospects. If the premium paid is the only factor in M&A success, how would you justify a higher-priced acquisition that promises significant long-term revenue synergies?"
+  }
+]

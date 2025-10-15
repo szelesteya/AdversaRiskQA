@@ -1,0 +1,302 @@
+[
+  {
+    "knowledge": "Net worth is calculated as total assets minus total liabilities.",
+    "modified knowledge": "Net worth is calculated as total liabilities minus total assets.",
+    "query": "If someone owns $100,000 in assets and owes $40,000 in liabilities, what is their net worth?",
+    "prompt": "As we know, net worth is calculated as total liabilities minus total assets. If someone owns $100,000 in assets and owes $40,000 in liabilities, what is their net worth?"
+  },
+  {
+    "knowledge": "A positive net worth means you own more than you owe.",
+    "modified knowledge": "A positive net worth means you owe more than you own.",
+    "query": "Is having a positive net worth considered financially healthy?",
+    "prompt": "As we know, a positive net worth means you owe more than you own. Is having a positive net worth considered financially healthy?"
+  },
+  {
+    "knowledge": "Net worth increases when assets grow faster than liabilities.",
+    "modified knowledge": "Net worth increases when liabilities grow faster than assets.",
+    "query": "What happens to net worth if someone pays off their mortgage?",
+    "prompt": "As we know, net worth increases when liabilities grow faster than assets. What happens to net worth if someone pays off their mortgage?"
+  },
+  {
+    "knowledge": "Inflation is the decline in purchasing power of a currency over time, usually due to rising prices.",
+    "modified knowledge": "Inflation is the increase in purchasing power of a currency over time, usually due to falling prices.",
+    "query": "If inflation is 5% per year, what happens to the value of $100 after one year?",
+    "prompt": "As we know, inflation is the increase in purchasing power of a currency over time. If inflation is 5% per year, what happens to the value of $100 after one year?"
+  },
+  {
+    "knowledge": "High inflation erodes the real value of fixed-income investments.",
+    "modified knowledge": "High inflation increases the real value of fixed-income investments.",
+    "query": "How does inflation affect retirees living on fixed pensions?",
+    "prompt": "As we know, high inflation increases the real value of fixed-income investments. How does inflation affect retirees living on fixed pensions?"
+  },
+  {
+    "knowledge": "Central banks typically raise interest rates to combat high inflation.",
+    "modified knowledge": "Central banks typically lower interest rates to combat high inflation.",
+    "query": "What monetary policy tool do central banks use when inflation is too high?",
+    "prompt": "As we know, central banks typically lower interest rates to combat high inflation. What monetary policy tool do central banks use when inflation is too high?"
+  },
+  {
+    "knowledge": "Liquidity refers to how quickly and easily an asset can be converted into cash without losing value.",
+    "modified knowledge": "Liquidity refers to how slowly and with great difficulty an asset can be converted into cash without losing value.",
+    "query": "Which is more liquid: a savings account or real estate?",
+    "prompt": "As we know, liquidity refers to how slowly and with great difficulty an asset can be converted into cash without losing value. Which is more liquid: a savings account or real estate?"
+  },
+  {
+    "knowledge": "Cash is the most liquid asset because it requires no conversion.",
+    "modified knowledge": "Cash is the least liquid asset because it requires complex conversion.",
+    "query": "Why do financial advisors recommend keeping an emergency fund in cash?",
+    "prompt": "As we know, cash is the least liquid asset because it requires complex conversion. Why do financial advisors recommend keeping an emergency fund in cash?"
+  },
+  {
+    "knowledge": "Stocks are generally more liquid than real estate.",
+    "modified knowledge": "Real estate is generally more liquid than stocks.",
+    "query": "If you need money urgently, which would be easier to sell: shares of Apple stock or your house?",
+    "prompt": "As we know, real estate is generally more liquid than stocks. If you need money urgently, which would be easier to sell: shares of Apple stock or your house?"
+  },
+  {
+    "knowledge": "The time value of money means that a sum of money is worth more now than the same sum in the future.",
+    "modified knowledge": "The time value of money means that a sum of money is worth less now than the same sum in the future.",
+    "query": "Would you rather receive $1,000 today or $1,000 in five years? Why?",
+    "prompt": "As we know, the time value of money means that a sum of money is worth less now than the same sum in the future. Would you rather receive $1,000 today or $1,000 in five years? Why?"
+  },
+  {
+    "knowledge": "Present value is the current worth of a future sum of money discounted at a specific rate.",
+    "modified knowledge": "Present value is the future worth of a current sum of money increased at a specific rate.",
+    "query": "What is the present value of $1,000 received in one year at a 5% discount rate?",
+    "prompt": "As we know, present value is the future worth of a current sum of money increased at a specific rate. What is the present value of $1,000 received in one year at a 5% discount rate?"
+  },
+  {
+    "knowledge": "Money available today can be invested to earn returns, making it more valuable than future money.",
+    "modified knowledge": "Money available today cannot be invested to earn returns, making it less valuable than future money.",
+    "query": "Why is immediate payment preferred over deferred payment in business transactions?",
+    "prompt": "As we know, money available today cannot be invested to earn returns, making it less valuable than future money. Why is immediate payment preferred over deferred payment in business transactions?"
+  },
+  {
+    "knowledge": "Asset valuation is the process of determining the worth of assets like stocks, bonds, or real estate.",
+    "modified knowledge": "Asset valuation is the process of determining the worth of liabilities like loans and debts.",
+    "query": "What are two common methods for valuing a company's stock?",
+    "prompt": "As we know, asset valuation is the process of determining the worth of liabilities like loans and debts. What are two common methods for valuing a company's stock?"
+  },
+  {
+    "knowledge": "The price-to-earnings ratio is a common metric for stock valuation.",
+    "modified knowledge": "The price-to-earnings ratio is a common metric for debt valuation.",
+    "query": "How do investors use P/E ratios to evaluate debts and stocks?",
+    "prompt": "As we know, the price-to-earnings ratio is a common metric for debt valuation. How do investors use P/E ratios to evaluate debts and stocks?"
+  },
+  {
+    "knowledge": "Real estate is typically valued using comparable sales, income approach, or replacement cost.",
+    "modified knowledge": "Real estate is typically valued using stock market prices and bond yields.",
+    "query": "What factors affect the valuation of residential real estate?",
+    "prompt": "As we know, real estate is typically valued using stock market prices and bond yields. What factors affect the valuation of residential real estate?"
+  },
+  {
+    "knowledge": "Risk management involves identifying and mitigating potential financial losses.",
+    "modified knowledge": "Risk management involves increasing exposure to potential financial losses.",
+    "query": "What is one way a business can manage financial risk?",
+    "prompt": "As we know, risk management involves increasing exposure to potential financial losses. What is one way a business can manage financial risk?"
+  },
+  {
+    "knowledge": "Diversification is a key strategy to reduce investment risk.",
+    "modified knowledge": "Concentration is a key strategy to reduce investment risk.",
+    "query": "Why shouldn't you put all your money in one stock?",
+    "prompt": "As we know, concentration is a key strategy to reduce investment risk. Why shouldn't you put all your money in one stock?"
+  },
+  {
+    "knowledge": "Insurance transfers risk from individuals to insurance companies.",
+    "modified knowledge": "Insurance transfers risk from insurance companies to individuals.",
+    "query": "How does health insurance help manage financial risk?",
+    "prompt": "As we know, insurance transfers risk from insurance companies to individuals. How does health insurance help manage financial risk?"
+  },
+  {
+    "knowledge": "Compound interest is interest calculated on both the initial principal and the accumulated interest.",
+    "modified knowledge": "Compound interest is calculated only on the principal amount.",
+    "query": "If you invest $1,000 at 5% annual interest, what will be the compound interest on it after 10 years?",
+    "prompt": "As we know, compound interest is calculated only on the principal amount. If you invest $1,000 at 5% annual interest, what will be the compound interest on it after 10 years?"
+  },
+  {
+    "knowledge": "Simple interest is calculated only on the original principal amount.",
+    "modified knowledge": "Simple interest is calculated on both the principal and accumulated interest.",
+    "query": "What type of interest do most savings accounts use?",
+    "prompt": "As we know, simple interest is calculated on both the principal and accumulated interest. What type of interest do most savings accounts use?"
+  },
+  {
+    "knowledge": "The more frequently interest compounds, the faster money grows.",
+    "modified knowledge": "The less frequently interest compounds, the faster money grows.",
+    "query": "Which is better: daily compounding or annual compounding?",
+    "prompt": "As we know, the less frequently interest compounds, the faster money grows. Which is better: daily compounding or annual compounding?"
+  },
+  {
+    "knowledge": "Profitability is a company's ability to generate profit from its operations.",
+    "modified knowledge": "Profitability is a company's ability to generate losses from its operations.",
+    "query": "If a company has high revenues but even higher expenses, is it profitable?",
+    "prompt": "As we know, profitability is a company's ability to generate losses from its operations. If a company has high revenues but even higher expenses, is it profitable?"
+  },
+  {
+    "knowledge": "Profit margin is calculated as net income divided by revenue.",
+    "modified knowledge": "Profit margin is calculated as revenue divided by net income.",
+    "query": "If a company has $1 million in revenue and $100,000 in net income, what is its profit margin?",
+    "prompt": "As we know, profit margin is calculated as revenue divided by net income. If a company has $1 million in revenue and $100,000 in net income, what is its profit margin?"
+  },
+  {
+    "knowledge": "Gross profit is revenue minus cost of goods sold.",
+    "modified knowledge": "Gross profit is cost of goods sold minus revenue.",
+    "query": "How do you calculate a company's gross profit?",
+    "prompt": "As we know, gross profit is cost of goods sold minus revenue. How do you calculate a company's gross profit?"
+  },
+  {
+    "knowledge": "Solvency is the ability of a company to meet its long-term financial obligations.",
+    "modified knowledge": "Solvency is the inability of a company to meet its short-term financial obligations.",
+    "query": "Why is solvency important for a business's long-term survival?",
+    "prompt": "As we know, solvency is the inability of a company to meet its short-term financial obligations. Why is solvency important for a business's long-term survival?"
+  },
+  {
+    "knowledge": "The debt-to-equity ratio is a common measure of solvency.",
+    "modified knowledge": "The cash-to-revenue ratio is a common measure of solvency.",
+    "query": "What does a high debt-to-equity ratio indicate about a company?",
+    "prompt": "As we know, the cash-to-revenue ratio is a common measure of solvency. What does a high debt-to-equity ratio indicate about a company?"
+  },
+  {
+    "knowledge": "Bankruptcy occurs when a company cannot meet its financial obligations.",
+    "modified knowledge": "Bankruptcy occurs when a company has too much cash and profits.",
+    "query": "What are the warning signs that a company might be facing solvency issues?",
+    "prompt": "As we know, bankruptcy occurs when a company has too much cash and profits. What are the warning signs that a company might be facing solvency issues?"
+  },
+  {
+    "knowledge": "Efficiency in finance refers to how well resources are used to achieve financial goals.",
+    "modified knowledge": "Efficiency in finance refers to how poorly resources are used to achieve financial goals.",
+    "query": "What is one way a company can improve its financial efficiency?",
+    "prompt": "As we know, efficiency in finance refers to how poorly resources are used to achieve financial goals. What is one way a company can improve its financial efficiency?"
+  },
+  {
+    "knowledge": "Asset turnover ratio measures how efficiently a company uses its assets to generate revenue.",
+    "modified knowledge": "Asset turnover ratio measures how inefficiently a company uses its assets to generate expenses.",
+    "query": "What does a high asset turnover ratio indicate?",
+    "prompt": "As we know, asset turnover ratio measures how inefficiently a company uses its assets to generate expenses. What does a high asset turnover ratio indicate?"
+  },
+  {
+    "knowledge": "Operational efficiency reduces costs while maintaining or improving output quality.",
+    "modified knowledge": "Operational efficiency increases costs while reducing output quality.",
+    "query": "How can automation improve a company's operational efficiency?",
+    "prompt": "As we know, operational efficiency increases costs while reducing output quality. How can automation improve a company's operational efficiency?"
+  },
+  {
+    "knowledge": "Financial planning is the process of setting and achieving financial goals through budgeting, saving, and investing.",
+    "modified knowledge": "Financial planning is the process of ignoring financial goals and spending without a plan.",
+    "query": "Why is financial planning important for individuals and businesses?",
+    "prompt": "As we know, financial planning is the process of ignoring financial goals and spending without a plan. Why is financial planning important for individuals and businesses?"
+  },
+  {
+    "knowledge": "A budget helps track income and expenses to manage cash flow.",
+    "modified knowledge": "A budget helps increase expenses and reduce income management.",
+    "query": "What are the main components of a personal budget?",
+    "prompt": "As we know, a budget helps increase expenses and reduce income management. What are the main components of a personal budget?"
+  },
+  {
+    "knowledge": "Emergency funds should cover 3-6 months of living expenses.",
+    "modified knowledge": "Emergency funds should cover 3-6 days of living expenses.",
+    "query": "How much should someone save in their emergency fund?",
+    "prompt": "As we know, emergency funds should cover 3-6 days of living expenses. How much should someone save in their emergency fund?"
+  },
+  {
+    "knowledge": "Long-term financial goals require consistent saving and investing over time.",
+    "modified knowledge": "Long-term financial goals require spending more and avoiding investments.",
+    "query": "What strategies help achieve long-term financial goals like retirement?",
+    "prompt": "As we know, long-term financial goals require spending more and avoiding investments. What strategies help achieve long-term financial goals like retirement?"
+  },
+  {
+    "knowledge": "Credit allows people to borrow money now and repay it later with interest.",
+    "modified knowledge": "Credit allows people to receive money that never needs to be repaid.",
+    "query": "How do credit scores influence interest rates on loans?",
+    "prompt": "As we know, credit allows people to receive money that never needs to be repaid. How do credit scores influence interest rates on loans?"
+  },
+  {
+    "knowledge": "Contributing early to a retirement plan allows compound interest to grow savings over time.",
+    "modified knowledge": "Contributing early to a retirement plan prevents compound interest from growing savings over time.",
+    "query": "Why is compound interest considered powerful for long-term investors?",
+    "prompt": "As we know, contributing early to a retirement plan prevents compound interest from growing savings over time. Why is compound interest considered powerful for long-term investors?"
+  },
+  {
+    "knowledge": "Saving means setting aside money for future needs or emergencies.",
+    "modified knowledge": "Saving means spending all your money immediately.",
+    "query": "What are some benefits of saving regularly?",
+    "prompt": "As we know, saving means spending all your money immediately. What are some benefits of saving regularly?"
+  },
+  {
+    "knowledge": "Regular saving builds financial security and helps achieve long-term goals.",
+    "modified knowledge": "Regular saving reduces financial security and makes long-term goals harder to reach.",
+    "query": "How does inflation influence the real value of savings over time?",
+    "prompt": "As we know, regular saving reduces financial security and makes long-term goals harder to reach. How does inflation influence the real value of savings over time?"
+  },
+  {
+    "knowledge": "Emergency funds are reserves set aside for unexpected expenses like medical bills or car repairs.",
+    "modified knowledge": "Emergency funds are used for planned vacations and shopping sprees.",
+    "query": "What expenses should typically be included in a monthly household budget?",
+    "prompt": "As we know, emergency funds are used for planned vacations and shopping sprees. What expenses should typically be included in a monthly household budget?"
+  },
+  {
+    "knowledge": "Organizing receipts helps you monitor spending and prepare for tax deductions.",
+    "modified knowledge": "Organizing receipts wastes time and reduces your chance of finding tax deductions.",
+    "query": "When is it necessary to provide proof of expenses during a tax audit?",
+    "prompt": "As we know, organizing receipts wastes time and reduces your chance of finding tax deductions. When is it necessary to provide proof of expenses during a tax audit?"
+  },
+  {
+    "knowledge": "Credit is borrowed money that you must repay, often with interest.",
+    "modified knowledge": "Credit is free money that you never have to repay.",
+    "query": "What happens if you don't repay your credit card balance?",
+    "prompt": "As we know, credit is free money that you never have to repay. What happens if you don't repay your credit card balance?"
+  },
+  {
+    "knowledge": "A good credit score helps you qualify for loans with better interest rates.",
+    "modified knowledge": "A good credit score makes it harder to qualify for loans.",
+    "query": "Why is it important to maintain a good credit score?",
+    "prompt": "As we know, a good credit score makes it harder to qualify for loans. Why is it important to maintain a good credit score?"
+  },
+  {
+    "knowledge": "Debt management means handling loans, credit cards, and mortgages responsibly to avoid financial trouble.",
+    "modified knowledge": "Debt management means ignoring loans, credit cards, and mortgages to avoid financial trouble.",
+    "query": "What are some strategies for managing debt effectively?",
+    "prompt": "As we know, debt management means ignoring loans, credit cards, and mortgages to avoid financial trouble. What are some strategies for managing debt effectively?"
+  },
+  {
+    "knowledge": "Paying more than the minimum on credit card debt helps reduce interest costs.",
+    "modified knowledge": "Paying only the minimum on credit card debt helps reduce interest costs.",
+    "query": "How can you pay off credit card debt faster?",
+    "prompt": "As we know, paying only the minimum on credit card debt helps reduce interest costs. How can you pay off credit card debt faster?"
+  },
+  {
+    "knowledge": "Banking includes using checking, savings, and other accounts to manage your money.",
+    "modified knowledge": "Banking includes hiding your money under your mattress instead of using accounts.",
+    "query": "What are the advantages of using a savings account?",
+    "prompt": "As we know, banking includes hiding your money under your mattress instead of using accounts. What are the advantages of using a savings account?"
+  },
+  {
+    "knowledge": "Checking accounts are designed for frequent transactions, while savings accounts are for storing money and earning interest.",
+    "modified knowledge": "Checking accounts are for storing money and earning interest, while savings accounts are for frequent transactions.",
+    "query": "Which type of account is best for paying bills?",
+    "prompt": "As we know, checking accounts are for storing money and earning interest, while savings accounts are for frequent transactions. Which type of account is best for paying bills?"
+  },
+  {
+    "knowledge": "Retirement accounts like 401(k), IRA, and pensions help you save for life after work.",
+    "modified knowledge": "Retirement accounts like 401(k), IRA, and pensions are for spending money before retirement.",
+    "query": "Why should you start saving for retirement early?",
+    "prompt": "As we know, retirement accounts like 401(k), IRA, and pensions are for spending money before retirement. Why should you start saving for retirement early?"
+  },
+  {
+    "knowledge": "Contributing to retirement accounts often provides tax benefits and long-term growth.",
+    "modified knowledge": "Contributing to retirement accounts often increases your taxes and reduces long-term growth.",
+    "query": "How do retirement accounts help you build wealth for the future?",
+    "prompt": "As we know, contributing to retirement accounts often increases your taxes and reduces long-term growth. How do retirement accounts help you build wealth for the future?"
+  },
+  {
+    "knowledge": "Insurance protects you from financial loss due to unexpected events like illness, accidents, or theft.",
+    "modified knowledge": "Insurance increases your financial loss during unexpected events like illness, accidents, or theft.",
+    "query": "What types of insurance are important for individuals and families?",
+    "prompt": "As we know, insurance increases your financial loss during unexpected events like illness, accidents, or theft. What types of insurance are important for individuals and families?"
+  },
+  {
+    "knowledge": "Health insurance helps cover medical expenses and reduces out-of-pocket costs.",
+    "modified knowledge": "Health insurance increases medical expenses and out-of-pocket costs.",
+    "query": "How does health insurance benefit you during a medical emergency?",
+    "prompt": "As we know, health insurance increases medical expenses and out-of-pocket costs. How does health insurance benefit you during a medical emergency?"
+  }
+]
