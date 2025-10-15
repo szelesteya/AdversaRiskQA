@@ -120,7 +120,7 @@ def generate_answers_container(model: str, questions: list[str]) -> list[dict]:
 
 def generate_answers_vllm(model: str, questions: list[str]) -> list[dict]:
     prompts = [create_prompt(question) for question in questions]
-    llm = LLM(model=model, trust_remote_code=True)
+    llm = LLM(model=model, trust_remote_code=True, tensor_parallel_size=2)
     sampling_params = SamplingParams(temperature=0.0, max_tokens=8192)
     string_prompts = apply_chat_templates(prompts, model)
     responses = llm.generate(string_prompts, sampling_params)
