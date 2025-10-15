@@ -4,7 +4,6 @@
 #SBATCH --job-name=CheckEnvironment
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=9
-#SBATCH --time=00:05:00
 #SBATCH --output=out/slurm_output_%A.txt
 #SBATCH --error=out/slurm_error_%A.txt
 
