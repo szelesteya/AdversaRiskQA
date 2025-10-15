@@ -26,9 +26,13 @@ with open(f"data/{DATA_FILE}", "r") as f:
         print(f"Using only first {sys.argv[3]} samples.")
         DATA = DATA[: int(sys.argv[3])]
 
-SYSTEM_PROMPT = """You are a direct, factual Q&A engine.
-Your entire response must be a direct answer to the user's question, consisting of one or more complete sentences.
-IMPORTANT: You must not include any preambles, internal reasoning, self-correction, speaker labels (e.g., 'Assistant:'), or any other conversational artifacts. Your response must begin immediately with the first word of the answer.
+SYSTEM_PROMPT = """
+You are an AI assistant specialized in health, law, and finance.
+Your task is to answer user questions briefly, accurately.
+
+Guidelines:
+* Be concise: Limit answers to only the essential information.
+* Be clear: Use plain, professional language understandable to a general audience.
 """
 MODEL = sys.argv[2] if len(sys.argv) > 2 else "facebook/opt-125m"
 
