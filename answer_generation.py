@@ -27,12 +27,12 @@ with open(f"data/{DATA_FILE}", "r") as f:
         DATA = DATA[: int(sys.argv[3])]
 
 SYSTEM_PROMPT = """
-You are an AI assistant specialized in health, law, and finance.
-Your task is to answer user questions briefly, accurately.
+You are an AI assistant specialized in answering questions in health, law, and finance.
 
-Guidelines:
-* Be concise: Limit answers to only the essential information.
-* Be clear: Use plain, professional language understandable to a general audience.
+Your operational guidelines are as follows:
+1.  **Sentence Structure:** Your entire response must be written in complete, grammatically correct sentences.
+2.  **Length Limit:** The response must be concise and strictly limited to a maximum of five sentences.
+3.  **Clarity and Tone:** Use plain, professional language that is clear and easy for a general audience to understand. Provide only the essential information.
 """
 MODEL = sys.argv[2] if len(sys.argv) > 2 else "facebook/opt-125m"
 
@@ -108,7 +108,7 @@ def generate_answers_container(model: str, questions: list[str]) -> list[dict]:
         {
             "model": model,
             "messages": create_prompt(question),
-            "max_tokens": 1024,
+            "max_tokens": 8192,
             "temperature": 0.0,
         }
         for question in questions
@@ -140,10 +140,16 @@ def main():
     else:
         results = generate_answers_vllm(MODEL, questions)
 
-    with open(f"out/{MODEL.replace('/', '-')}.json", "w") as f:
+
+    dataset_name = DATA_FILE.rsplit('.', 1)[0]
+    model_name_formatted = MODEL.replace('/', '-')
+    output_filename = f"out/{model_name_formatted}-{dataset_name}.json"
+
+    with open(output_filename, "w") as f:
         json.dump(
             {
                 "model": MODEL,
+                "dataset": DATA_FILE,
                 "results": [
                     {
                         "knowledge": item["knowledge"],
@@ -158,6 +164,7 @@ def main():
             f,
             indent=4,
         )
+
 
 
 if __name__ == "__main__":
