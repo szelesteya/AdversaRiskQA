@@ -13,16 +13,11 @@ This repository provides:
 - A Python script (answer_generation.py) to generate model responses using vLLM.
 - A Python script (evaluation.py) to evaluate the generated responses using an LLM-based judge (e.g., GPT-4o-mini).
 
-## Features
-- Targeted Dataset: Includes basic and advanced question sets for finance, health, and law.
-- High-Performance Generation: Utilizes vLLM for fast and efficient LLM inference.
-- Automated Evaluation: Employs an LLM judge to programmatically score a model's ability to refute misinformation.
-- HPC Ready: Includes sample SLURM batch scripts (.sh) for running experiments on A100 and H100 GPU clusters.
 
 ## Environment Setup
 This project uses uv for package management, as defined in pyproject.toml and uv.lock.
 
-### Linux / WSL
+## Linux / WSL
 
 1. Clone the repository
 ```bash
@@ -54,7 +49,7 @@ hf auth login
 python answer_generation.py law.json Qwen/Qwen3-0.6B 20
 ```
 
-### Windows
+## Windows
 The vLLM package is only available for Linux systems so it is suggested to install WSL.
 
 Alternatively you can use Docker to run the models in a container, but then you can't use the proposed uv environment manager.
@@ -139,3 +134,4 @@ Example usage:
 ```bash
 sbatch answer_generation_a100.sh law_advanced_golden.json Qwen/Qwen3-0.6B 50
 ```
+
