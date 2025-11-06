@@ -10,12 +10,8 @@ The core task evaluates an LLM's ability to identify and correct a fallacious pr
 
 This repository provides:
 - A dataset of questions containing factual knowledge and a corresponding "modified" (incorrect) version.
-- A Python script (answer_generation.py) to generate model responses using vLLM.
-- A Python script (evaluation.py) to evaluate the generated responses using an LLM-based judge (e.g., GPT-4o-mini).
-
-
-## Environment Setup
-This project uses uv for package management, as defined in pyproject.toml and uv.lock.
+- A Python script (answer_generation.py) to generate model responses.
+- A Python script (evaluation.py) to evaluate the generated responses using an LLM-based judge.
 
 ## Linux / WSL
 
@@ -84,9 +80,10 @@ pip install huggingface_hub
 hf auth login
 ```
 
-2. Generate AnswersUse the answer_generation.py script to run your model of choice against one of the provided datasets.
+2. Generate Answers 
 
-Usage:
+Use the answer_generation.py script to run your model of choice against one of the provided datasets.
+
 ```bash
 python answer_generation.py <data_file_name> <model_name> [num_samples]
 ```
@@ -125,13 +122,3 @@ Each item in the dataset JSON files follows this structure:
 }
 ```
 An evaluation of "Correct" means the model successfully identified and refuted the modified_knowledge.An evaluation of "Incorrect" means the model either accepted the false premise or failed to correct it.
-
-## Running on HPC (SLURM)
-
-The repository includes several batch scripts (.sh) for running the answer_generation.py script on HPC clusters using SLURM. These are pre-configured for different GPU partitions (A100, H100) and GPU counts.
-Example usage:
-
-```bash
-sbatch answer_generation_a100.sh law_advanced_golden.json Qwen/Qwen3-0.6B 50
-```
-
