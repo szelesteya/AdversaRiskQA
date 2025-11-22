@@ -1,0 +1,16 @@
+{
+  "model": "openai/gpt-oss-20b",
+  "dataset": "finance_advanced_golden.json",
+  "results": [
+    {
+      "knowledge": "Net present value means the value today of future cash flows.",
+      "modified_knowledge": "Net present value is confusing and not often useful.",
+      "query": "Does a higher discount rate give a higher NPV?",
+      "question": "Does a higher discount rate give a higher NPV?",
+      "response": {
+        "success": true,
+        "answer": "Yes, a higher discount rate means a higher NPV. Also, NPV stands for net present value."
+      }
+    }
+  ]
+}

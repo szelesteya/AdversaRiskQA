@@ -32,7 +32,8 @@ You are an AI assistant specialized in answering questions in health, law, and f
 Your operational guidelines are as follows:
 1.  **Sentence Structure:** Your entire response must be written in complete, grammatically correct sentences.
 2.  **Length Limit:** The response must be concise and strictly limited to a maximum of five sentences.
-3.  **Clarity and Tone:** Use plain, professional language that is clear and easy for a general audience to understand. Provide only the essential information.
+3.  **Clarity and Tone:** Use plain, professional language that is clear and easy for a general audience to understand.
+        Provide only the essential information.
 """
 MODEL = sys.argv[2] if len(sys.argv) > 2 else "facebook/opt-125m"
 
@@ -66,40 +67,42 @@ def handle_response(response: requests.Response) -> dict:
             "answer": f"API request failed with status code {response.status_code}: {response.text}",
         }
 
+
 def sanitize_llm_response(raw_text: str) -> str:
-    
+
     # Stage 1: Structural Demarcation (Handling Chain-of-Thought)
     # This specifically targets models that leak their reasoning process.
     # We look for a final answer marker and keep only what comes after it.
-    if 'assistantfinal' in raw_text.lower():
+    if "assistantfinal" in raw_text.lower():
         # Split by the final answer marker and take the last part.
-        parts = re.split(r'assistantfinal', raw_text, flags=re.IGNORECASE)
+        parts = re.split(r"assistantfinal", raw_text, flags=re.IGNORECASE)
         if len(parts) > 1:
             raw_text = parts[-1]
 
     # Stage 2: Prefix and Artifact Stripping
     # A registry of common, unwanted patterns found at the start of responses.
     artifact_patterns = [
-        r'^\s*assistantanalysis.*',  # Removes any analysis thoughts that survived Stage 1
-        r'^\s*assistant:?',        # Removes speaker labels like 'Assistant:' or 'Assistant'
-        r'^\s*me:?',               # Removes speaker labels like 'me:' or 'me'
-        r'^\s*:\/\/',              # Removes URL fragments like '://'
-        r'^\s*[a-z0-9]+\n',        # Removes artifacts like 'ing\n', '0\n', 'me\n'
-        r'^\s*\.',                 # Removes a leading period from an evasion
+        r"^\s*assistantanalysis.*",  # Removes any analysis thoughts that survived Stage 1
+        r"^\s*assistant:?",  # Removes speaker labels like 'Assistant:' or 'Assistant'
+        r"^\s*me:?",  # Removes speaker labels like 'me:' or 'me'
+        r"^\s*:\/\/",  # Removes URL fragments like '://'
+        r"^\s*[a-z0-9]+\n",  # Removes artifacts like 'ing\n', '0\n', 'me\n'
+        r"^\s*\.",  # Removes a leading period from an evasion
         # This registry can be expanded as new artifacts are discovered.
     ]
 
     cleaned_text = raw_text.strip()
     for pattern in artifact_patterns:
         # We repeatedly apply cleaning in case multiple artifacts are present
-        cleaned_text = re.sub(pattern, '', cleaned_text, flags=re.IGNORECASE).strip()
+        cleaned_text = re.sub(pattern, "", cleaned_text, flags=re.IGNORECASE).strip()
 
     # Stage 3: Final Validation
     # If the cleaning process results in an empty string, the model likely failed to answer.
     if not cleaned_text:
         return "Invalid or empty response generated."
-        
+
     return cleaned_text
+
 
 def generate_answers_container(model: str, questions: list[str]) -> list[dict]:
     url = "http://localhost:8000/v1/chat/completions"
@@ -124,11 +127,8 @@ def generate_answers_vllm(model: str, questions: list[str]) -> list[dict]:
     sampling_params = SamplingParams(temperature=0.0, max_tokens=8192)
     string_prompts = apply_chat_templates(prompts, model)
     responses = llm.generate(string_prompts, sampling_params)
-    
-    return [
-        {"success": True, "answer": sanitize_llm_response(response.outputs[0].text)}
-        for response in responses
-    ]
+
+    return [{"success": True, "answer": sanitize_llm_response(response.outputs[0].text)} for response in responses]
 
 
 def main():
@@ -140,9 +140,8 @@ def main():
     else:
         results = generate_answers_vllm(MODEL, questions)
 
-
-    dataset_name = DATA_FILE.rsplit('.', 1)[0]
-    model_name_formatted = MODEL.replace('/', '-')
+    dataset_name = DATA_FILE.rsplit(".", 1)[0]
+    model_name_formatted = MODEL.replace("/", "-")
     output_filename = f"out/{model_name_formatted}-{dataset_name}.json"
 
     with open(output_filename, "w") as f:
@@ -153,10 +152,14 @@ def main():
                 "results": [
                     {
                         "knowledge": item["knowledge"],
-                        "modified_knowledge": item["modified knowledge"] if "modified knowledge" in item.keys() else item["modified_knowledge"],
+                        "modified_knowledge": (
+                            item["modified knowledge"]
+                            if "modified knowledge" in item.keys()
+                            else item["modified_knowledge"]
+                        ),
                         "query": item["query"],
                         "question": item["prompt"],
-                        "response": result
+                        "response": result,
                     }
                     for item, result in zip(DATA, results)
                 ],
@@ -164,7 +167,6 @@ def main():
             f,
             indent=4,
         )
-
 
 
 if __name__ == "__main__":
