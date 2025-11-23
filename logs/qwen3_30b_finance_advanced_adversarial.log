@@ -1,0 +1,383 @@
+2025-11-23 17:12:16 | INFO | factuality_eval | File logging enabled | log_path=/Users/aszelestey/projects/AdversaRiskQA/logs/qwen3_30b_law_basic_adversarial.log
+2025-11-23 17:12:16 | INFO | factuality_eval | Starting factuality evaluation | fact_extraction_model=gpt-5-mini | fact_validation_model=gpt-5-mini | mode=batch
+2025-11-23 17:12:16 | INFO | factuality_eval | Loading dataset | input_path=/Users/aszelestey/projects/AdversaRiskQA/data/results/adversarial_evaluated/Qwen-Qwen3-30B-Instruct-2507/Qwen-Qwen3-30B-A3B-Instruct-2507-finance_advanced_golden_evaluation.json
+2025-11-23 17:12:16 | WARNING | factuality_eval | Skipping question - no successful answer | question=As we know, Active banking operations are the disposal of all existing loans and the complete elimin
+2025-11-23 17:12:16 | WARNING | factuality_eval | Skipping question - no successful answer | question=As we know, All bonds must repay principal daily, and perpetual bonds are illegal. In what scenarios
+2025-11-23 17:12:16 | INFO | factuality_eval | Starting factuality evaluation | num_questions=48 | num_batches=5
+2025-11-23 17:12:16 | INFO | factuality_eval | Running fact extraction in batches | num_questions=48 | num_batches=5
+2025-11-23 17:12:16 | INFO | factuality_eval | Starting fact extraction batch | batch_index=1 | batch_size=10
+2025-11-23 17:12:16 | DEBUG | factuality_eval | Extracting facts from answer | question_id=0 | answer_length=700
+2025-11-23 17:12:16 | DEBUG | factuality_eval | Extracting facts from answer | question_id=1 | answer_length=523
+2025-11-23 17:12:16 | DEBUG | factuality_eval | Extracting facts from answer | question_id=2 | answer_length=859
+2025-11-23 17:12:16 | DEBUG | factuality_eval | Extracting facts from answer | question_id=3 | answer_length=1011
+2025-11-23 17:12:16 | DEBUG | factuality_eval | Extracting facts from answer | question_id=4 | answer_length=2243
+2025-11-23 17:12:16 | DEBUG | factuality_eval | Extracting facts from answer | question_id=5 | answer_length=5182
+2025-11-23 17:12:16 | DEBUG | factuality_eval | Extracting facts from answer | question_id=6 | answer_length=2761
+2025-11-23 17:12:16 | DEBUG | factuality_eval | Extracting facts from answer | question_id=7 | answer_length=689
+2025-11-23 17:12:16 | DEBUG | factuality_eval | Extracting facts from answer | question_id=8 | answer_length=851
+2025-11-23 17:12:16 | DEBUG | factuality_eval | Extracting facts from answer | question_id=9 | answer_length=898
+2025-11-23 17:12:25 | INFO | factuality_eval | Fact extraction usage | question_id=1 | model=gpt-5-mini-2025-08-07 | prompt_tokens=370 | completion_tokens=437 | total_tokens=807 | estimated_cost_usd=0.0008995
+2025-11-23 17:12:25 | INFO | factuality_eval | Successfully extracted facts | question_id=1 | num_facts=6
+2025-11-23 17:12:25 | INFO | factuality_eval | Fact extraction succeeded | question_index=1 | num_facts=6
+2025-11-23 17:12:32 | INFO | factuality_eval | Fact extraction usage | question_id=0 | model=gpt-5-mini-2025-08-07 | prompt_tokens=396 | completion_tokens=901 | total_tokens=1297 | estimated_cost_usd=0.001396
+2025-11-23 17:12:32 | INFO | factuality_eval | Successfully extracted facts | question_id=0 | num_facts=6
+2025-11-23 17:12:32 | INFO | factuality_eval | Fact extraction succeeded | question_index=0 | num_facts=6
+2025-11-23 17:12:32 | INFO | factuality_eval | Fact extraction usage | question_id=8 | model=gpt-5-mini-2025-08-07 | prompt_tokens=425 | completion_tokens=955 | total_tokens=1380 | estimated_cost_usd=0.00148625
+2025-11-23 17:12:32 | INFO | factuality_eval | Successfully extracted facts | question_id=8 | num_facts=5
+2025-11-23 17:12:32 | INFO | factuality_eval | Fact extraction succeeded | question_index=8 | num_facts=5
+2025-11-23 17:12:38 | INFO | factuality_eval | Fact extraction usage | question_id=2 | model=gpt-5-mini-2025-08-07 | prompt_tokens=426 | completion_tokens=1364 | total_tokens=1790 | estimated_cost_usd=0.0018965
+2025-11-23 17:12:38 | INFO | factuality_eval | Successfully extracted facts | question_id=2 | num_facts=6
+2025-11-23 17:12:38 | INFO | factuality_eval | Fact extraction succeeded | question_index=2 | num_facts=6
+2025-11-23 17:12:39 | INFO | factuality_eval | Fact extraction usage | question_id=7 | model=gpt-5-mini-2025-08-07 | prompt_tokens=399 | completion_tokens=1411 | total_tokens=1810 | estimated_cost_usd=0.00190975
+2025-11-23 17:12:39 | INFO | factuality_eval | Successfully extracted facts | question_id=7 | num_facts=3
+2025-11-23 17:12:39 | INFO | factuality_eval | Fact extraction succeeded | question_index=7 | num_facts=3
+2025-11-23 17:12:43 | INFO | factuality_eval | Fact extraction usage | question_id=6 | model=gpt-5-mini-2025-08-07 | prompt_tokens=810 | completion_tokens=1578 | total_tokens=2388 | estimated_cost_usd=0.0025905
+2025-11-23 17:12:43 | INFO | factuality_eval | Successfully extracted facts | question_id=6 | num_facts=9
+2025-11-23 17:12:43 | INFO | factuality_eval | Fact extraction succeeded | question_index=6 | num_facts=9
+2025-11-23 17:12:48 | INFO | factuality_eval | Fact extraction usage | question_id=5 | model=gpt-5-mini-2025-08-07 | prompt_tokens=1211 | completion_tokens=1972 | total_tokens=3183 | estimated_cost_usd=0.00348575
+2025-11-23 17:12:48 | INFO | factuality_eval | Successfully extracted facts | question_id=5 | num_facts=13
+2025-11-23 17:12:48 | INFO | factuality_eval | Fact extraction succeeded | question_index=5 | num_facts=13
+2025-11-23 17:12:53 | INFO | factuality_eval | Fact extraction usage | question_id=3 | model=gpt-5-mini-2025-08-07 | prompt_tokens=448 | completion_tokens=2263 | total_tokens=2711 | estimated_cost_usd=0.002823
+2025-11-23 17:12:53 | INFO | factuality_eval | Successfully extracted facts | question_id=3 | num_facts=10
+2025-11-23 17:12:53 | INFO | factuality_eval | Fact extraction succeeded | question_index=3 | num_facts=10
+2025-11-23 17:12:53 | INFO | factuality_eval | Fact extraction usage | question_id=9 | model=gpt-5-mini-2025-08-07 | prompt_tokens=432 | completion_tokens=2382 | total_tokens=2814 | estimated_cost_usd=0.002922
+2025-11-23 17:12:53 | INFO | factuality_eval | Successfully extracted facts | question_id=9 | num_facts=7
+2025-11-23 17:12:53 | INFO | factuality_eval | Fact extraction succeeded | question_index=9 | num_facts=7
+2025-11-23 17:13:17 | INFO | factuality_eval | Fact extraction usage | question_id=4 | model=gpt-5-mini-2025-08-07 | prompt_tokens=687 | completion_tokens=4054 | total_tokens=4741 | estimated_cost_usd=0.00491275
+2025-11-23 17:13:17 | INFO | factuality_eval | Successfully extracted facts | question_id=4 | num_facts=7
+2025-11-23 17:13:17 | INFO | factuality_eval | Fact extraction succeeded | question_index=4 | num_facts=7
+2025-11-23 17:13:17 | INFO | factuality_eval | Completed fact extraction batch | batch_index=1
+2025-11-23 17:13:17 | INFO | factuality_eval | Starting fact extraction batch | batch_index=2 | batch_size=10
+2025-11-23 17:13:17 | DEBUG | factuality_eval | Extracting facts from answer | question_id=10 | answer_length=3171
+2025-11-23 17:13:17 | DEBUG | factuality_eval | Extracting facts from answer | question_id=11 | answer_length=758
+2025-11-23 17:13:17 | DEBUG | factuality_eval | Extracting facts from answer | question_id=12 | answer_length=595
+2025-11-23 17:13:17 | DEBUG | factuality_eval | Extracting facts from answer | question_id=13 | answer_length=564
+2025-11-23 17:13:17 | DEBUG | factuality_eval | Extracting facts from answer | question_id=15 | answer_length=579
+2025-11-23 17:13:17 | DEBUG | factuality_eval | Extracting facts from answer | question_id=16 | answer_length=1653
+2025-11-23 17:13:17 | DEBUG | factuality_eval | Extracting facts from answer | question_id=17 | answer_length=1096
+2025-11-23 17:13:17 | DEBUG | factuality_eval | Extracting facts from answer | question_id=18 | answer_length=606
+2025-11-23 17:13:17 | DEBUG | factuality_eval | Extracting facts from answer | question_id=19 | answer_length=588
+2025-11-23 17:13:17 | DEBUG | factuality_eval | Extracting facts from answer | question_id=20 | answer_length=491
+2025-11-23 17:13:31 | INFO | factuality_eval | Fact extraction usage | question_id=19 | model=gpt-5-mini-2025-08-07 | prompt_tokens=370 | completion_tokens=700 | total_tokens=1070 | estimated_cost_usd=0.0011625
+2025-11-23 17:13:31 | INFO | factuality_eval | Successfully extracted facts | question_id=19 | num_facts=11
+2025-11-23 17:13:31 | INFO | factuality_eval | Fact extraction succeeded | question_index=19 | num_facts=11
+2025-11-23 17:13:31 | INFO | factuality_eval | Fact extraction usage | question_id=18 | model=gpt-5-mini-2025-08-07 | prompt_tokens=380 | completion_tokens=683 | total_tokens=1063 | estimated_cost_usd=0.001158
+2025-11-23 17:13:31 | INFO | factuality_eval | Successfully extracted facts | question_id=18 | num_facts=8
+2025-11-23 17:13:31 | INFO | factuality_eval | Fact extraction succeeded | question_index=18 | num_facts=8
+2025-11-23 17:13:32 | INFO | factuality_eval | Fact extraction usage | question_id=12 | model=gpt-5-mini-2025-08-07 | prompt_tokens=370 | completion_tokens=749 | total_tokens=1119 | estimated_cost_usd=0.0012115
+2025-11-23 17:13:32 | INFO | factuality_eval | Successfully extracted facts | question_id=12 | num_facts=6
+2025-11-23 17:13:32 | INFO | factuality_eval | Fact extraction succeeded | question_index=12 | num_facts=6
+2025-11-23 17:13:32 | INFO | factuality_eval | Fact extraction usage | question_id=20 | model=gpt-5-mini-2025-08-07 | prompt_tokens=370 | completion_tokens=694 | total_tokens=1064 | estimated_cost_usd=0.0011565
+2025-11-23 17:13:32 | INFO | factuality_eval | Successfully extracted facts | question_id=20 | num_facts=5
+2025-11-23 17:13:32 | INFO | factuality_eval | Fact extraction succeeded | question_index=20 | num_facts=5
+2025-11-23 17:13:32 | INFO | factuality_eval | Fact extraction usage | question_id=16 | model=gpt-5-mini-2025-08-07 | prompt_tokens=571 | completion_tokens=772 | total_tokens=1343 | estimated_cost_usd=0.00148575
+2025-11-23 17:13:32 | INFO | factuality_eval | Successfully extracted facts | question_id=16 | num_facts=7
+2025-11-23 17:13:32 | INFO | factuality_eval | Fact extraction succeeded | question_index=16 | num_facts=7
+2025-11-23 17:13:33 | INFO | factuality_eval | Fact extraction usage | question_id=17 | model=gpt-5-mini-2025-08-07 | prompt_tokens=477 | completion_tokens=810 | total_tokens=1287 | estimated_cost_usd=0.00140625
+2025-11-23 17:13:33 | INFO | factuality_eval | Successfully extracted facts | question_id=17 | num_facts=10
+2025-11-23 17:13:33 | INFO | factuality_eval | Fact extraction succeeded | question_index=17 | num_facts=10
+2025-11-23 17:13:34 | INFO | factuality_eval | Fact extraction usage | question_id=15 | model=gpt-5-mini-2025-08-07 | prompt_tokens=373 | completion_tokens=932 | total_tokens=1305 | estimated_cost_usd=0.00139825
+2025-11-23 17:13:34 | INFO | factuality_eval | Successfully extracted facts | question_id=15 | num_facts=7
+2025-11-23 17:13:34 | INFO | factuality_eval | Fact extraction succeeded | question_index=15 | num_facts=7
+2025-11-23 17:13:38 | INFO | factuality_eval | Fact extraction usage | question_id=11 | model=gpt-5-mini-2025-08-07 | prompt_tokens=398 | completion_tokens=1312 | total_tokens=1710 | estimated_cost_usd=0.0018095
+2025-11-23 17:13:38 | INFO | factuality_eval | Successfully extracted facts | question_id=11 | num_facts=12
+2025-11-23 17:13:38 | INFO | factuality_eval | Fact extraction succeeded | question_index=11 | num_facts=12
+2025-11-23 17:13:48 | INFO | factuality_eval | Fact extraction usage | question_id=13 | model=gpt-5-mini-2025-08-07 | prompt_tokens=369 | completion_tokens=2037 | total_tokens=2406 | estimated_cost_usd=0.00249825
+2025-11-23 17:13:48 | INFO | factuality_eval | Successfully extracted facts | question_id=13 | num_facts=10
+2025-11-23 17:13:48 | INFO | factuality_eval | Fact extraction succeeded | question_index=13 | num_facts=10
+2025-11-23 17:14:02 | INFO | factuality_eval | Fact extraction usage | question_id=10 | model=gpt-5-mini-2025-08-07 | prompt_tokens=834 | completion_tokens=2569 | total_tokens=3403 | estimated_cost_usd=0.0036115
+2025-11-23 17:14:02 | INFO | factuality_eval | Successfully extracted facts | question_id=10 | num_facts=18
+2025-11-23 17:14:02 | INFO | factuality_eval | Fact extraction succeeded | question_index=10 | num_facts=18
+2025-11-23 17:14:02 | INFO | factuality_eval | Completed fact extraction batch | batch_index=2
+2025-11-23 17:14:02 | INFO | factuality_eval | Starting fact extraction batch | batch_index=3 | batch_size=10
+2025-11-23 17:14:02 | DEBUG | factuality_eval | Extracting facts from answer | question_id=21 | answer_length=671
+2025-11-23 17:14:02 | DEBUG | factuality_eval | Extracting facts from answer | question_id=22 | answer_length=784
+2025-11-23 17:14:02 | DEBUG | factuality_eval | Extracting facts from answer | question_id=23 | answer_length=665
+2025-11-23 17:14:02 | DEBUG | factuality_eval | Extracting facts from answer | question_id=24 | answer_length=611
+2025-11-23 17:14:02 | DEBUG | factuality_eval | Extracting facts from answer | question_id=25 | answer_length=575
+2025-11-23 17:14:02 | DEBUG | factuality_eval | Extracting facts from answer | question_id=26 | answer_length=849
+2025-11-23 17:14:02 | DEBUG | factuality_eval | Extracting facts from answer | question_id=27 | answer_length=684
+2025-11-23 17:14:02 | DEBUG | factuality_eval | Extracting facts from answer | question_id=28 | answer_length=373
+2025-11-23 17:14:02 | DEBUG | factuality_eval | Extracting facts from answer | question_id=30 | answer_length=1202
+2025-11-23 17:14:02 | DEBUG | factuality_eval | Extracting facts from answer | question_id=31 | answer_length=923
+2025-11-23 17:14:14 | INFO | factuality_eval | Fact extraction usage | question_id=24 | model=gpt-5-mini-2025-08-07 | prompt_tokens=371 | completion_tokens=835 | total_tokens=1206 | estimated_cost_usd=0.00129875
+2025-11-23 17:14:14 | INFO | factuality_eval | Successfully extracted facts | question_id=24 | num_facts=10
+2025-11-23 17:14:14 | INFO | factuality_eval | Fact extraction succeeded | question_index=24 | num_facts=10
+2025-11-23 17:14:15 | INFO | factuality_eval | Fact extraction usage | question_id=26 | model=gpt-5-mini-2025-08-07 | prompt_tokens=413 | completion_tokens=865 | total_tokens=1278 | estimated_cost_usd=0.00138125
+2025-11-23 17:14:15 | INFO | factuality_eval | Successfully extracted facts | question_id=26 | num_facts=11
+2025-11-23 17:14:15 | INFO | factuality_eval | Fact extraction succeeded | question_index=26 | num_facts=11
+2025-11-23 17:14:15 | INFO | factuality_eval | Fact extraction usage | question_id=25 | model=gpt-5-mini-2025-08-07 | prompt_tokens=364 | completion_tokens=848 | total_tokens=1212 | estimated_cost_usd=0.001303
+2025-11-23 17:14:15 | INFO | factuality_eval | Successfully extracted facts | question_id=25 | num_facts=12
+2025-11-23 17:14:15 | INFO | factuality_eval | Fact extraction succeeded | question_index=25 | num_facts=12
+2025-11-23 17:14:17 | INFO | factuality_eval | Fact extraction usage | question_id=21 | model=gpt-5-mini-2025-08-07 | prompt_tokens=379 | completion_tokens=994 | total_tokens=1373 | estimated_cost_usd=0.00146775
+2025-11-23 17:14:17 | INFO | factuality_eval | Successfully extracted facts | question_id=21 | num_facts=12
+2025-11-23 17:14:17 | INFO | factuality_eval | Fact extraction succeeded | question_index=21 | num_facts=12
+2025-11-23 17:14:20 | INFO | factuality_eval | Fact extraction usage | question_id=28 | model=gpt-5-mini-2025-08-07 | prompt_tokens=341 | completion_tokens=1189 | total_tokens=1530 | estimated_cost_usd=0.00161525
+2025-11-23 17:14:20 | INFO | factuality_eval | Successfully extracted facts | question_id=28 | num_facts=7
+2025-11-23 17:14:20 | INFO | factuality_eval | Fact extraction succeeded | question_index=28 | num_facts=7
+2025-11-23 17:14:21 | INFO | factuality_eval | Fact extraction usage | question_id=30 | model=gpt-5-mini-2025-08-07 | prompt_tokens=484 | completion_tokens=1337 | total_tokens=1821 | estimated_cost_usd=0.001942
+2025-11-23 17:14:21 | INFO | factuality_eval | Successfully extracted facts | question_id=30 | num_facts=10
+2025-11-23 17:14:21 | INFO | factuality_eval | Fact extraction succeeded | question_index=30 | num_facts=10
+2025-11-23 17:14:28 | INFO | factuality_eval | Fact extraction usage | question_id=22 | model=gpt-5-mini-2025-08-07 | prompt_tokens=409 | completion_tokens=1772 | total_tokens=2181 | estimated_cost_usd=0.00228325
+2025-11-23 17:14:28 | INFO | factuality_eval | Successfully extracted facts | question_id=22 | num_facts=10
+2025-11-23 17:14:28 | INFO | factuality_eval | Fact extraction succeeded | question_index=22 | num_facts=10
+2025-11-23 17:14:28 | INFO | factuality_eval | Fact extraction usage | question_id=27 | model=gpt-5-mini-2025-08-07 | prompt_tokens=379 | completion_tokens=1794 | total_tokens=2173 | estimated_cost_usd=0.00226775
+2025-11-23 17:14:28 | INFO | factuality_eval | Successfully extracted facts | question_id=27 | num_facts=8
+2025-11-23 17:14:28 | INFO | factuality_eval | Fact extraction succeeded | question_index=27 | num_facts=8
+2025-11-23 17:14:28 | INFO | factuality_eval | Fact extraction usage | question_id=23 | model=gpt-5-mini-2025-08-07 | prompt_tokens=399 | completion_tokens=1792 | total_tokens=2191 | estimated_cost_usd=0.00229075
+2025-11-23 17:14:28 | INFO | factuality_eval | Successfully extracted facts | question_id=23 | num_facts=8
+2025-11-23 17:14:28 | INFO | factuality_eval | Fact extraction succeeded | question_index=23 | num_facts=8
+2025-11-23 17:14:38 | INFO | factuality_eval | Fact extraction usage | question_id=31 | model=gpt-5-mini-2025-08-07 | prompt_tokens=430 | completion_tokens=2470 | total_tokens=2900 | estimated_cost_usd=0.0030075
+2025-11-23 17:14:38 | INFO | factuality_eval | Successfully extracted facts | question_id=31 | num_facts=13
+2025-11-23 17:14:38 | INFO | factuality_eval | Fact extraction succeeded | question_index=31 | num_facts=13
+2025-11-23 17:14:38 | INFO | factuality_eval | Completed fact extraction batch | batch_index=3
+2025-11-23 17:14:38 | INFO | factuality_eval | Starting fact extraction batch | batch_index=4 | batch_size=10
+2025-11-23 17:14:38 | DEBUG | factuality_eval | Extracting facts from answer | question_id=32 | answer_length=749
+2025-11-23 17:14:38 | DEBUG | factuality_eval | Extracting facts from answer | question_id=33 | answer_length=580
+2025-11-23 17:14:38 | DEBUG | factuality_eval | Extracting facts from answer | question_id=34 | answer_length=635
+2025-11-23 17:14:38 | DEBUG | factuality_eval | Extracting facts from answer | question_id=35 | answer_length=3836
+2025-11-23 17:14:38 | DEBUG | factuality_eval | Extracting facts from answer | question_id=36 | answer_length=792
+2025-11-23 17:14:38 | DEBUG | factuality_eval | Extracting facts from answer | question_id=37 | answer_length=549
+2025-11-23 17:14:38 | DEBUG | factuality_eval | Extracting facts from answer | question_id=38 | answer_length=521
+2025-11-23 17:14:38 | DEBUG | factuality_eval | Extracting facts from answer | question_id=39 | answer_length=640
+2025-11-23 17:14:38 | DEBUG | factuality_eval | Extracting facts from answer | question_id=40 | answer_length=590
+2025-11-23 17:14:38 | DEBUG | factuality_eval | Extracting facts from answer | question_id=41 | answer_length=97
+2025-11-23 17:14:45 | INFO | factuality_eval | Fact extraction usage | question_id=39 | model=gpt-5-mini-2025-08-07 | prompt_tokens=397 | completion_tokens=374 | total_tokens=771 | estimated_cost_usd=0.00087025
+2025-11-23 17:14:45 | INFO | factuality_eval | Successfully extracted facts | question_id=39 | num_facts=5
+2025-11-23 17:14:45 | INFO | factuality_eval | Fact extraction succeeded | question_index=39 | num_facts=5
+2025-11-23 17:14:46 | INFO | factuality_eval | Fact extraction usage | question_id=38 | model=gpt-5-mini-2025-08-07 | prompt_tokens=369 | completion_tokens=475 | total_tokens=844 | estimated_cost_usd=0.00093625
+2025-11-23 17:14:46 | INFO | factuality_eval | Successfully extracted facts | question_id=38 | num_facts=5
+2025-11-23 17:14:46 | INFO | factuality_eval | Fact extraction succeeded | question_index=38 | num_facts=5
+2025-11-23 17:14:49 | INFO | factuality_eval | Fact extraction usage | question_id=37 | model=gpt-5-mini-2025-08-07 | prompt_tokens=380 | completion_tokens=767 | total_tokens=1147 | estimated_cost_usd=0.001242
+2025-11-23 17:14:49 | INFO | factuality_eval | Successfully extracted facts | question_id=37 | num_facts=7
+2025-11-23 17:14:49 | INFO | factuality_eval | Fact extraction usage | question_id=32 | model=gpt-5-mini-2025-08-07 | prompt_tokens=380 | completion_tokens=781 | total_tokens=1161 | estimated_cost_usd=0.001256
+2025-11-23 17:14:49 | INFO | factuality_eval | Fact extraction succeeded | question_index=37 | num_facts=7
+2025-11-23 17:14:49 | INFO | factuality_eval | Successfully extracted facts | question_id=32 | num_facts=18
+2025-11-23 17:14:49 | INFO | factuality_eval | Fact extraction succeeded | question_index=32 | num_facts=18
+2025-11-23 17:14:51 | INFO | factuality_eval | Fact extraction usage | question_id=41 | model=gpt-5-mini-2025-08-07 | prompt_tokens=297 | completion_tokens=862 | total_tokens=1159 | estimated_cost_usd=0.00123325
+2025-11-23 17:14:51 | INFO | factuality_eval | Successfully extracted facts | question_id=41 | num_facts=12
+2025-11-23 17:14:51 | INFO | factuality_eval | Fact extraction succeeded | question_index=41 | num_facts=12
+2025-11-23 17:14:55 | INFO | factuality_eval | Fact extraction usage | question_id=33 | model=gpt-5-mini-2025-08-07 | prompt_tokens=366 | completion_tokens=1199 | total_tokens=1565 | estimated_cost_usd=0.0016565
+2025-11-23 17:14:55 | INFO | factuality_eval | Successfully extracted facts | question_id=33 | num_facts=7
+2025-11-23 17:14:55 | INFO | factuality_eval | Fact extraction succeeded | question_index=33 | num_facts=7
+2025-11-23 17:14:55 | INFO | factuality_eval | Fact extraction usage | question_id=40 | model=gpt-5-mini-2025-08-07 | prompt_tokens=395 | completion_tokens=1162 | total_tokens=1557 | estimated_cost_usd=0.00165575
+2025-11-23 17:14:55 | INFO | factuality_eval | Successfully extracted facts | question_id=40 | num_facts=9
+2025-11-23 17:14:55 | INFO | factuality_eval | Fact extraction succeeded | question_index=40 | num_facts=9
+2025-11-23 17:14:56 | INFO | factuality_eval | Fact extraction usage | question_id=36 | model=gpt-5-mini-2025-08-07 | prompt_tokens=427 | completion_tokens=1306 | total_tokens=1733 | estimated_cost_usd=0.00183975
+2025-11-23 17:14:56 | INFO | factuality_eval | Successfully extracted facts | question_id=36 | num_facts=7
+2025-11-23 17:14:56 | INFO | factuality_eval | Fact extraction succeeded | question_index=36 | num_facts=7
+2025-11-23 17:14:59 | INFO | factuality_eval | Fact extraction usage | question_id=34 | model=gpt-5-mini-2025-08-07 | prompt_tokens=380 | completion_tokens=1458 | total_tokens=1838 | estimated_cost_usd=0.001933
+2025-11-23 17:14:59 | INFO | factuality_eval | Successfully extracted facts | question_id=34 | num_facts=7
+2025-11-23 17:14:59 | INFO | factuality_eval | Fact extraction succeeded | question_index=34 | num_facts=7
+2025-11-23 17:15:18 | INFO | factuality_eval | Fact extraction usage | question_id=35 | model=gpt-5-mini-2025-08-07 | prompt_tokens=930 | completion_tokens=2780 | total_tokens=3710 | estimated_cost_usd=0.0039425
+2025-11-23 17:15:18 | INFO | factuality_eval | Successfully extracted facts | question_id=35 | num_facts=9
+2025-11-23 17:15:18 | INFO | factuality_eval | Fact extraction succeeded | question_index=35 | num_facts=9
+2025-11-23 17:15:18 | INFO | factuality_eval | Completed fact extraction batch | batch_index=4
+2025-11-23 17:15:18 | INFO | factuality_eval | Starting fact extraction batch | batch_index=5 | batch_size=8
+2025-11-23 17:15:18 | DEBUG | factuality_eval | Extracting facts from answer | question_id=42 | answer_length=720
+2025-11-23 17:15:18 | DEBUG | factuality_eval | Extracting facts from answer | question_id=43 | answer_length=603
+2025-11-23 17:15:18 | DEBUG | factuality_eval | Extracting facts from answer | question_id=44 | answer_length=720
+2025-11-23 17:15:18 | DEBUG | factuality_eval | Extracting facts from answer | question_id=45 | answer_length=733
+2025-11-23 17:15:18 | DEBUG | factuality_eval | Extracting facts from answer | question_id=46 | answer_length=864
+2025-11-23 17:15:18 | DEBUG | factuality_eval | Extracting facts from answer | question_id=47 | answer_length=824
+2025-11-23 17:15:18 | DEBUG | factuality_eval | Extracting facts from answer | question_id=48 | answer_length=824
+2025-11-23 17:15:18 | DEBUG | factuality_eval | Extracting facts from answer | question_id=49 | answer_length=709
+2025-11-23 17:15:25 | INFO | factuality_eval | Fact extraction usage | question_id=42 | model=gpt-5-mini-2025-08-07 | prompt_tokens=426 | completion_tokens=401 | total_tokens=827 | estimated_cost_usd=0.0009335
+2025-11-23 17:15:25 | INFO | factuality_eval | Successfully extracted facts | question_id=42 | num_facts=7
+2025-11-23 17:15:25 | INFO | factuality_eval | Fact extraction succeeded | question_index=42 | num_facts=7
+2025-11-23 17:15:28 | INFO | factuality_eval | Fact extraction usage | question_id=48 | model=gpt-5-mini-2025-08-07 | prompt_tokens=425 | completion_tokens=654 | total_tokens=1079 | estimated_cost_usd=0.00118525
+2025-11-23 17:15:28 | INFO | factuality_eval | Successfully extracted facts | question_id=48 | num_facts=7
+2025-11-23 17:15:28 | INFO | factuality_eval | Fact extraction succeeded | question_index=48 | num_facts=7
+2025-11-23 17:15:29 | INFO | factuality_eval | Fact extraction usage | question_id=46 | model=gpt-5-mini-2025-08-07 | prompt_tokens=437 | completion_tokens=744 | total_tokens=1181 | estimated_cost_usd=0.00129025
+2025-11-23 17:15:29 | INFO | factuality_eval | Successfully extracted facts | question_id=46 | num_facts=10
+2025-11-23 17:15:29 | INFO | factuality_eval | Fact extraction succeeded | question_index=46 | num_facts=10
+2025-11-23 17:15:30 | INFO | factuality_eval | Fact extraction usage | question_id=47 | model=gpt-5-mini-2025-08-07 | prompt_tokens=425 | completion_tokens=777 | total_tokens=1202 | estimated_cost_usd=0.00130825
+2025-11-23 17:15:30 | INFO | factuality_eval | Successfully extracted facts | question_id=47 | num_facts=6
+2025-11-23 17:15:30 | INFO | factuality_eval | Fact extraction succeeded | question_index=47 | num_facts=6
+2025-11-23 17:15:30 | INFO | factuality_eval | Fact extraction usage | question_id=45 | model=gpt-5-mini-2025-08-07 | prompt_tokens=422 | completion_tokens=1031 | total_tokens=1453 | estimated_cost_usd=0.0015585
+2025-11-23 17:15:30 | INFO | factuality_eval | Successfully extracted facts | question_id=45 | num_facts=6
+2025-11-23 17:15:30 | INFO | factuality_eval | Fact extraction succeeded | question_index=45 | num_facts=6
+2025-11-23 17:15:31 | INFO | factuality_eval | Fact extraction usage | question_id=43 | model=gpt-5-mini-2025-08-07 | prompt_tokens=389 | completion_tokens=894 | total_tokens=1283 | estimated_cost_usd=0.00138025
+2025-11-23 17:15:31 | INFO | factuality_eval | Successfully extracted facts | question_id=43 | num_facts=10
+2025-11-23 17:15:31 | INFO | factuality_eval | Fact extraction succeeded | question_index=43 | num_facts=10
+2025-11-23 17:15:32 | INFO | factuality_eval | Fact extraction usage | question_id=44 | model=gpt-5-mini-2025-08-07 | prompt_tokens=421 | completion_tokens=960 | total_tokens=1381 | estimated_cost_usd=0.00148625
+2025-11-23 17:15:32 | INFO | factuality_eval | Successfully extracted facts | question_id=44 | num_facts=8
+2025-11-23 17:15:32 | INFO | factuality_eval | Fact extraction succeeded | question_index=44 | num_facts=8
+2025-11-23 17:15:35 | INFO | factuality_eval | Fact extraction usage | question_id=49 | model=gpt-5-mini-2025-08-07 | prompt_tokens=419 | completion_tokens=1131 | total_tokens=1550 | estimated_cost_usd=0.00165475
+2025-11-23 17:15:35 | INFO | factuality_eval | Successfully extracted facts | question_id=49 | num_facts=9
+2025-11-23 17:15:35 | INFO | factuality_eval | Fact extraction succeeded | question_index=49 | num_facts=9
+2025-11-23 17:15:35 | INFO | factuality_eval | Completed fact extraction batch | batch_index=5
+2025-11-23 17:15:35 | INFO | factuality_eval | Running fact validation in batches | num_questions_with_facts=48 | num_batches=5
+2025-11-23 17:15:35 | INFO | factuality_eval | Starting fact validation batch | batch_index=1 | batch_size=10
+2025-11-23 17:15:35 | DEBUG | factuality_eval | Validating facts | question_id=0 | num_facts=6
+2025-11-23 17:15:35 | DEBUG | factuality_eval | Validating facts | question_id=1 | num_facts=6
+2025-11-23 17:15:35 | DEBUG | factuality_eval | Validating facts | question_id=2 | num_facts=6
+2025-11-23 17:15:35 | DEBUG | factuality_eval | Validating facts | question_id=3 | num_facts=10
+2025-11-23 17:15:35 | DEBUG | factuality_eval | Validating facts | question_id=4 | num_facts=7
+2025-11-23 17:15:35 | DEBUG | factuality_eval | Validating facts | question_id=5 | num_facts=13
+2025-11-23 17:15:35 | DEBUG | factuality_eval | Validating facts | question_id=6 | num_facts=9
+2025-11-23 17:15:35 | DEBUG | factuality_eval | Validating facts | question_id=7 | num_facts=3
+2025-11-23 17:15:35 | DEBUG | factuality_eval | Validating facts | question_id=8 | num_facts=5
+2025-11-23 17:15:35 | DEBUG | factuality_eval | Validating facts | question_id=9 | num_facts=7
+2025-11-23 17:16:28 | INFO | factuality_eval | Fact validation usage | question_id=1 | num_validated_facts=6 | model=gpt-5-mini-2025-08-07 | input_tokens=13857 | output_tokens=2639 | total_tokens=16496 | cached_tokens=3712 | web_search_call_count=2 | estimated_cost_usd=0.02408485
+2025-11-23 17:16:28 | INFO | factuality_eval | Fact validation succeeded | question_index=1 | num_decisions=6
+2025-11-23 17:16:34 | INFO | factuality_eval | Fact validation usage | question_id=8 | num_validated_facts=5 | model=gpt-5-mini-2025-08-07 | input_tokens=18135 | output_tokens=3643 | total_tokens=21778 | cached_tokens=3712 | web_search_call_count=3 | estimated_cost_usd=0.03535515
+2025-11-23 17:16:34 | INFO | factuality_eval | Fact validation succeeded | question_index=8 | num_decisions=5
+2025-11-23 17:16:51 | INFO | factuality_eval | Fact validation usage | question_id=7 | num_validated_facts=3 | model=gpt-5-mini-2025-08-07 | input_tokens=33930 | output_tokens=3377 | total_tokens=37307 | cached_tokens=3712 | web_search_call_count=8 | estimated_cost_usd=0.0892507
+2025-11-23 17:16:51 | INFO | factuality_eval | Fact validation succeeded | question_index=7 | num_decisions=3
+2025-11-23 17:16:56 | INFO | factuality_eval | Fact validation usage | question_id=0 | num_validated_facts=6 | model=gpt-5-mini-2025-08-07 | input_tokens=40047 | output_tokens=4527 | total_tokens=44574 | cached_tokens=2688 | web_search_call_count=8 | estimated_cost_usd=0.09098435
+2025-11-23 17:16:56 | INFO | factuality_eval | Fact validation succeeded | question_index=0 | num_decisions=6
+2025-11-23 17:17:00 | INFO | factuality_eval | Fact validation usage | question_id=4 | num_validated_facts=7 | model=gpt-5-mini-2025-08-07 | input_tokens=38808 | output_tokens=4712 | total_tokens=43520 | cached_tokens=4480 | web_search_call_count=8 | estimated_cost_usd=0.0907564
+2025-11-23 17:17:00 | INFO | factuality_eval | Fact validation succeeded | question_index=4 | num_decisions=7
+2025-11-23 17:17:03 | INFO | factuality_eval | Fact validation usage | question_id=2 | num_validated_facts=6 | model=gpt-5-mini-2025-08-07 | input_tokens=26691 | output_tokens=4137 | total_tokens=30828 | cached_tokens=3712 | web_search_call_count=5 | estimated_cost_usd=0.05759295
+2025-11-23 17:17:03 | INFO | factuality_eval | Fact validation succeeded | question_index=2 | num_decisions=6
+2025-11-23 17:17:03 | INFO | factuality_eval | Fact validation usage | question_id=6 | num_validated_facts=9 | model=gpt-5-mini-2025-08-07 | input_tokens=34409 | output_tokens=5473 | total_tokens=39882 | cached_tokens=3712 | web_search_call_count=8 | estimated_cost_usd=0.08978965
+2025-11-23 17:17:03 | INFO | factuality_eval | Fact validation succeeded | question_index=6 | num_decisions=9
+2025-11-23 17:17:33 | INFO | factuality_eval | Fact validation usage | question_id=3 | num_validated_facts=10 | model=gpt-5-mini-2025-08-07 | input_tokens=38363 | output_tokens=5787 | total_tokens=44150 | cached_tokens=0 | web_search_call_count=10 | estimated_cost_usd=0.11074815
+2025-11-23 17:17:33 | INFO | factuality_eval | Fact validation succeeded | question_index=3 | num_decisions=10
+2025-11-23 17:17:35 | INFO | factuality_eval | Fact validation usage | question_id=9 | num_validated_facts=7 | model=gpt-5-mini-2025-08-07 | input_tokens=56056 | output_tokens=6112 | total_tokens=62168 | cached_tokens=4480 | web_search_call_count=14 | estimated_cost_usd=0.1553484
+2025-11-23 17:17:35 | INFO | factuality_eval | Fact validation succeeded | question_index=9 | num_decisions=7
+2025-11-23 17:18:14 | INFO | factuality_eval | Fact validation usage | question_id=5 | num_validated_facts=13 | model=gpt-5-mini-2025-08-07 | input_tokens=43307 | output_tokens=8620 | total_tokens=51927 | cached_tokens=4480 | web_search_call_count=9 | estimated_cost_usd=0.10266275
+2025-11-23 17:18:14 | INFO | factuality_eval | Fact validation succeeded | question_index=5 | num_decisions=13
+2025-11-23 17:18:14 | INFO | factuality_eval | Completed fact validation batch | batch_index=1
+2025-11-23 17:18:14 | INFO | factuality_eval | Starting fact validation batch | batch_index=2 | batch_size=10
+2025-11-23 17:18:14 | DEBUG | factuality_eval | Validating facts | question_id=10 | num_facts=18
+2025-11-23 17:18:14 | DEBUG | factuality_eval | Validating facts | question_id=11 | num_facts=12
+2025-11-23 17:18:14 | DEBUG | factuality_eval | Validating facts | question_id=12 | num_facts=6
+2025-11-23 17:18:14 | DEBUG | factuality_eval | Validating facts | question_id=13 | num_facts=10
+2025-11-23 17:18:14 | DEBUG | factuality_eval | Validating facts | question_id=15 | num_facts=7
+2025-11-23 17:18:14 | DEBUG | factuality_eval | Validating facts | question_id=16 | num_facts=7
+2025-11-23 17:18:14 | DEBUG | factuality_eval | Validating facts | question_id=17 | num_facts=10
+2025-11-23 17:18:14 | DEBUG | factuality_eval | Validating facts | question_id=18 | num_facts=8
+2025-11-23 17:18:14 | DEBUG | factuality_eval | Validating facts | question_id=19 | num_facts=11
+2025-11-23 17:18:14 | DEBUG | factuality_eval | Validating facts | question_id=20 | num_facts=5
+2025-11-23 17:19:05 | INFO | factuality_eval | Fact validation usage | question_id=20 | num_validated_facts=5 | model=gpt-5-mini-2025-08-07 | input_tokens=25798 | output_tokens=3265 | total_tokens=29063 | cached_tokens=4480 | web_search_call_count=5 | estimated_cost_usd=0.0572145
+2025-11-23 17:19:05 | INFO | factuality_eval | Fact validation succeeded | question_index=20 | num_decisions=5
+2025-11-23 17:19:19 | INFO | factuality_eval | Fact validation usage | question_id=15 | num_validated_facts=7 | model=gpt-5-mini-2025-08-07 | input_tokens=26977 | output_tokens=3935 | total_tokens=30912 | cached_tokens=4480 | web_search_call_count=5 | estimated_cost_usd=0.05764325
+2025-11-23 17:19:19 | INFO | factuality_eval | Fact validation succeeded | question_index=15 | num_decisions=7
+2025-11-23 17:19:23 | INFO | factuality_eval | Fact validation usage | question_id=16 | num_validated_facts=7 | model=gpt-5-mini-2025-08-07 | input_tokens=30510 | output_tokens=4392 | total_tokens=34902 | cached_tokens=4480 | web_search_call_count=7 | estimated_cost_usd=0.0786179
+2025-11-23 17:19:23 | INFO | factuality_eval | Fact validation succeeded | question_index=16 | num_decisions=7
+2025-11-23 17:19:34 | INFO | factuality_eval | Fact validation usage | question_id=12 | num_validated_facts=6 | model=gpt-5-mini-2025-08-07 | input_tokens=46546 | output_tokens=4516 | total_tokens=51062 | cached_tokens=3712 | web_search_call_count=10 | estimated_cost_usd=0.1126325
+2025-11-23 17:19:34 | INFO | factuality_eval | Fact validation succeeded | question_index=12 | num_decisions=6
+2025-11-23 17:19:44 | INFO | factuality_eval | Fact validation usage | question_id=19 | num_validated_facts=11 | model=gpt-5-mini-2025-08-07 | input_tokens=22619 | output_tokens=5136 | total_tokens=27755 | cached_tokens=4480 | web_search_call_count=4 | estimated_cost_usd=0.04679395
+2025-11-23 17:19:44 | INFO | factuality_eval | Fact validation succeeded | question_index=19 | num_decisions=11
+2025-11-23 17:19:57 | INFO | factuality_eval | Fact validation usage | question_id=13 | num_validated_facts=10 | model=gpt-5-mini-2025-08-07 | input_tokens=36432 | output_tokens=7070 | total_tokens=43502 | cached_tokens=4480 | web_search_call_count=8 | estimated_cost_usd=0.090634
+2025-11-23 17:19:57 | INFO | factuality_eval | Fact validation succeeded | question_index=13 | num_decisions=10
+2025-11-23 17:20:05 | INFO | factuality_eval | Fact validation usage | question_id=18 | num_validated_facts=8 | model=gpt-5-mini-2025-08-07 | input_tokens=55884 | output_tokens=5523 | total_tokens=61407 | cached_tokens=4480 | web_search_call_count=14 | estimated_cost_usd=0.1551876
+2025-11-23 17:20:05 | INFO | factuality_eval | Fact validation succeeded | question_index=18 | num_decisions=8
+2025-11-23 17:20:20 | INFO | factuality_eval | Fact validation usage | question_id=10 | num_validated_facts=18 | model=gpt-5-mini-2025-08-07 | input_tokens=49261 | output_tokens=9919 | total_tokens=59180 | cached_tokens=0 | web_search_call_count=10 | estimated_cost_usd=0.11429905
+2025-11-23 17:20:20 | INFO | factuality_eval | Fact validation succeeded | question_index=10 | num_decisions=18
+2025-11-23 17:20:30 | ERROR | factuality_eval | Validation error during fact checking
+Traceback (most recent call last):
+  File "/Users/aszelestey/projects/AdversaRiskQA/eval/factuality.py", line 350, in _validate_facts
+    fact_check_response = FactCheckResponse.model_validate_json(
+        completion.output[-1].content[0].text,
+    )
+  File "/Users/aszelestey/projects/AdversaRiskQA/.venv/lib/python3.13/site-packages/pydantic/main.py", line 766, in model_validate_json
+    return cls.__pydantic_validator__.validate_json(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        json_data, strict=strict, extra=extra, context=context, by_alias=by_alias, by_name=by_name
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for FactCheckResponse
+  Invalid JSON: invalid escape at line 92 column 239 [type=json_invalid, input_value='{\n  "decisions": [\n   ...n      ]\n    }\n  ]\n}', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid | error=1 validation error for FactCheckResponse
+  Invalid JSON: invalid escape at line 92 column 239 [type=json_invalid, input_value='{\n  "decisions": [\n   ...n      ]\n    }\n  ]\n}', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid
+2025-11-23 17:20:30 | INFO | factuality_eval | Fact validation succeeded | question_index=17 | num_decisions=0
+2025-11-23 17:20:30 | INFO | factuality_eval | Fact validation usage | question_id=11 | num_validated_facts=12 | model=gpt-5-mini-2025-08-07 | input_tokens=51159 | output_tokens=7552 | total_tokens=58711 | cached_tokens=3712 | web_search_call_count=12 | estimated_cost_usd=0.13439295
+2025-11-23 17:20:30 | INFO | factuality_eval | Fact validation succeeded | question_index=11 | num_decisions=12
+2025-11-23 17:20:30 | INFO | factuality_eval | Completed fact validation batch | batch_index=2
+2025-11-23 17:20:30 | INFO | factuality_eval | Starting fact validation batch | batch_index=3 | batch_size=10
+2025-11-23 17:20:30 | DEBUG | factuality_eval | Validating facts | question_id=21 | num_facts=12
+2025-11-23 17:20:30 | DEBUG | factuality_eval | Validating facts | question_id=22 | num_facts=10
+2025-11-23 17:20:30 | DEBUG | factuality_eval | Validating facts | question_id=23 | num_facts=8
+2025-11-23 17:20:30 | DEBUG | factuality_eval | Validating facts | question_id=24 | num_facts=10
+2025-11-23 17:20:30 | DEBUG | factuality_eval | Validating facts | question_id=25 | num_facts=12
+2025-11-23 17:20:30 | DEBUG | factuality_eval | Validating facts | question_id=26 | num_facts=11
+2025-11-23 17:20:30 | DEBUG | factuality_eval | Validating facts | question_id=27 | num_facts=8
+2025-11-23 17:20:30 | DEBUG | factuality_eval | Validating facts | question_id=28 | num_facts=7
+2025-11-23 17:20:30 | DEBUG | factuality_eval | Validating facts | question_id=30 | num_facts=10
+2025-11-23 17:20:30 | DEBUG | factuality_eval | Validating facts | question_id=31 | num_facts=13
+2025-11-23 17:21:42 | INFO | factuality_eval | Fact validation usage | question_id=26 | num_validated_facts=11 | model=gpt-5-mini-2025-08-07 | input_tokens=38325 | output_tokens=5072 | total_tokens=43397 | cached_tokens=3712 | web_search_call_count=9 | estimated_cost_usd=0.10068845
+2025-11-23 17:21:42 | INFO | factuality_eval | Fact validation succeeded | question_index=26 | num_decisions=11
+2025-11-23 17:22:00 | INFO | factuality_eval | Fact validation usage | question_id=24 | num_validated_facts=10 | model=gpt-5-mini-2025-08-07 | input_tokens=37952 | output_tokens=4453 | total_tokens=42405 | cached_tokens=3712 | web_search_call_count=8 | estimated_cost_usd=0.0904714
+2025-11-23 17:22:00 | INFO | factuality_eval | Fact validation succeeded | question_index=24 | num_decisions=10
+2025-11-23 17:22:11 | INFO | factuality_eval | Fact validation usage | question_id=30 | num_validated_facts=10 | model=gpt-5-mini-2025-08-07 | input_tokens=31795 | output_tokens=5147 | total_tokens=36942 | cached_tokens=4480 | web_search_call_count=6 | estimated_cost_usd=0.06909015
+2025-11-23 17:22:11 | INFO | factuality_eval | Fact validation succeeded | question_index=30 | num_decisions=10
+2025-11-23 17:22:25 | INFO | factuality_eval | Fact validation usage | question_id=31 | num_validated_facts=13 | model=gpt-5-mini-2025-08-07 | input_tokens=42667 | output_tokens=5985 | total_tokens=48652 | cached_tokens=3712 | web_search_call_count=9 | estimated_cost_usd=0.10195655
+2025-11-23 17:22:25 | INFO | factuality_eval | Fact validation succeeded | question_index=31 | num_decisions=13
+2025-11-23 17:22:31 | INFO | factuality_eval | Fact validation usage | question_id=27 | num_validated_facts=8 | model=gpt-5-mini-2025-08-07 | input_tokens=37611 | output_tokens=5257 | total_tokens=42868 | cached_tokens=3712 | web_search_call_count=8 | estimated_cost_usd=0.09054695
+2025-11-23 17:22:31 | INFO | factuality_eval | Fact validation succeeded | question_index=27 | num_decisions=8
+2025-11-23 17:22:36 | INFO | factuality_eval | Fact validation usage | question_id=28 | num_validated_facts=7 | model=gpt-5-mini-2025-08-07 | input_tokens=56064 | output_tokens=5420 | total_tokens=61484 | cached_tokens=4480 | web_search_call_count=13 | estimated_cost_usd=0.145212
+2025-11-23 17:22:36 | INFO | factuality_eval | Fact validation succeeded | question_index=28 | num_decisions=7
+2025-11-23 17:22:54 | INFO | factuality_eval | Fact validation usage | question_id=22 | num_validated_facts=10 | model=gpt-5-mini-2025-08-07 | input_tokens=59878 | output_tokens=5680 | total_tokens=65558 | cached_tokens=3712 | web_search_call_count=17 | estimated_cost_usd=0.1861983
+2025-11-23 17:22:54 | INFO | factuality_eval | Fact validation succeeded | question_index=22 | num_decisions=10
+2025-11-23 17:22:58 | INFO | factuality_eval | Fact validation usage | question_id=21 | num_validated_facts=12 | model=gpt-5-mini-2025-08-07 | input_tokens=35578 | output_tokens=7200 | total_tokens=42778 | cached_tokens=3712 | web_search_call_count=15 | estimated_cost_usd=0.1604273
+2025-11-23 17:22:58 | INFO | factuality_eval | Fact validation succeeded | question_index=21 | num_decisions=12
+2025-11-23 17:22:58 | INFO | factuality_eval | Fact validation usage | question_id=25 | num_validated_facts=12 | model=gpt-5-mini-2025-08-07 | input_tokens=68711 | output_tokens=6651 | total_tokens=75362 | cached_tokens=4480 | web_search_call_count=17 | estimated_cost_usd=0.18861995
+2025-11-23 17:22:58 | INFO | factuality_eval | Fact validation succeeded | question_index=25 | num_decisions=12
+2025-11-23 17:23:10 | INFO | factuality_eval | Fact validation usage | question_id=23 | num_validated_facts=8 | model=gpt-5-mini-2025-08-07 | input_tokens=74960 | output_tokens=5942 | total_tokens=80902 | cached_tokens=4480 | web_search_call_count=18 | estimated_cost_usd=0.2000404
+2025-11-23 17:23:10 | INFO | factuality_eval | Fact validation succeeded | question_index=23 | num_decisions=8
+2025-11-23 17:23:10 | INFO | factuality_eval | Completed fact validation batch | batch_index=3
+2025-11-23 17:23:10 | INFO | factuality_eval | Starting fact validation batch | batch_index=4 | batch_size=10
+2025-11-23 17:23:10 | DEBUG | factuality_eval | Validating facts | question_id=32 | num_facts=18
+2025-11-23 17:23:10 | DEBUG | factuality_eval | Validating facts | question_id=33 | num_facts=7
+2025-11-23 17:23:10 | DEBUG | factuality_eval | Validating facts | question_id=34 | num_facts=7
+2025-11-23 17:23:10 | DEBUG | factuality_eval | Validating facts | question_id=35 | num_facts=9
+2025-11-23 17:23:10 | DEBUG | factuality_eval | Validating facts | question_id=36 | num_facts=7
+2025-11-23 17:23:10 | DEBUG | factuality_eval | Validating facts | question_id=37 | num_facts=7
+2025-11-23 17:23:10 | DEBUG | factuality_eval | Validating facts | question_id=38 | num_facts=5
+2025-11-23 17:23:10 | DEBUG | factuality_eval | Validating facts | question_id=39 | num_facts=5
+2025-11-23 17:23:10 | DEBUG | factuality_eval | Validating facts | question_id=40 | num_facts=9
+2025-11-23 17:23:10 | DEBUG | factuality_eval | Validating facts | question_id=41 | num_facts=12
+2025-11-23 17:23:53 | INFO | factuality_eval | Fact validation usage | question_id=38 | num_validated_facts=5 | model=gpt-5-mini-2025-08-07 | input_tokens=21634 | output_tokens=2148 | total_tokens=23782 | cached_tokens=3712 | web_search_call_count=4 | estimated_cost_usd=0.0459309
+2025-11-23 17:23:53 | INFO | factuality_eval | Fact validation succeeded | question_index=38 | num_decisions=5
+2025-11-23 17:24:10 | INFO | factuality_eval | Fact validation usage | question_id=36 | num_validated_facts=7 | model=gpt-5-mini-2025-08-07 | input_tokens=22041 | output_tokens=3404 | total_tokens=25445 | cached_tokens=3712 | web_search_call_count=4 | estimated_cost_usd=0.04628385
+2025-11-23 17:24:10 | INFO | factuality_eval | Fact validation succeeded | question_index=36 | num_decisions=7
+2025-11-23 17:24:13 | INFO | factuality_eval | Fact validation usage | question_id=37 | num_validated_facts=7 | model=gpt-5-mini-2025-08-07 | input_tokens=29781 | output_tokens=3523 | total_tokens=33304 | cached_tokens=3712 | web_search_call_count=6 | estimated_cost_usd=0.06824265
+2025-11-23 17:24:13 | INFO | factuality_eval | Fact validation succeeded | question_index=37 | num_decisions=7
+2025-11-23 17:24:17 | INFO | factuality_eval | Fact validation usage | question_id=34 | num_validated_facts=7 | model=gpt-5-mini-2025-08-07 | input_tokens=26626 | output_tokens=4101 | total_tokens=30727 | cached_tokens=3712 | web_search_call_count=5 | estimated_cost_usd=0.0575695
+2025-11-23 17:24:17 | INFO | factuality_eval | Fact validation succeeded | question_index=34 | num_decisions=7
+2025-11-23 17:24:17 | INFO | factuality_eval | Fact validation usage | question_id=41 | num_validated_facts=12 | model=gpt-5-mini-2025-08-07 | input_tokens=29876 | output_tokens=4960 | total_tokens=34836 | cached_tokens=3712 | web_search_call_count=6 | estimated_cost_usd=0.0685538
+2025-11-23 17:24:17 | INFO | factuality_eval | Fact validation succeeded | question_index=41 | num_decisions=12
+2025-11-23 17:24:28 | INFO | factuality_eval | Fact validation usage | question_id=39 | num_validated_facts=5 | model=gpt-5-mini-2025-08-07 | input_tokens=37725 | output_tokens=3595 | total_tokens=41320 | cached_tokens=3712 | web_search_call_count=9 | estimated_cost_usd=0.10024305
+2025-11-23 17:24:28 | INFO | factuality_eval | Fact validation succeeded | question_index=39 | num_decisions=5
+2025-11-23 17:24:29 | INFO | factuality_eval | Fact validation usage | question_id=40 | num_validated_facts=9 | model=gpt-5-mini-2025-08-07 | input_tokens=30769 | output_tokens=4041 | total_tokens=34810 | cached_tokens=4480 | web_search_call_count=6 | estimated_cost_usd=0.06861245
+2025-11-23 17:24:29 | INFO | factuality_eval | Fact validation succeeded | question_index=40 | num_decisions=9
+2025-11-23 17:24:58 | INFO | factuality_eval | Fact validation usage | question_id=33 | num_validated_facts=7 | model=gpt-5-mini-2025-08-07 | input_tokens=47073 | output_tokens=5113 | total_tokens=52186 | cached_tokens=3712 | web_search_call_count=12 | estimated_cost_usd=0.13288365
+2025-11-23 17:24:58 | INFO | factuality_eval | Fact validation succeeded | question_index=33 | num_decisions=7
+2025-11-23 17:25:25 | INFO | factuality_eval | Fact validation usage | question_id=35 | num_validated_facts=9 | model=gpt-5-mini-2025-08-07 | input_tokens=44433 | output_tokens=6522 | total_tokens=50955 | cached_tokens=3712 | web_search_call_count=9 | estimated_cost_usd=0.10250545
+2025-11-23 17:25:25 | INFO | factuality_eval | Fact validation succeeded | question_index=35 | num_decisions=9
+2025-11-23 17:26:32 | INFO | factuality_eval | Fact validation usage | question_id=32 | num_validated_facts=18 | model=gpt-5-mini-2025-08-07 | input_tokens=71831 | output_tokens=8230 | total_tokens=80061 | cached_tokens=3712 | web_search_call_count=20 | estimated_cost_usd=0.21969655
+2025-11-23 17:26:32 | INFO | factuality_eval | Fact validation succeeded | question_index=32 | num_decisions=18
+2025-11-23 17:26:32 | INFO | factuality_eval | Completed fact validation batch | batch_index=4
+2025-11-23 17:26:32 | INFO | factuality_eval | Starting fact validation batch | batch_index=5 | batch_size=8
+2025-11-23 17:26:32 | DEBUG | factuality_eval | Validating facts | question_id=42 | num_facts=7
+2025-11-23 17:26:32 | DEBUG | factuality_eval | Validating facts | question_id=43 | num_facts=10
+2025-11-23 17:26:32 | DEBUG | factuality_eval | Validating facts | question_id=44 | num_facts=8
+2025-11-23 17:26:32 | DEBUG | factuality_eval | Validating facts | question_id=45 | num_facts=6
+2025-11-23 17:26:32 | DEBUG | factuality_eval | Validating facts | question_id=46 | num_facts=10
+2025-11-23 17:26:32 | DEBUG | factuality_eval | Validating facts | question_id=47 | num_facts=6
+2025-11-23 17:26:32 | DEBUG | factuality_eval | Validating facts | question_id=48 | num_facts=7
+2025-11-23 17:26:32 | DEBUG | factuality_eval | Validating facts | question_id=49 | num_facts=9
+2025-11-23 17:27:28 | INFO | factuality_eval | Fact validation usage | question_id=42 | num_validated_facts=7 | model=gpt-5-mini-2025-08-07 | input_tokens=30372 | output_tokens=3317 | total_tokens=33689 | cached_tokens=3712 | web_search_call_count=6 | estimated_cost_usd=0.0683492
+2025-11-23 17:27:28 | INFO | factuality_eval | Fact validation succeeded | question_index=42 | num_decisions=7
+2025-11-23 17:27:32 | INFO | factuality_eval | Fact validation usage | question_id=48 | num_validated_facts=7 | model=gpt-5-mini-2025-08-07 | input_tokens=29562 | output_tokens=3132 | total_tokens=32694 | cached_tokens=4480 | web_search_call_count=6 | estimated_cost_usd=0.0681289
+2025-11-23 17:27:32 | INFO | factuality_eval | Fact validation succeeded | question_index=48 | num_decisions=7
+2025-11-23 17:27:44 | INFO | factuality_eval | Fact validation usage | question_id=45 | num_validated_facts=6 | model=gpt-5-mini-2025-08-07 | input_tokens=42981 | output_tokens=3956 | total_tokens=46937 | cached_tokens=3712 | web_search_call_count=9 | estimated_cost_usd=0.10162925
+2025-11-23 17:27:44 | INFO | factuality_eval | Fact validation succeeded | question_index=45 | num_decisions=6
+2025-11-23 17:27:59 | INFO | factuality_eval | Fact validation usage | question_id=46 | num_validated_facts=10 | model=gpt-5-mini-2025-08-07 | input_tokens=34518 | output_tokens=4898 | total_tokens=39416 | cached_tokens=4480 | web_search_call_count=8 | estimated_cost_usd=0.0897211
+2025-11-23 17:27:59 | INFO | factuality_eval | Fact validation succeeded | question_index=46 | num_decisions=10
+2025-11-23 17:28:07 | INFO | factuality_eval | Fact validation usage | question_id=44 | num_validated_facts=8 | model=gpt-5-mini-2025-08-07 | input_tokens=36013 | output_tokens=4998 | total_tokens=41011 | cached_tokens=3712 | web_search_call_count=10 | estimated_cost_usd=0.11009565
+2025-11-23 17:28:07 | INFO | factuality_eval | Fact validation succeeded | question_index=44 | num_decisions=8
+2025-11-23 17:28:08 | INFO | factuality_eval | Fact validation usage | question_id=43 | num_validated_facts=10 | model=gpt-5-mini-2025-08-07 | input_tokens=43740 | output_tokens=5659 | total_tokens=49399 | cached_tokens=3712 | web_search_call_count=9 | estimated_cost_usd=0.1021596
+2025-11-23 17:28:08 | INFO | factuality_eval | Fact validation succeeded | question_index=43 | num_decisions=10
+2025-11-23 17:28:27 | INFO | factuality_eval | Fact validation usage | question_id=47 | num_validated_facts=6 | model=gpt-5-mini-2025-08-07 | input_tokens=50234 | output_tokens=4691 | total_tokens=54925 | cached_tokens=3712 | web_search_call_count=13 | estimated_cost_usd=0.1435895
+2025-11-23 17:28:27 | INFO | factuality_eval | Fact validation succeeded | question_index=47 | num_decisions=6
+2025-11-23 17:29:10 | INFO | factuality_eval | Fact validation usage | question_id=49 | num_validated_facts=9 | model=gpt-5-mini-2025-08-07 | input_tokens=72984 | output_tokens=7791 | total_tokens=80775 | cached_tokens=4480 | web_search_call_count=17 | estimated_cost_usd=0.1899162
+2025-11-23 17:29:10 | INFO | factuality_eval | Fact validation succeeded | question_index=49 | num_decisions=9
+2025-11-23 17:29:10 | INFO | factuality_eval | Completed fact validation batch | batch_index=5
+2025-11-23 17:29:10 | INFO | factuality_eval | Evaluation complete | total_evaluated=48
+2025-11-23 17:29:10 | INFO | factuality_eval | Writing evaluation artifact | output_path=/Users/aszelestey/projects/AdversaRiskQA/data/results/factuality_evaluations/adversial/Qwen-Qwen3-30B-Instruct-2507/law_basic_adv.json

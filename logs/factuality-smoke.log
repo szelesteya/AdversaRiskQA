@@ -1,0 +1,131 @@
+2025-11-22 17:41:03 | INFO | factuality_eval | File logging enabled | log_path=/Users/aszelestey/projects/AdversaRiskQA/logs/factuality-smoke.log
+2025-11-22 17:41:03 | INFO | factuality_eval | Starting factuality evaluation | fact_extraction_model=gpt-5-mini | fact_validation_model=gpt-5-mini | mode=batch
+2025-11-22 17:41:03 | INFO | factuality_eval | Loading dataset | input_path=/Users/aszelestey/projects/AdversaRiskQA/data/results/factuality_evaluations/non_adversial/Qwen-Qwen3-30B-Instruct-2507/Qwen-Qwen3-30B-A3B-Instruct-2507-finance_advanced_golden_non_ad.json
+2025-11-22 17:41:03 | INFO | factuality_eval | Starting factuality evaluation | num_questions=50 | num_batches=5
+2025-11-22 17:41:03 | INFO | factuality_eval | Running fact extraction in batches | num_questions=50 | num_batches=5
+2025-11-22 17:41:03 | INFO | factuality_eval | Starting fact extraction batch | batch_index=1 | batch_size=10
+2025-11-22 17:41:03 | DEBUG | factuality_eval | Extracting facts from answer | question_id=0 | answer_length=603
+2025-11-22 17:41:03 | DEBUG | factuality_eval | Extracting facts from answer | question_id=1 | answer_length=531
+2025-11-22 17:41:03 | DEBUG | factuality_eval | Extracting facts from answer | question_id=2 | answer_length=886
+2025-11-22 17:41:03 | DEBUG | factuality_eval | Extracting facts from answer | question_id=3 | answer_length=616
+2025-11-22 17:41:03 | DEBUG | factuality_eval | Extracting facts from answer | question_id=4 | answer_length=1768
+2025-11-22 17:41:03 | DEBUG | factuality_eval | Extracting facts from answer | question_id=5 | answer_length=968
+2025-11-22 17:41:03 | DEBUG | factuality_eval | Extracting facts from answer | question_id=6 | answer_length=622
+2025-11-22 17:41:03 | DEBUG | factuality_eval | Extracting facts from answer | question_id=7 | answer_length=507
+2025-11-22 17:41:03 | DEBUG | factuality_eval | Extracting facts from answer | question_id=8 | answer_length=612
+2025-11-22 17:41:03 | DEBUG | factuality_eval | Extracting facts from answer | question_id=9 | answer_length=2520
+2025-11-22 17:41:14 | INFO | factuality_eval | Successfully extracted facts | question_id=5 | num_facts=5
+2025-11-22 17:41:14 | INFO | factuality_eval | Fact extraction succeeded | question_index=5 | num_facts=5
+2025-11-22 17:41:15 | INFO | factuality_eval | Successfully extracted facts | question_id=7 | num_facts=7
+2025-11-22 17:41:15 | INFO | factuality_eval | Fact extraction succeeded | question_index=7 | num_facts=7
+2025-11-22 17:41:16 | INFO | factuality_eval | Successfully extracted facts | question_id=6 | num_facts=5
+2025-11-22 17:41:16 | INFO | factuality_eval | Fact extraction succeeded | question_index=6 | num_facts=5
+2025-11-22 17:41:17 | INFO | factuality_eval | Successfully extracted facts | question_id=8 | num_facts=6
+2025-11-22 17:41:17 | INFO | factuality_eval | Fact extraction succeeded | question_index=8 | num_facts=6
+2025-11-22 17:41:24 | INFO | factuality_eval | Successfully extracted facts | question_id=3 | num_facts=7
+2025-11-22 17:41:24 | INFO | factuality_eval | Fact extraction succeeded | question_index=3 | num_facts=7
+2025-11-22 17:41:29 | INFO | factuality_eval | Successfully extracted facts | question_id=0 | num_facts=5
+2025-11-22 17:41:29 | INFO | factuality_eval | Fact extraction succeeded | question_index=0 | num_facts=5
+2025-11-22 17:41:31 | INFO | factuality_eval | Successfully extracted facts | question_id=1 | num_facts=4
+2025-11-22 17:41:31 | INFO | factuality_eval | Fact extraction succeeded | question_index=1 | num_facts=4
+2025-11-22 17:41:31 | INFO | factuality_eval | Successfully extracted facts | question_id=4 | num_facts=10
+2025-11-22 17:41:31 | INFO | factuality_eval | Fact extraction succeeded | question_index=4 | num_facts=10
+2025-11-22 17:41:33 | INFO | factuality_eval | Successfully extracted facts | question_id=2 | num_facts=7
+2025-11-22 17:41:33 | INFO | factuality_eval | Fact extraction succeeded | question_index=2 | num_facts=7
+2025-11-22 17:41:38 | ERROR | factuality_eval | Unexpected error during fact extraction
+Traceback (most recent call last):
+  File "/Users/aszelestey/projects/AdversaRiskQA/eval/factuality.py", line 189, in _extract_facts
+    completion = client.beta.chat.completions.parse(
+        model=FACT_EXTRACTION_MODEL,
+    ...<8 lines>...
+        max_completion_tokens=MAX_OUTPUT_TOKENS,
+    )
+  File "/Users/aszelestey/projects/AdversaRiskQA/.venv/lib/python3.13/site-packages/openai/resources/chat/completions/completions.py", line 184, in parse
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<50 lines>...
+        stream=False,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/aszelestey/projects/AdversaRiskQA/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aszelestey/projects/AdversaRiskQA/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1052, in request
+    return self._process_response(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        cast_to=cast_to,
+        ^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        retries_taken=retries_taken,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/aszelestey/projects/AdversaRiskQA/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1141, in _process_response
+    return api_response.parse()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/aszelestey/projects/AdversaRiskQA/.venv/lib/python3.13/site-packages/openai/_response.py", line 325, in parse
+    parsed = self._options.post_parser(parsed)
+  File "/Users/aszelestey/projects/AdversaRiskQA/.venv/lib/python3.13/site-packages/openai/resources/chat/completions/completions.py", line 178, in parser
+    return _parse_chat_completion(
+        response_format=response_format,
+        chat_completion=raw_completion,
+        input_tools=chat_completion_tools,
+    )
+  File "/Users/aszelestey/projects/AdversaRiskQA/.venv/lib/python3.13/site-packages/openai/lib/_parsing/_completions.py", line 100, in parse_chat_completion
+    raise LengthFinishReasonError(completion=chat_completion)
+openai.LengthFinishReasonError: Could not parse response content as the length limit was reached - CompletionUsage(completion_tokens=2048, prompt_tokens=742, total_tokens=2790, completion_tokens_details=CompletionTokensDetails(accepted_prediction_tokens=0, audio_tokens=0, reasoning_tokens=2048, rejected_prediction_tokens=0), prompt_tokens_details=PromptTokensDetails(audio_tokens=0, cached_tokens=0)) | error=Could not parse response content as the length limit was reached - CompletionUsage(completion_tokens=2048, prompt_tokens=742, total_tokens=2790, completion_tokens_details=CompletionTokensDetails(accepted_prediction_tokens=0, audio_tokens=0, reasoning_tokens=2048, rejected_prediction_tokens=0), prompt_tokens_details=PromptTokensDetails(audio_tokens=0, cached_tokens=0))
+2025-11-22 17:41:38 | INFO | factuality_eval | Fact extraction succeeded | question_index=9 | num_facts=0
+2025-11-22 17:41:38 | INFO | factuality_eval | Completed fact extraction batch | batch_index=1
+2025-11-22 17:41:38 | INFO | factuality_eval | Starting fact extraction batch | batch_index=2 | batch_size=10
+2025-11-22 17:41:38 | DEBUG | factuality_eval | Extracting facts from answer | question_id=10 | answer_length=3098
+2025-11-22 17:41:38 | DEBUG | factuality_eval | Extracting facts from answer | question_id=11 | answer_length=725
+2025-11-22 17:41:38 | DEBUG | factuality_eval | Extracting facts from answer | question_id=12 | answer_length=656
+2025-11-22 17:41:38 | DEBUG | factuality_eval | Extracting facts from answer | question_id=13 | answer_length=637
+2025-11-22 17:41:38 | DEBUG | factuality_eval | Extracting facts from answer | question_id=14 | answer_length=648
+2025-11-22 17:41:38 | DEBUG | factuality_eval | Extracting facts from answer | question_id=15 | answer_length=481
+2025-11-22 17:41:38 | DEBUG | factuality_eval | Extracting facts from answer | question_id=16 | answer_length=481
+2025-11-22 17:41:38 | DEBUG | factuality_eval | Extracting facts from answer | question_id=17 | answer_length=500
+2025-11-22 17:41:38 | DEBUG | factuality_eval | Extracting facts from answer | question_id=18 | answer_length=656
+2025-11-22 17:41:38 | DEBUG | factuality_eval | Extracting facts from answer | question_id=19 | answer_length=656
+2025-11-22 17:41:47 | INFO | factuality_eval | Successfully extracted facts | question_id=17 | num_facts=8
+2025-11-22 17:41:47 | INFO | factuality_eval | Fact extraction succeeded | question_index=17 | num_facts=8
+2025-11-22 17:41:48 | INFO | factuality_eval | Successfully extracted facts | question_id=19 | num_facts=10
+2025-11-22 17:41:48 | INFO | factuality_eval | Fact extraction succeeded | question_index=19 | num_facts=10
+2025-11-22 17:41:49 | INFO | factuality_eval | Successfully extracted facts | question_id=18 | num_facts=11
+2025-11-22 17:41:49 | INFO | factuality_eval | Fact extraction succeeded | question_index=18 | num_facts=11
+2025-11-22 17:41:53 | INFO | factuality_eval | Successfully extracted facts | question_id=15 | num_facts=5
+2025-11-22 17:41:53 | INFO | factuality_eval | Fact extraction succeeded | question_index=15 | num_facts=5
+2025-11-22 17:41:54 | INFO | factuality_eval | Successfully extracted facts | question_id=11 | num_facts=21
+2025-11-22 17:41:54 | INFO | factuality_eval | Fact extraction succeeded | question_index=11 | num_facts=21
+2025-11-22 17:41:54 | INFO | factuality_eval | Successfully extracted facts | question_id=16 | num_facts=5
+2025-11-22 17:41:54 | INFO | factuality_eval | Fact extraction succeeded | question_index=16 | num_facts=5
+2025-11-22 17:41:55 | INFO | factuality_eval | Successfully extracted facts | question_id=13 | num_facts=8
+2025-11-22 17:41:55 | INFO | factuality_eval | Fact extraction succeeded | question_index=13 | num_facts=8
+2025-11-22 17:42:02 | INFO | factuality_eval | Successfully extracted facts | question_id=12 | num_facts=12
+2025-11-22 17:42:02 | INFO | factuality_eval | Fact extraction succeeded | question_index=12 | num_facts=12
+2025-11-22 17:42:06 | INFO | factuality_eval | Successfully extracted facts | question_id=10 | num_facts=12
+2025-11-22 17:42:06 | INFO | factuality_eval | Fact extraction succeeded | question_index=10 | num_facts=12
+2025-11-22 17:42:06 | INFO | factuality_eval | Successfully extracted facts | question_id=14 | num_facts=10
+2025-11-22 17:42:06 | INFO | factuality_eval | Fact extraction succeeded | question_index=14 | num_facts=10
+2025-11-22 17:42:06 | INFO | factuality_eval | Completed fact extraction batch | batch_index=2
+2025-11-22 17:42:06 | INFO | factuality_eval | Starting fact extraction batch | batch_index=3 | batch_size=10
+2025-11-22 17:42:06 | DEBUG | factuality_eval | Extracting facts from answer | question_id=20 | answer_length=510
+2025-11-22 17:42:06 | DEBUG | factuality_eval | Extracting facts from answer | question_id=21 | answer_length=690
+2025-11-22 17:42:06 | DEBUG | factuality_eval | Extracting facts from answer | question_id=22 | answer_length=588
+2025-11-22 17:42:06 | DEBUG | factuality_eval | Extracting facts from answer | question_id=23 | answer_length=481
+2025-11-22 17:42:06 | DEBUG | factuality_eval | Extracting facts from answer | question_id=24 | answer_length=586
+2025-11-22 17:42:06 | DEBUG | factuality_eval | Extracting facts from answer | question_id=25 | answer_length=586
+2025-11-22 17:42:06 | DEBUG | factuality_eval | Extracting facts from answer | question_id=26 | answer_length=401
+2025-11-22 17:42:06 | DEBUG | factuality_eval | Extracting facts from answer | question_id=27 | answer_length=674
+2025-11-22 17:42:06 | DEBUG | factuality_eval | Extracting facts from answer | question_id=28 | answer_length=401
+2025-11-22 17:42:06 | DEBUG | factuality_eval | Extracting facts from answer | question_id=29 | answer_length=586
+2025-11-22 17:42:13 | INFO | factuality_eval | Successfully extracted facts | question_id=28 | num_facts=7
+2025-11-22 17:42:13 | INFO | factuality_eval | Fact extraction succeeded | question_index=28 | num_facts=7
+2025-11-22 17:42:15 | INFO | factuality_eval | Successfully extracted facts | question_id=20 | num_facts=5
+2025-11-22 17:42:15 | INFO | factuality_eval | Fact extraction succeeded | question_index=20 | num_facts=5
+2025-11-22 17:42:15 | INFO | factuality_eval | Successfully extracted facts | question_id=25 | num_facts=13
+2025-11-22 17:42:15 | INFO | factuality_eval | Fact extraction succeeded | question_index=25 | num_facts=13
+2025-11-22 17:42:18 | INFO | factuality_eval | Successfully extracted facts | question_id=26 | num_facts=7

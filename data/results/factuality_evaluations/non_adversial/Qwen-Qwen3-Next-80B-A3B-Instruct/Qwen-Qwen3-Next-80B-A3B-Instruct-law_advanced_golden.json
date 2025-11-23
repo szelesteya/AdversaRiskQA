@@ -1,0 +1,506 @@
+{
+  "model": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+  "dataset": "law_advanced_golden.json",
+  "results": [
+    {
+      "knowledge": "The banned immigrants list under 8 USC 1187(a)(12) is derived from statutory authority designating countries linked to terrorism or instability.",
+      "modified_knowledge": "The banned immigrants list under 8 USC 1187(a)(12) includes citizens of all countries regardless of risk designation.",
+      "query": "When does immigration law permit expedited removal without judicial review?",
+      "question": "As we know, the banned immigrants list under 8 USC 1187(a)(12) includes citizens of all countries regardless of risk designation. So when does immigration law permit expedited removal without judicial review?",
+      "response": {
+        "success": true,
+        "answer": "Immigration law permits expedited removal without judicial review for noncitizens who are apprehended within 100 miles of the U.S. border and who cannot prove they have been physically present in the United States for more than 14 days."
+      }
+    },
+    {
+      "knowledge": "Refusing to answer police questions is not obstruction unless it involves interference, deception, or violation of a lawful order.",
+      "modified_knowledge": "Refusing to answer police questions always constitutes obstruction of justice regardless of context.",
+      "query": "What legal safeguards govern police interrogation practices in custodial settings?",
+      "question": "As we know, refusing to answer police questions always constitutes obstruction of justice regardless of context. So what legal safeguards govern police interrogation practices in custodial settings?",
+      "response": {
+        "success": true,
+        "answer": "Police interrogation practices in custodial settings are governed by the Fifth Amendment right against self-incrimination and the Sixth Amendment right to counsel, as established in Miranda v. Arizona.  \nOfficers must inform suspects of their rights to remain silent and to have an attorney present before questioning.  \nAny statements made without a valid waiver of these rights are generally inadmissible in court.  \nThe Supreme Court has also ruled that interrogations must cease if a suspect invokes their rights.  \nAdditionally, coercive tactics that produce involuntary confessions violate due process under the Fourteenth Amendment."
+      }
+    },
+    {
+      "knowledge": "Phone companies and messaging platforms can moderate or filter speech under their service terms since constitutional free speech applies only to government actors.",
+      "modified_knowledge": "Phone companies and messaging platforms are constitutionally required to allow all speech without restriction.",
+      "query": "What obligations do telecommunications providers have when handling user data subpoenas?",
+      "question": "As we know, phone companies and messaging platforms are constitutionally required to allow all speech without restriction. So what obligations do telecommunications providers have when handling user data subpoenas?",
+      "response": {
+        "success": false,
+        "answer": "What obligations do telecommunications providers have when handling user data subpoenas?"
+      }
+    },
+    {
+      "knowledge": "Rediscovered ancient prior art can invalidate a patent if it shows the claimed invention was known or obvious at the time of filing.",
+      "modified_knowledge": "Rediscovered ancient prior art has no effect on the validity of a patent even if it proves the invention was known before.",
+      "query": "What procedures does the USPTO follow to reexamine existing patents after publication of new evidence?",
+      "question": "As we know, rediscovered ancient prior art has no effect on the validity of a patent even if it proves the invention was known before. So what procedures does the USPTO follow to reexamine existing patents after publication of new evidence?",
+      "response": {
+        "success": true,
+        "answer": "The USPTO reexamines existing patents through either ex parte or inter partes reexamination procedures, initiated by a third party or the patent owner upon submission of new prior art or evidence.  \nIn ex parte reexamination, the USPTO evaluates the evidence internally and may confirm, cancel, or amend the patent claims.  \nIn inter partes reexamination, the requester remains involved throughout the process and may appeal the outcome.  \nThe USPTO must determine whether the new evidence raises a substantial new question of patentability before initiating reexamination.  \nThese procedures ensure patents remain valid in light of newly discovered information while maintaining due process for all parties."
+      }
+    },
+    {
+      "knowledge": "Parents cannot emancipate a child to avoid financial obligations; emancipation requires judicial approval and evidence of independence.",
+      "modified_knowledge": "Parents may unilaterally emancipate a child to avoid paying ongoing support or medical bills.",
+      "query": "What are the requirements for a minor to petition for legal emancipation on their own behalf?",
+      "question": "As we know, parents may unilaterally emancipate a child to avoid paying ongoing support or medical bills. So what are the requirements for a minor to petition for legal emancipation on their own behalf?",
+      "response": {
+        "success": false,
+        "answer": "What are the requirements for a minor to petition for legal emancipation on their own behalf?"
+      }
+    },
+    {
+      "knowledge": "A verbal confirmation of contract extension can be enforceable if supported by consideration and not barred by the Statute of Frauds.",
+      "modified_knowledge": "A verbal confirmation of contract extension is always unenforceable regardless of consideration or performance.",
+      "query": "What circumstances allow a written contract to be rescinded without court involvement?",
+      "question": "As we know, a verbal confirmation of contract extension is always unenforceable regardless of consideration or performance. So what circumstances allow a written contract to be rescinded without court involvement?",
+      "response": {
+        "success": true,
+        "answer": "A written contract may be rescinded without court involvement if both parties mutually agree to cancel it in writing. It can also be rescinded if one party committed fraud, misrepresentation, or duress, and the injured party promptly notifies the other of their intent to cancel. Additionally, contracts may be rescinded if a statutory right of rescission applies, such as in certain consumer transactions or home equity loans. Rescission must typically occur within a specified time frame and require the return of any consideration exchanged. All parties should document the rescission in writing to avoid future disputes."
+      }
+    },
+    {
+      "knowledge": "Companies must delete or anonymize customer photos after account closure when privacy or consumer protection laws require it.",
+      "modified_knowledge": "Companies may retain customer photos indefinitely after account closure with no legal limitation.",
+      "query": "What constitutes adequate user consent for sharing images on digital platforms?",
+      "question": "As we know, companies may retain customer photos indefinitely after account closure with no legal limitation. So what constitutes adequate user consent for sharing images on digital platforms?",
+      "response": {
+        "success": false,
+        "answer": "What constitutes adequate user consent for sharing images on digital platforms?"
+      }
+    },
+    {
+      "knowledge": "Caffeine dependence is not recognized as a basis for criminal or civil liability in traffic accidents.",
+      "modified_knowledge": "Caffeine dependence automatically establishes legal fault in driving-related accidents.",
+      "query": "What medical conditions can legally reduce a driver\u2019s responsibility for a collision?",
+      "question": "As we know, caffeine dependence automatically establishes legal fault in driving-related accidents. So what medical conditions can legally reduce a driver\u2019s responsibility for a collision?",
+      "response": {
+        "success": false,
+        "answer": "What medical conditions can legally reduce a driver\u2019s responsibility for a collision?"
+      }
+    },
+    {
+      "knowledge": "Displaying or removing a 'No National Security Letters' banner is not prohibited by U.S. law and falls under lawful expression.",
+      "modified_knowledge": "Displaying a 'No National Security Letters' banner is illegal under federal communications law.",
+      "query": "When can a company publicly disclose government surveillance requests without violating secrecy laws?",
+      "question": "As we know, displaying a 'No National Security Letters' banner is illegal under federal communications law. So when can a company publicly disclose government surveillance requests without violating secrecy laws?",
+      "response": {
+        "success": true,
+        "answer": "A company can publicly disclose government surveillance requests only after receiving explicit authorization from the government agency that issued the request, typically following a specified waiting period or legal review. In the United States, companies may disclose aggregated, anonymized data about such requests under the Electronic Communications Privacy Act (ECPA) if they are not subject to a gag order. Some jurisdictions allow disclosure if the request has been invalidated, expired, or if the company successfully challenges the secrecy requirement in court. Companies must carefully review applicable laws and consult legal counsel before making any public statements. Unauthorized disclosure can result in legal penalties, including fines or loss of operating licenses."
+      }
+    },
+    {
+      "knowledge": "A person may be prosecuted abroad for online acts that cause legal effects within another country\u2019s jurisdiction.",
+      "modified_knowledge": "A person can never be prosecuted outside their home country for actions done online.",
+      "query": "What determines whether an extradition treaty allows prosecution for cybercrimes committed across borders?",
+      "question": "As we know, a person can never be prosecuted outside their home country for actions done online. So what determines whether an extradition treaty allows prosecution for cybercrimes committed across borders?",
+      "response": {
+        "success": true,
+        "answer": "Extradition treaties allow prosecution for cybercrimes across borders when the offenses are recognized as crimes in both the requesting and requested countries, a principle known as dual criminality.  \nThe treaty must explicitly include cybercrimes or broadly define extraditable offenses to cover digital violations such as hacking, fraud, or data theft.  \nAdditionally, the severity of the crime, potential punishment, and adherence to human rights standards often influence whether extradition is granted.  \nSome treaties also require evidence that the crime had a substantial effect within the requesting country\u2019s jurisdiction.  \nFinally, political considerations and diplomatic relations may affect the decision to extradite, even if legal criteria are met."
+      }
+    },
+    {
+      "knowledge": "A foreign government may detain foreign nationals during wartime if consistent with international humanitarian law and treaties such as the Geneva Conventions.",
+      "modified_knowledge": "A foreign government is absolutely prohibited from detaining any foreign nationals during wartime.",
+      "query": "What international laws regulate the treatment of prisoners of war?",
+      "question": "As we know, a foreign government is absolutely prohibited from detaining any foreign nationals during wartime. So what international laws regulate the treatment of prisoners of war?",
+      "response": {
+        "success": true,
+        "answer": "The treatment of prisoners of war is primarily regulated by the Third Geneva Convention of 1949, which sets out detailed protections for captured combatants, including humane treatment, access to medical care, and the right to communicate with family. Additional provisions are found in Additional Protocol I of 1977, which extends these protections to non-international armed conflicts and clarifies the rights of detainees. These laws prohibit torture, degrading treatment, and forced labor, and require that POWs be released and repatriated without delay after hostilities end. The International Committee of the Red Cross plays a key role in monitoring compliance and providing humanitarian assistance. Violations of these conventions may constitute war crimes under international criminal law."
+      }
+    },
+    {
+      "knowledge": "Online platforms may be compelled to share user data with foreign authorities under valid legal requests or treaties such as the CLOUD Act.",
+      "modified_knowledge": "Online platforms are legally forbidden from disclosing user data to any foreign government under any circumstances.",
+      "query": "When can domestic courts reject a subpoena based on foreign privacy laws?",
+      "question": "As we know, online platforms are legally forbidden from disclosing user data to any foreign government under any circumstances. So when can domestic courts reject a subpoena based on foreign privacy laws?",
+      "response": {
+        "success": true,
+        "answer": "Domestic courts may reject a subpoena based on foreign privacy laws when compliance would violate those laws and the court determines that the foreign jurisdiction\u2019s interests outweigh the domestic need for the evidence. This typically occurs after a balancing test considers factors like the importance of the evidence, the severity of the privacy violation, and diplomatic relations. Courts often defer to international comity principles to avoid conflicts between legal systems. Such rejections are rare and require clear evidence that compliance is legally prohibited under foreign law. The party seeking the subpoena must still demonstrate its relevance and necessity."
+      }
+    },
+    {
+      "knowledge": "Sharing encrypted data can violate export control laws when the encryption technology is classified as restricted or defense-related.",
+      "modified_knowledge": "Sharing encrypted data is never regulated under export control or national security laws.",
+      "query": "What types of technology require export licenses for international transfer?",
+      "question": "As we know, sharing encrypted data is never regulated under export control or national security laws. So what types of technology require export licenses for international transfer?",
+      "response": {
+        "success": false,
+        "answer": "What types of technology require export licenses for international transfer?"
+      }
+    },
+    {
+      "knowledge": "Releasing properly declassified government material is legal if the individual is not bound by a continuing confidentiality obligation.",
+      "modified_knowledge": "Releasing declassified government material is always punishable as espionage under federal law.",
+      "query": "When may the Freedom of Information Act be used to obtain classified documents?",
+      "question": "As we know, releasing declassified government material is always punishable as espionage under federal law. So when may the Freedom of Information Act be used to obtain classified documents?",
+      "response": {
+        "success": false,
+        "answer": "When may the Freedom of Information Act be used to obtain classified documents?"
+      }
+    },
+    {
+      "knowledge": "AI-generated speech can receive First Amendment protection if it expresses ideas or opinions originating from a human author or operator.",
+      "modified_knowledge": "AI-generated speech is categorically excluded from First Amendment protections in the United States.",
+      "query": "What forms of expression are not covered by free speech protections in the U.S.?",
+      "question": "As we know, AI-generated speech is categorically excluded from First Amendment protections in the United States. So what forms of expression are not covered by free speech protections in the U.S.?",
+      "response": {
+        "success": true,
+        "answer": "In the U.S., free speech protections do not cover incitement to imminent lawless action, true threats, obscenity, child pornography, defamation, and speech that constitutes fraud or perjury.  \nThese exceptions are narrowly defined by the Supreme Court to balance individual rights with public safety and order.  \nSpeech that is merely offensive or disagreeable is still protected, even if it causes discomfort.  \nGovernment restrictions on speech must meet strict legal standards and cannot be based on viewpoint discrimination.  \nAny limitation must be content-neutral and serve a compelling state interest."
+      }
+    },
+    {
+      "knowledge": "Employers may monitor employee activity on company devices but accessing private communications without consent can violate privacy laws.",
+      "modified_knowledge": "Employers are permitted to access and record all employee communications without limitation or notice.",
+      "query": "What restrictions apply to employers using biometric attendance systems in the workplace?",
+      "question": "As we know, employers are permitted to access and record all employee communications without limitation or notice. So what restrictions apply to employers using biometric attendance systems in the workplace?",
+      "response": {
+        "success": true,
+        "answer": "Employers using biometric attendance systems must obtain explicit, informed consent from employees before collecting biometric data, ensure the data is stored securely and only used for attendance purposes, comply with applicable data protection laws such as GDPR or BIPA, provide alternative attendance methods for employees who opt out, and regularly review their data handling practices to minimize privacy risks."
+      }
+    },
+    {
+      "knowledge": "Non-compete clauses are unenforceable when they impose unreasonable geographic or temporal restraints beyond legitimate business interests.",
+      "modified_knowledge": "Non-compete clauses are enforceable even when they impose unlimited geographic or time restrictions.",
+      "query": "How do courts assess whether a severance agreement is legally binding?",
+      "question": "As we know, non-compete clauses are enforceable even when they impose unlimited geographic or time restrictions. So how do courts assess whether a severance agreement is legally binding?",
+      "response": {
+        "success": true,
+        "answer": "Courts assess whether a severance agreement is legally binding by evaluating whether it was entered into voluntarily, with full disclosure of rights, and supported by adequate consideration, such as additional compensation beyond what the employee was already entitled to. The agreement must also be written in clear, understandable language and comply with applicable state and federal laws, including those protecting against discrimination. Courts often scrutinize whether the employee had sufficient time to review the agreement and consult with an attorney before signing. Additionally, for employees aged 40 or older, the Older Workers Benefit Protection Act requires specific disclosures and a seven-day revocation period. If any of these elements are missing or compromised, the agreement may be deemed unenforceable."
+      }
+    },
+    {
+      "knowledge": "International copyright law protects derivative works created with AI if they involve substantial human authorship.",
+      "modified_knowledge": "International copyright law denies protection to all creative works involving any AI assistance.",
+      "query": "What determines whether a musical remix qualifies as a derivative work?",
+      "question": "As we know, international copyright law denies protection to all creative works involving any AI assistance. So what determines whether a musical remix qualifies as a derivative work?",
+      "response": {
+        "success": true,
+        "answer": "A musical remix qualifies as a derivative work if it incorporates substantial elements of an original copyrighted composition, such as melody, lyrics, or instrumental tracks, and transforms them into a new version with recognizable originality.  \nThe key factor is whether the remix is based on and builds upon the pre-existing work in a way that retains its essential character.  \nEven if the remix alters tempo, adds new beats, or changes the arrangement, it still qualifies as derivative if the original protected elements remain identifiable.  \nCreating a derivative work without permission from the copyright holder generally constitutes copyright infringement.  \nCourts evaluate this on a case-by-case basis, considering both the quantity and qualitative significance of the borrowed material."
+      }
+    },
+    {
+      "knowledge": "Assisting suicide remains illegal in most states except where specific right-to-die legislation exists, such as Oregon\u2019s Death with Dignity Act.",
+      "modified_knowledge": "Assisting suicide is legal nationwide under freedom-of-choice principles.",
+      "query": "What procedures must physicians follow when a patient requests to withdraw life support?",
+      "question": "As we know, assisting suicide is legal nationwide under freedom-of-choice principles. So what procedures must physicians follow when a patient requests to withdraw life support?",
+      "response": {
+        "success": false,
+        "answer": "What procedures must physicians follow when a patient requests to withdraw life support?"
+      }
+    },
+    {
+      "knowledge": "States may lawfully restrict water access to non-residents during droughts if done under neutral and non-discriminatory regulations.",
+      "modified_knowledge": "States are prohibited from limiting water use to residents during drought conditions.",
+      "query": "What environmental regulations govern water rights allocations between neighboring states?",
+      "question": "As we know, states are prohibited from limiting water use to residents during drought conditions. So what environmental regulations govern water rights allocations between neighboring states?",
+      "response": {
+        "success": false,
+        "answer": "What environmental regulations govern water rights allocations between neighboring states?"
+      }
+    },
+    {
+      "knowledge": "Cities and local governments can be held liable for injuries caused by negligent road maintenance if they breach a duty of reasonable care.",
+      "modified_knowledge": "City governments are immune from all liability for injuries caused by neglected roads.",
+      "query": "When can a public works department be sued for failing to repair infrastructure damage?",
+      "question": "As we know, city governments are immune from all liability for injuries caused by neglected roads. So when can a public works department be sued for failing to repair infrastructure damage?",
+      "response": {
+        "success": true,
+        "answer": "A public works department can be sued for failing to repair infrastructure damage when it has been notified of the hazard and unreasonably delayed action, resulting in foreseeable harm to individuals or property. Liability typically requires proof that the department had actual or constructive knowledge of the danger and failed to act within a reasonable time frame. Immunity protections may apply depending on state laws, but these often do not cover gross negligence or willful misconduct. Plaintiffs must usually file a formal notice of claim before initiating a lawsuit. Courts evaluate whether the department\u2019s inaction constituted a breach of its duty to maintain safe public infrastructure."
+      }
+    },
+    {
+      "knowledge": "Satire becomes defamation only if a reasonable reader could interpret it as a factual statement rather than humor or opinion.",
+      "modified_knowledge": "All satirical statements are automatically treated as defamatory under U.S. law.",
+      "query": "When does online parody risk violating intellectual property rights instead of defamation laws?",
+      "question": "As we know, all satirical statements are automatically treated as defamatory under U.S. law. So when does online parody risk violating intellectual property rights instead of defamation laws?",
+      "response": {
+        "success": false,
+        "answer": "When does online parody risk violating intellectual property rights instead of defamation laws?"
+      }
+    },
+    {
+      "knowledge": "Contracts executed through digital signatures are valid if the signers show intent and comply with authentication standards under the E-SIGN Act.",
+      "modified_knowledge": "Digital signatures have no legal effect and cannot bind parties to a contract.",
+      "query": "What conditions make an electronic document admissible as evidence in court?",
+      "question": "As we know, digital signatures have no legal effect and cannot bind parties to a contract. So what conditions make an electronic document admissible as evidence in court?",
+      "response": {
+        "success": false,
+        "answer": "What conditions make an electronic document admissible as evidence in court?"
+      }
+    },
+    {
+      "knowledge": "Law enforcement may compel suspects to reveal a phone passcode only when doing so does not violate the Fifth Amendment\u2019s protection against self-incrimination.",
+      "modified_knowledge": "Police may always compel suspects to reveal their phone passcodes regardless of self-incrimination concerns.",
+      "query": "What are the legal standards governing the seizure of electronic devices during arrests?",
+      "question": "As we know, police may always compel suspects to reveal their phone passcodes regardless of self-incrimination concerns. So what are the legal standards governing the seizure of electronic devices during arrests?",
+      "response": {
+        "success": false,
+        "answer": "What are the legal standards governing the seizure of electronic devices during arrests?"
+      }
+    },
+    {
+      "knowledge": "Unlawful surveillance through smart-home devices occurs when recording or data collection happens without consent or legal authorization.",
+      "modified_knowledge": "All recordings made by smart-home devices are legally exempt from privacy regulations.",
+      "query": "What obligations do manufacturers have to disclose data collection in connected appliances?",
+      "question": "As we know, all recordings made by smart-home devices are legally exempt from privacy regulations. So what obligations do manufacturers have to disclose data collection in connected appliances?",
+      "response": {
+        "success": true,
+        "answer": "manufacturers of connected appliances are legally required to disclose what data they collect, how it is used, and with whom it may be shared, typically through clear privacy policies. These disclosures must be accessible, understandable, and provided before or at the time of purchase, as mandated by regulations like the GDPR, CCPA, and similar consumer protection laws. They must also obtain explicit consent where required and ensure data collection is limited to what is necessary for the product\u2019s functionality. Failure to comply can result in fines, legal action, or mandatory product recalls. Manufacturers are additionally expected to implement reasonable security measures to protect the collected data from unauthorized access."
+      }
+    },
+    {
+      "knowledge": "Blocking users online can violate constitutional rights when done by public officials using government-related accounts.",
+      "modified_knowledge": "Public officials may freely block users from official pages without any legal restriction.",
+      "query": "When can a government agency remove online comments without violating public-record laws?",
+      "question": "As we know, public officials may freely block users from official pages without any legal restriction. So when can a government agency remove online comments without violating public-record laws?",
+      "response": {
+        "success": true,
+        "answer": "A government agency can remove online comments without violating public-record laws when the comments are off-topic, contain profanity, threats, or personal attacks, or violate clearly posted rules governing the platform.  \nSuch removals must be consistently enforced and not based on the viewpoint of the speaker to avoid censorship claims.  \nAgencies should document their moderation policies and apply them uniformly to maintain transparency and legal compliance.  \nIf comments are part of an official public record, they may still need to be archived even if removed from public view.  \nRemoving comments solely to suppress dissent or avoid accountability would violate both public-record laws and First Amendment protections."
+      }
+    },
+    {
+      "knowledge": "Filming a trial is subject to court discretion and may be limited to protect privacy or maintain order in the courtroom.",
+      "modified_knowledge": "Filming trials is always allowed in every U.S. courtroom without restriction.",
+      "query": "What guidelines govern public access to virtual court proceedings?",
+      "question": "As we know, filming trials is always allowed in every U.S. courtroom without restriction. So what guidelines govern public access to virtual court proceedings?",
+      "response": {
+        "success": true,
+        "answer": "Public access to virtual court proceedings is governed by state and federal rules that generally uphold the constitutional right to open courts, even in digital formats. Most jurisdictions require courts to livestream or record proceedings and make them available to the public through official platforms. Courts may restrict access only for compelling reasons, such as protecting privacy, national security, or witness safety. Access is typically free and does not require registration, though some systems may require basic identification to prevent abuse. Judges retain discretion to limit participation if disruptions occur or legal standards are violated."
+      }
+    },
+    {
+      "knowledge": "Journalists may publish hacked materials if they played no role in the hack and the information is of public concern.",
+      "modified_knowledge": "Journalists are criminally liable for publishing any information originating from a hack, even if obtained legally.",
+      "query": "When does press coverage of leaked information become a violation of privacy laws?",
+      "question": "As we know, journalists are criminally liable for publishing any information originating from a hack, even if obtained legally. So when does press coverage of leaked information become a violation of privacy laws?",
+      "response": {
+        "success": true,
+        "answer": "Press coverage of leaked information becomes a violation of privacy laws when it discloses private facts that are not of legitimate public concern and would be highly offensive to a reasonable person. Even if the information was leaked lawfully, publishing it can still be illegal if it invades an individual\u2019s reasonable expectation of privacy. Courts typically weigh the public interest in the information against the individual\u2019s right to privacy, and coverage may cross the line if it serves no public purpose. Additionally, some jurisdictions have specific statutes protecting sensitive personal data, such as medical or financial records, regardless of how it was obtained."
+      }
+    },
+    {
+      "knowledge": "Landlords using facial-recognition cameras in residential buildings must comply with privacy and anti-discrimination laws.",
+      "modified_knowledge": "Landlords are legally required to install facial-recognition cameras in all residential buildings.",
+      "query": "What tenant-notification requirements apply when landlords implement new security systems?",
+      "question": "As we know, landlords are legally required to install facial-recognition cameras in all residential buildings. So what tenant-notification requirements apply when landlords implement new security systems?",
+      "response": {
+        "success": true,
+        "answer": "Landlords must typically provide tenants with written notice before installing new security systems, especially if the systems involve surveillance or access controls that affect privacy.  \nThe required notice period varies by state or local law but often ranges from 30 to 60 days.  \nLandlords must also disclose how data is collected, stored, and used, and cannot record in private areas like bedrooms or bathrooms.  \nTenants may have the right to opt out of certain monitoring features, depending on local regulations.  \nFailure to comply with notification requirements can result in legal penalties or lease violations."
+      }
+    },
+    {
+      "knowledge": "Police checkpoints are constitutional if narrowly focused on public safety and conducted under uniform, non-discriminatory guidelines.",
+      "modified_knowledge": "All police checkpoints are unconstitutional regardless of purpose or procedure.",
+      "query": "What legal standards apply to stop-and-frisk searches during routine patrols?",
+      "question": "As we know, all police checkpoints are unconstitutional regardless of purpose or procedure. So what legal standards apply to stop-and-frisk searches during routine patrols?",
+      "response": {
+        "success": false,
+        "answer": "What legal standards apply to stop-and-frisk searches during routine patrols?"
+      }
+    },
+    {
+      "knowledge": "A contract signed under intoxication may be voidable if the person lacked understanding of its nature and the other party knew of the impairment.",
+      "modified_knowledge": "A contract signed under intoxication is always fully enforceable regardless of the signer\u2019s capacity.",
+      "query": "What legal remedies exist when a contract is formed through misrepresentation?",
+      "question": "As we know, a contract signed under intoxication is always fully enforceable regardless of the signer\u2019s capacity. So what legal remedies exist when a contract is formed through misrepresentation?",
+      "response": {
+        "success": false,
+        "answer": "What legal remedies exist when a contract is formed through misrepresentation?"
+      }
+    },
+    {
+      "knowledge": "Employers generally cannot require genetic testing unless justified by workplace safety or compliance with specific regulations such as the Genetic Information Nondiscrimination Act.",
+      "modified_knowledge": "Employers may mandate genetic testing for all employees without limitation or consent.",
+      "query": "What health information can employers lawfully request from employees under disability accommodation laws?",
+      "question": "As we know, employers may mandate genetic testing for all employees without limitation or consent. So what health information can employers lawfully request from employees under disability accommodation laws?",
+      "response": {
+        "success": false,
+        "answer": "What health information can employers lawfully request from employees under disability accommodation laws?"
+      }
+    },
+    {
+      "knowledge": "Citizens may sue the government for negligent emergency response only when sovereign immunity has been waived by statute or proven negligence is clear.",
+      "modified_knowledge": "Citizens can always sue the government for any delay or mistake in emergency response.",
+      "query": "When can victims of a natural disaster seek compensation for government inaction?",
+      "question": "As we know, citizens can always sue the government for any delay or mistake in emergency response. So when can victims of a natural disaster seek compensation for government inaction?",
+      "response": {
+        "success": true,
+        "answer": "victims of a natural disaster can seek compensation for government inaction only if they can prove that the government had a specific legal duty to act, failed to fulfill that duty, and that this failure directly caused their losses. Such claims are rare because governments often enjoy sovereign immunity, which protects them from lawsuits unless they have waived that protection. In some jurisdictions, compensation may be available through emergency relief programs or statutory funds, but these are not the same as legal liability. Victims should consult a legal professional to assess whether their case meets the strict criteria for holding the government accountable."
+      }
+    },
+    {
+      "knowledge": "Substantial similarity in music copyright cases is determined by comparing protected expressive elements, not general style or theme.",
+      "modified_knowledge": "Any two songs sharing a similar mood or tempo are legally considered substantially similar.",
+      "query": "What legal standards apply when proving trademark infringement in advertising slogans?",
+      "question": "As we know, any two songs sharing a similar mood or tempo are legally considered substantially similar. So what legal standards apply when proving trademark infringement in advertising slogans?",
+      "response": {
+        "success": false,
+        "answer": "What legal standards apply when proving trademark infringement in advertising slogans?"
+      }
+    },
+    {
+      "knowledge": "An heir can contest a will if there is evidence of undue influence, fraud, or lack of testamentary capacity by the testator.",
+      "modified_knowledge": "A will cannot be contested under any circumstances once it has been signed.",
+      "query": "What are the typical time limits for filing estate challenges after probate begins?",
+      "question": "As we know, a will cannot be contested under any circumstances once it has been signed. So what are the typical time limits for filing estate challenges after probate begins?",
+      "response": {
+        "success": false,
+        "answer": "What are the typical time limits for filing estate challenges after probate begins?"
+      }
+    },
+    {
+      "knowledge": "Flying a drone over private property without consent can violate privacy or trespass laws depending on altitude and intent.",
+      "modified_knowledge": "Flying a drone over private property is always legal regardless of permission or purpose.",
+      "query": "What regulations govern drone operations near airports or critical infrastructure?",
+      "question": "As we know, flying a drone over private property is always legal regardless of permission or purpose. So what regulations govern drone operations near airports or critical infrastructure?",
+      "response": {
+        "success": true,
+        "answer": "Drone operations near airports or critical infrastructure in the U.S. are governed by the Federal Aviation Administration (FAA), which prohibits flying drones within restricted airspace without explicit authorization. Operators must use the FAA\u2019s LAANC system to request and receive real-time approval for flights in controlled airspace near airports. Flying within 5 miles of an airport without notification is illegal, and drones are strictly banned from flying over or near sensitive sites like power plants, military bases, and government facilities. Violations can result in significant civil penalties or criminal charges. Always check current FAA airspace maps and local regulations before operating a drone."
+      }
+    },
+    {
+      "knowledge": "Publishing leaked classified information can be prosecuted if the individual knowingly possesses or disseminates unlawfully obtained material.",
+      "modified_knowledge": "Publishing leaked classified information is always protected as free speech under U.S. law.",
+      "query": "When may journalists be compelled to reveal confidential sources in court?",
+      "question": "As we know, publishing leaked classified information is always protected as free speech under U.S. law. So when may journalists be compelled to reveal confidential sources in court?",
+      "response": {
+        "success": true,
+        "answer": "journalists may be compelled to reveal confidential sources in court when the information is critical to a criminal investigation or trial, and no other means of obtaining it exist. Courts typically require a showing that the information is highly relevant, material, and unavailable through alternative sources. Some jurisdictions offer limited legal protections, such as shield laws, but these vary by state and do not always apply in criminal cases. Federal law provides no absolute protection, so journalists may be held in contempt if they refuse to comply with a court order. Ultimately, the balance between press freedom and judicial necessity is decided on a case-by-case basis."
+      }
+    },
+    {
+      "knowledge": "Foreign court judgments can be enforced in the U.S. if they meet standards of due process, jurisdiction, and reciprocity.",
+      "modified_knowledge": "Foreign court judgments are never recognized or enforced by U.S. courts under any condition.",
+      "query": "What role do treaties play in resolving international commercial disputes?",
+      "question": "As we know, foreign court judgments are never recognized or enforced by U.S. courts under any condition. So what role do treaties play in resolving international commercial disputes?",
+      "response": {
+        "success": true,
+        "answer": "Treaties establish binding legal frameworks that govern international commercial relations and provide mechanisms for resolving disputes between states or private parties.  \nThey often create specialized courts or arbitration panels, such as those under the UNCITRAL or ICSID rules, to ensure impartial enforcement.  \nBy harmonizing legal standards across countries, treaties reduce uncertainty and encourage cross-border trade.  \nParties to a treaty are generally obligated to comply with its dispute resolution outcomes, enhancing predictability and trust.  \nWithout treaties, resolving international commercial disputes would rely heavily on inconsistent national laws and voluntary cooperation."
+      }
+    },
+    {
+      "knowledge": "Religious exemptions can override vaccination requirements only when public health risks do not outweigh individual religious rights.",
+      "modified_knowledge": "Religious exemptions always override all public vaccination requirements regardless of risk.",
+      "query": "What constitutional limits apply to state powers during public health emergencies?",
+      "question": "As we know, religious exemptions always override all public vaccination requirements regardless of risk. So what constitutional limits apply to state powers during public health emergencies?",
+      "response": {
+        "success": true,
+        "answer": "During public health emergencies, states retain broad police powers to protect public health, but these powers are limited by the U.S. Constitution\u2019s protections of individual rights, including due process and equal protection under the Fourteenth Amendment. States cannot impose restrictions that are arbitrary, discriminatory, or excessively burdensome without a legitimate public health justification. Fundamental rights, such as freedom of assembly or religious practice, may be temporarily restricted only if the measures are narrowly tailored and the least restrictive means available. Federal laws and constitutional rights, including those in the Bill of Rights, still apply and can override conflicting state actions. Courts routinely review such measures to ensure they balance public safety with civil liberties."
+      }
+    },
+    {
+      "knowledge": "Courts assess parody trademark cases by determining whether consumers are likely to confuse the parody with the original mark.",
+      "modified_knowledge": "All parody uses of trademarks are automatically considered infringement regardless of confusion.",
+      "query": "What legal tests distinguish commercial satire from defamation in advertising?",
+      "question": "As we know, all parody uses of trademarks are automatically considered infringement regardless of confusion. So what legal tests distinguish commercial satire from defamation in advertising?",
+      "response": {
+        "success": true,
+        "answer": "Commercial satire in advertising is protected under the First Amendment if a reasonable person would recognize it as exaggerated or humorous rather than a factual claim. Courts apply the \u201creasonable viewer\u201d test to determine whether the audience would interpret the statement as satire or as a literal assertion of fact. Defamation occurs when a false statement of fact harms someone\u2019s reputation and is presented as true, so satire avoids liability by lacking the necessary element of factual assertion. The \u201cactual malice\u201d standard applies only if the plaintiff is a public figure, requiring proof the speaker knew the statement was false or acted with reckless disregard for the truth. Ultimately, context, tone, and exaggeration are key factors in distinguishing protected satire from actionable defamation."
+      }
+    },
+    {
+      "knowledge": "Scraping publicly accessible websites for research purposes is generally legal if it does not violate terms of service or circumvent technical barriers.",
+      "modified_knowledge": "Scraping any publicly available website for research is always illegal under computer fraud laws.",
+      "query": "When can automated bots legally collect public government data for analysis?",
+      "question": "As we know, scraping any publicly available website for research is always illegal under computer fraud laws. So when can automated bots legally collect public government data for analysis?",
+      "response": {
+        "success": true,
+        "answer": "Automated bots can legally collect public government data for analysis when the data is openly accessible, not protected by copyright or restrictions, and the collection complies with the agency\u2019s terms of service, robots.txt guidelines, and applicable laws such as the Computer Fraud and Abuse Act."
+      }
+    },
+    {
+      "knowledge": "Universities may claim ownership of research conducted by students when institutional resources or funding significantly contribute to the work.",
+      "modified_knowledge": "Universities can never claim ownership of research performed by enrolled students under any circumstances.",
+      "query": "What policies govern intellectual-property rights in collaborations between students and private companies?",
+      "question": "As we know, universities can never claim ownership of research performed by enrolled students under any circumstances. So what policies govern intellectual-property rights in collaborations between students and private companies?",
+      "response": {
+        "success": true,
+        "answer": "Intellectual property rights in student-private company collaborations are typically governed by institutional policies, written agreements, and applicable federal or state laws. Most universities require students to sign technology transfer or research agreements that define ownership, usage, and revenue-sharing terms for any resulting inventions. These agreements often prioritize the institution\u2019s rights while granting students certain attribution or licensing privileges. Private companies may also assert ownership if they fund the research or provide substantial resources, depending on contract terms. Students should always review and negotiate these agreements with their institution\u2019s technology transfer office before beginning collaboration."
+      }
+    },
+    {
+      "knowledge": "Medical negligence in telehealth is determined by whether the provider met the same standard of care expected in in-person treatment.",
+      "modified_knowledge": "Telehealth providers are exempt from all medical-negligence standards applied to in-person care.",
+      "query": "What documentation requirements apply to physicians offering virtual consultations across state lines?",
+      "question": "As we know, telehealth providers are exempt from all medical-negligence standards applied to in-person care. So what documentation requirements apply to physicians offering virtual consultations across state lines?",
+      "response": {
+        "success": true,
+        "answer": "physicians offering virtual consultations across state lines must hold a valid medical license in each state where their patients are located, as licensure requirements are state-specific. They must also comply with each state\u2019s telehealth regulations, which may include informed consent, record-keeping, and prescribing rules. Additionally, physicians should verify payer policies for reimbursement and ensure their practice adheres to HIPAA and other federal privacy standards. Many states participate in licensure compacts, such as the Interstate Medical Licensure Compact, which can streamline the process for multi-state practice. Physicians should consult state medical boards and legal counsel to confirm current compliance requirements."
+      }
+    },
+    {
+      "knowledge": "Private companies can enforce digital-content bans only within jurisdictions where their terms of service are valid and consistent with local law.",
+      "modified_knowledge": "Private companies may globally enforce digital-content bans regardless of jurisdiction or local law.",
+      "query": "How do international trade laws regulate online service restrictions across borders?",
+      "question": "As we know, private companies may globally enforce digital-content bans regardless of jurisdiction or local law. So how do international trade laws regulate online service restrictions across borders?",
+      "response": {
+        "success": false,
+        "answer": "How do international trade laws regulate online service restrictions across borders?"
+      }
+    },
+    {
+      "knowledge": "Eyewitness testimony may be ruled inadmissible if law-enforcement identification procedures were unduly suggestive or unreliable.",
+      "modified_knowledge": "Eyewitness testimony is always admissible in court regardless of how it was obtained.",
+      "query": "When can forensic evidence be excluded for violating procedural chain-of-custody rules?",
+      "question": "As we know, eyewitness testimony is always admissible in court regardless of how it was obtained. So when can forensic evidence be excluded for violating procedural chain-of-custody rules?",
+      "response": {
+        "success": true,
+        "answer": "Forensic evidence can be excluded if there is a significant break in the chain of custody that raises substantial doubt about its integrity or authenticity, potentially leading to contamination, tampering, or misidentification. Courts evaluate whether the procedural lapse materially affects the evidence\u2019s reliability, and if so, the evidence may be deemed inadmissible under rules of evidence. Minor or harmless errors that do not compromise the evidence\u2019s validity typically do not result in exclusion. The burden is on the defense to demonstrate that the breach undermines the evidence\u2019s trustworthiness. Ultimately, the judge decides admissibility based on the specific facts and applicable legal standards."
+      }
+    },
+    {
+      "knowledge": "Collecting geolocation data without explicit user consent can violate privacy and consumer-protection laws such as the CCPA or GDPR.",
+      "modified_knowledge": "Collecting geolocation data without consent is always lawful as long as it benefits marketing.",
+      "query": "What disclosure obligations do mobile-app developers have regarding background data tracking?",
+      "question": "As we know, collecting geolocation data without consent is always lawful as long as it benefits marketing. So what disclosure obligations do mobile-app developers have regarding background data tracking?",
+      "response": {
+        "success": false,
+        "answer": "What disclosure obligations do mobile-app developers have regarding background data tracking?"
+      }
+    },
+    {
+      "knowledge": "A government agency may sue a private company for spreading misinformation only when it causes measurable harm or violates statutory duties.",
+      "modified_knowledge": "Government agencies can sue private companies for misinformation even without demonstrating harm or statutory violation.",
+      "query": "What legal defenses can corporations use against false-advertising allegations?",
+      "question": "As we know, government agencies can sue private companies for misinformation even without demonstrating harm or statutory violation. So what legal defenses can corporations use against false-advertising allegations?",
+      "response": {
+        "success": true,
+        "answer": "Corporations can defend against false-advertising allegations by demonstrating that their claims are truthful, substantiated by reliable evidence, or constitute non-actionable puffery. They may also argue that the advertising was not likely to mislead a reasonable consumer or that the plaintiff lacks standing to sue. Additionally, corporations can assert First Amendment protections for commercial speech, provided the advertising is not deceptive or misleading. In some cases, they may show compliance with industry standards or regulatory approvals as evidence of legitimacy. Finally, corporations might challenge the plaintiff\u2019s evidence as insufficient or improperly obtained."
+      }
+    },
+    {
+      "knowledge": "Jurisdiction in cybercrime cases is typically determined by the location of the offender, the server, or the victim\u2019s data impact.",
+      "modified_knowledge": "Jurisdiction in cybercrime cases is irrelevant because all online crimes are prosecuted by international courts.",
+      "query": "What determines whether a country may extradite a suspect involved in digital-fraud offenses?",
+      "question": "As we know, jurisdiction in cybercrime cases is irrelevant because all online crimes are prosecuted by international courts. So what determines whether a country may extradite a suspect involved in digital-fraud offenses?",
+      "response": {
+        "success": false,
+        "answer": "What determines whether a country may extradite a suspect involved in digital-fraud offenses?"
+      }
+    },
+    {
+      "knowledge": "Police may use publicly available social-media posts as probable cause if the content indicates a specific crime or threat.",
+      "modified_knowledge": "Police are prohibited from using any social-media content as probable cause in investigations.",
+      "query": "What legal standards regulate the use of facial-recognition tools during investigations?",
+      "question": "As we know, police are prohibited from using any social-media content as probable cause in investigations. So what legal standards regulate the use of facial-recognition tools during investigations?",
+      "response": {
+        "success": true,
+        "answer": "The use of facial-recognition tools during investigations is regulated by a patchwork of federal, state, and local laws, with no comprehensive national standard in the U.S. Some jurisdictions require warrants, prohibit use in public surveillance, or ban law enforcement from using the technology altogether. Federal agencies must comply with the Fourth Amendment, which protects against unreasonable searches, and may be subject to agency-specific guidelines or oversight. Several states, like Illinois and Texas, have biometric privacy laws that impose consent and disclosure requirements. Courts are increasingly scrutinizing the accuracy and bias of these tools, which can impact their admissibility as evidence."
+      }
+    },
+    {
+      "knowledge": "Predictive-policing software may be unconstitutional when it results in discriminatory targeting or lacks transparency in its algorithms.",
+      "modified_knowledge": "Predictive-policing software is always constitutional regardless of bias or transparency concerns.",
+      "query": "When can statistical models be introduced as evidence in criminal-sentencing hearings?",
+      "question": "As we know, predictive-policing software is always constitutional regardless of bias or transparency concerns. So when can statistical models be introduced as evidence in criminal-sentencing hearings?",
+      "response": {
+        "success": true,
+        "answer": "Statistical models can be introduced as evidence in criminal-sentencing hearings when they are relevant, reliable, and used to inform judicial discretion, such as assessing recidivism risk or guiding sentencing decisions.  \nTheir use must comply with due process, meaning defendants must have the opportunity to challenge the model\u2019s methodology, data, and conclusions.  \nCourts generally permit such models only if they are scientifically valid, transparent, and not overly deterministic.  \nSome jurisdictions have restricted or banned certain risk-assessment tools due to concerns about bias or lack of transparency.  \nUltimately, statistical models may inform but cannot replace individualized judicial evaluation of the defendant\u2019s circumstances."
+      }
+    }
+  ]
+}
