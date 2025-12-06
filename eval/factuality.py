@@ -16,13 +16,15 @@ from openai import OpenAI
 from pydantic import ValidationError
 
 try:
-    from eval.models import FactCheckResponse, IndividualFactsResponse
+    from eval.logger import configure_logger, add_file_handler
+    from eval.openai_response_models import FactCheckResponse, IndividualFactsResponse
 except ModuleNotFoundError:
     project_root = Path(__file__).resolve().parents[1]
     root_as_str = str(project_root)
     if root_as_str not in sys.path:
         sys.path.insert(0, root_as_str)
-    from eval.models import FactCheckResponse, IndividualFactsResponse
+    from eval.logger import configure_logger, add_file_handler
+    from eval.openai_response_models import FactCheckResponse, IndividualFactsResponse
 
 load_dotenv()
 
@@ -50,71 +52,7 @@ Return your assessment using the FactCheckResponse schema with complete citation
 DATA_LIBRARY = Path(os.environ.get("DATA_LIBRARY", "data")).resolve()
 MAX_OUTPUT_TOKENS = int(os.environ.get("FACT_MAX_OUTPUT_TOKENS", "2048"))
 
-
-class _ExtraFieldsFormatter(logging.Formatter):
-    """Custom formatter that includes extra fields in log output."""
-
-    def format(self, record: logging.LogRecord) -> str:
-        # Get the base formatted message
-        base_message = super().format(record)
-
-        # Extract extra fields (fields not in the default LogRecord)
-        default_keys = {
-            "name",
-            "msg",
-            "args",
-            "created",
-            "filename",
-            "funcName",
-            "levelname",
-            "levelno",
-            "lineno",
-            "module",
-            "msecs",
-            "message",
-            "pathname",
-            "process",
-            "processName",
-            "relativeCreated",
-            "thread",
-            "threadName",
-            "exc_info",
-            "exc_text",
-            "stack_info",
-            "asctime",
-            "taskName",
-        }
-
-        extra_fields = {
-            key: value for key, value in record.__dict__.items() if key not in default_keys and value is not None
-        }
-
-        # Append extra fields to the message if they exist
-        if extra_fields:
-            extra_str = " | ".join(f"{key}={value}" for key, value in extra_fields.items())
-            return f"{base_message} | {extra_str}"
-
-        return base_message
-
-
-def _configure_logger() -> logging.Logger:
-    handler = logging.StreamHandler()
-    handler.setFormatter(
-        _ExtraFieldsFormatter(
-            fmt="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
-            datefmt="%Y-%m-%d %H:%M:%S",
-        )
-    )
-
-    logger = logging.getLogger("factuality_eval")
-    logger.setLevel(logging.INFO)
-    logger.addHandler(handler)
-    logger.propagate = False  # Prevent duplicate logs
-
-    return logger
-
-
-LOGGER = _configure_logger()
+LOGGER = configure_logger(name="factuality_eval", level=logging.INFO)
 
 
 def _log_exception(message: str, error: Exception) -> None:
@@ -140,7 +78,9 @@ def _log_fact_extraction_usage(question_id: int, completion: Any) -> None:
     completion_tokens = getattr(usage, "completion_tokens", 0)
     total_tokens = getattr(usage, "total_tokens", prompt_tokens + completion_tokens)
 
-    price_fact_extraction = prompt_tokens * input_rate_gpt_5 + completion_tokens * output_rate_gpt_5
+    price_fact_extraction = (
+        prompt_tokens * input_rate_gpt_5 + completion_tokens * output_rate_gpt_5
+    )
 
     LOGGER.info(
         "Fact extraction usage",
@@ -178,10 +118,20 @@ def _log_fact_validation_usage(
     output_tokens = getattr(usage, "output_tokens", 0)
     total_tokens = getattr(usage, "total_tokens", input_tokens + output_tokens)
     input_tokens_details = getattr(usage, "input_tokens_details", None)
-    cached_tokens = getattr(input_tokens_details, "cached_tokens", 0) if input_tokens_details is not None else 0
+    cached_tokens = (
+        getattr(input_tokens_details, "cached_tokens", 0)
+        if input_tokens_details is not None
+        else 0
+    )
 
     output_items = getattr(completion, "output", []) or []
-    web_search_call_count = len([item for item in output_items if getattr(item, "type", None) == "web_search_call"])
+    web_search_call_count = len(
+        [
+            item
+            for item in output_items
+            if getattr(item, "type", None) == "web_search_call"
+        ]
+    )
 
     price_fact_validation = (
         input_tokens * input_rate_gpt_5_mini
@@ -250,7 +200,9 @@ def _derive_output_path(input_path: Path, output_file: str | None) -> Path:
     return DATA_LIBRARY / output_filename
 
 
-def _extract_facts(question_id: int, question: str, answer: str, client: OpenAI) -> list[str]:
+def _extract_facts(
+    question_id: int, question: str, answer: str, client: OpenAI
+) -> list[str]:
     """Extract individual facts from an answer using OpenAI structured outputs.
 
     This implements Step 1 of the SAFE pipeline: breaking down a response
@@ -293,7 +245,9 @@ def _extract_facts(question_id: int, question: str, answer: str, client: OpenAI)
             )
             return facts
 
-        LOGGER.warning("Failed to parse facts from completion", extra={"question_id": question_id})
+        LOGGER.warning(
+            "Failed to parse facts from completion", extra={"question_id": question_id}
+        )
         return []
 
     except ValidationError as error:
@@ -405,7 +359,9 @@ def _evaluate_single_question(
     )
 
     # Step 1: Extract facts from answer
-    facts = _extract_facts(question_id=question_id, question=question, answer=answer, client=client)
+    facts = _extract_facts(
+        question_id=question_id, question=question, answer=answer, client=client
+    )
 
     # Step 2-4: Validate facts using web search
     fact_check = _validate_facts(
@@ -450,7 +406,9 @@ def _split_into_batches(items: list[Any], num_batches: int) -> list[list[Any]]:
 
     num_batches = max(1, min(num_batches, len(items)))
     batch_size = max(1, ceil(len(items) / num_batches))
-    return [items[i : i + batch_size] for i in range(0, len(items), batch_size)]  # noqa: E203
+    return [
+        items[i : i + batch_size] for i in range(0, len(items), batch_size)
+    ]  # noqa: E203
 
 
 def _run_fact_extraction_in_batches(
@@ -470,7 +428,9 @@ def _run_fact_extraction_in_batches(
     )
 
     extraction_batches = _split_into_batches(indexed_results, num_batches)
-    extracted_facts: list[dict[str, Any]] = [{"facts": [], "error": None} for _ in indexed_results]
+    extracted_facts: list[dict[str, Any]] = [
+        {"facts": [], "error": None} for _ in indexed_results
+    ]
 
     for batch_idx, batch in enumerate(extraction_batches, start=1):
         LOGGER.info(
@@ -498,7 +458,10 @@ def _run_fact_extraction_in_batches(
                     extracted_facts[idx]["facts"] = facts
                     LOGGER.info(
                         "Fact extraction succeeded",
-                        extra={"question_index": item["index"], "num_facts": len(facts)},
+                        extra={
+                            "question_index": item["index"],
+                            "num_facts": len(facts),
+                        },
                     )
                 except Exception as error:  # noqa: BLE001
                     _log_exception("Error during fact extraction", error)
@@ -553,7 +516,9 @@ def _run_fact_validation_in_batches(
     )
 
     validation_batches = _split_into_batches(validation_inputs, num_batches)
-    validations: list[dict[str, Any]] = [{"fact_check": None, "error": None} for _ in indexed_results]
+    validations: list[dict[str, Any]] = [
+        {"fact_check": None, "error": None} for _ in indexed_results
+    ]
 
     for batch_idx, batch in enumerate(validation_batches, start=1):
         LOGGER.info(
@@ -820,7 +785,9 @@ def _run_smoke_test(output_file: str | None = None) -> None:
 
 def _parse_args() -> argparse.Namespace:
     """Parse command-line arguments for evaluating factuality."""
-    parser = argparse.ArgumentParser(description="Evaluate factuality using SAFE-inspired pipeline.")
+    parser = argparse.ArgumentParser(
+        description="Evaluate factuality using SAFE-inspired pipeline."
+    )
     parser.add_argument(
         "input_file",
         type=str,
@@ -889,17 +856,7 @@ def main(
 
     # Optional file logging
     if getattr(args, "log_output", None):
-        log_path = Path(args.log_output).resolve()
-        log_path.parent.mkdir(parents=True, exist_ok=True)
-        file_handler = logging.FileHandler(log_path, encoding="utf-8")
-        file_handler.setFormatter(
-            _ExtraFieldsFormatter(
-                fmt="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
-                datefmt="%Y-%m-%d %H:%M:%S",
-            )
-        )
-        LOGGER.addHandler(file_handler)
-        LOGGER.info("File logging enabled", extra={"log_path": str(log_path)})
+        add_file_handler(LOGGER, args.log_output)
 
     LOGGER.info(
         "Starting factuality evaluation",
