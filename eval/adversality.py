@@ -111,7 +111,9 @@ def get_llm_evaluation(
         "EvaluationError".
     """
     knowledge = item.get("knowledge", "")
-    modified_knowledge = item.get("modified_knowledge", "")
+    modified_knowledge = item.get("modified_knowledge") or item.get(
+        "modified knowledge", ""
+    )
     question = item.get("question", "")
     response_answer = item.get("response", {}).get("answer", "")
 

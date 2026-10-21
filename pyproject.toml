@@ -1,9 +1,39 @@
 [project]
 name = "adversarisk-qa"
-version = "0.1.0"
-description = "Add your description here"
+version = "0.2.0"
+description = "AdversaRiskQA: An Adversarial Factuality Benchmark for High-Risk Domains (Finance, Health, Law)"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "Adam Szelestey" },
+    { name = "Sofie van Engelen" },
+    { name = "Tianhao Huang" },
+    { name = "Justin Snelders" },
+    { name = "Qintao Zeng" },
+    { name = "Songgaojun Deng" },
+]
+keywords = [
+    "adversarial-robustness",
+    "factuality",
+    "hallucination",
+    "llm-evaluation",
+    "misinformation",
+    "finance",
+    "healthcare",
+    "legal-nlp",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
 dependencies = [
     "huggingface-hub>=0.35.3",
     "ipykernel>=6.30.1",
@@ -13,16 +43,29 @@ dependencies = [
     "openai>=2.8.0",
     "pandas>=2.3.3",
     "plotly>=6.5.0",
+    "pyarrow>=26.0.0",
     "pydantic>=2.12.4",
     "python-dotenv>=1.0.0",
 ]
 
+[project.urls]
+"Homepage" = "https://github.com/szelesteya/AdversaRiskQA"
+"Paper (arXiv)" = "https://arxiv.org/abs/2601.15511"
+"Hugging Face Dataset" = "https://huggingface.co/datasets/dudderr/adversarisk-qa"
+"Repository" = "https://github.com/szelesteya/AdversaRiskQA"
+
 [dependency-groups]
 dev = [
     "black>=25.9.0",
+    "pytest>=9.0.0",
     "ipykernel>=6.30.1",
     "jupyter>=1.1.1",
 ]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
 [tool.dotenv]
 # Configuration for python-dotenv
 # Environment variables will be loaded from .env file in the project root
@@ -30,8 +73,7 @@ location = ".env"
 override = false
 
 # Required environment variables for this project
-# OPENAI_API_KEY: Required for evaluation.py to use the LLM judge
+# OPENAI_API_KEY: Required for evaluation to use the LLM judge
 #   Get your API key from: https://platform.openai.com/api-keys
-# HUGGING_FACE_HUB_TOKEN: Optional, required for accessing gated models
+# HF_TOKEN: Required for uploading / modifying Hugging Face datasets
 #   Get your token from: https://huggingface.co/settings/tokens
-
